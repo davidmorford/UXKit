@@ -1,0 +1,107 @@
+﻿"To:" = "To:";
+
+"just a moment ago" = "just a moment ago";
+
+"%d seconds ago" = "%d seconds ago";
+
+/* Date format: 7/27/09 */
+"M/d/yy" = "M/d/yy";
+
+/* Current page in photo browser (1 of 10) */
+"%d of %d" = "%1$d of %2$d";
+
+"Error" = "Error";
+
+"Send" = "Send";
+
+/* Date format: 2009 */
+"yyyy" = "yyyy";
+
+"Showing %@ Photos" = "Showing %@ Photos";
+
+"Unable to load this photo set." = "Unable to load this photo set.";
+
+"This photo set contains no photos." = "This photo set contains no photos.";
+
+"Subject:" = "Subject:";
+
+"Today" = "Today";
+
+"%d minutes ago" = "%d minutes ago";
+
+"Open in Safari" = "Open in Safari";
+
+/* Date format: Monday, July 27, 2009 */
+"EEEE, LLLL d, YYYY" = "EEEE, LLLL d, YYYY";
+
+"Sending..." = "Sending...";
+
+"No" = "No";
+
+"Yesterday" = "Yesterday";
+
+"Alert" = "Alert";
+
+"No Internet Connection" = "No Internet Connection";
+
+"Showing %@ of %@ Photos" = "Showing %1$@ of %2$@ Photos";
+
+"Sorry, there was an error." = "Sorry, there was an error.";
+
+"Done" = "Done";
+
+"Updating..." = "Updating...";
+
+"%d hours ago" = "%d hours ago";
+
+"about an hour ago" = "about an hour ago";
+
+"No Photos" = "No Photos";
+
+"Search" = "Search";
+
+"Ok" = "Ok";
+
+"Connection Timed Out" = "Connection Timed Out";
+
+/* Date format: 1:05 pm */
+"h:mm a" = "h:mm a";
+
+/* Date format: Monday */
+"EEEE" = "EEEE";
+
+"Are you sure you want to cancel?" = "Are you sure you want to cancel?";
+
+/* Date format: Mon 1:05 pm */
+"EEE h:mm a" = "EEE h:mm a";
+
+"New Message" = "New Message";
+
+/* Date format: July */
+"MMMM" = "MMMM";
+
+"about a minute ago" = "about a minute ago";
+
+"OK" = "OK";
+
+/* Title for back button that returns to photo browser */
+"Photo" = "Photo";
+
+"Load More Photos..." = "Load More Photos...";
+
+/* Date format: Jul 27 1:05 pm */
+"MMM d h:mm a" = "MMM d h:mm a";
+
+/* See all photo thumbnails */
+"See All" = "See All";
+
+/* Date format: July 27 */
+"MMMM d" = "MMMM d";
+
+"Cancel" = "Cancel";
+
+"Yes" = "Yes";
+
+"Loading..." = "Loading...";
+
+"Connection Error" = "Connection Error";

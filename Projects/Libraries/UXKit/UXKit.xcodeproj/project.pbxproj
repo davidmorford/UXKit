@@ -1,0 +1,1690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630AC6DA10162A90002E6BFF /* UXModelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 630AC6D810162A90002E6BFF /* UXModelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		630AC6DB10162A90002E6BFF /* UXModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630AC6D910162A90002E6BFF /* UXModelViewController.m */; };
+		63194681109C2A23006E1B56 /* UXPanelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6319467F109C2A23006E1B56 /* UXPanelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63194682109C2A23006E1B56 /* UXPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63194680109C2A23006E1B56 /* UXPanelViewController.m */; };
+		63194685109C2B71006E1B56 /* UXPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63194683109C2B71006E1B56 /* UXPanelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63194686109C2B71006E1B56 /* UXPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63194684109C2B71006E1B56 /* UXPanelView.m */; };
+		632D5B62109EAF1B00627CEA /* UXManagedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B60109EAF1B00627CEA /* UXManagedModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B63109EAF1B00627CEA /* UXManagedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B61109EAF1B00627CEA /* UXManagedModel.m */; };
+		632D5B6E109EB00C00627CEA /* UXManagedModelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B6F109EB00C00627CEA /* UXManagedModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */; };
+		632D5B76109EB33A00627CEA /* UXManagedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B77109EB33A00627CEA /* UXManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */; };
+		632D5B7A109EB35400627CEA /* UXManagedTableItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B7B109EB35400627CEA /* UXManagedTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */; };
+		632D5B7E109EB36000627CEA /* UXManagedTableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B7C109EB36000627CEA /* UXManagedTableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B7F109EB36000627CEA /* UXManagedTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B7D109EB36000627CEA /* UXManagedTableItem.m */; };
+		632D5B82109EB37200627CEA /* UXManagedTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B83109EB37200627CEA /* UXManagedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */; };
+		632D5B93109EB57C00627CEA /* UXStoreQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B91109EB57C00627CEA /* UXStoreQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B94109EB57C00627CEA /* UXStoreQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B92109EB57C00627CEA /* UXStoreQuery.m */; };
+		632D5B9B109EB5EE00627CEA /* UXStoreContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B99109EB5EE00627CEA /* UXStoreContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632D5B9C109EB5EE00627CEA /* UXStoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B9A109EB5EE00627CEA /* UXStoreContext.m */; };
+		6354FE25107D5A36006831CE /* UXLauncherViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6354FE23107D5A36006831CE /* UXLauncherViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6354FE26107D5A36006831CE /* UXLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6354FE24107D5A36006831CE /* UXLauncherViewController.m */; };
+		635F5B84102A94D400CF0EF9 /* UXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 635F5B82102A94D400CF0EF9 /* UXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635F5B85102A94D400CF0EF9 /* UXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 635F5B83102A94D400CF0EF9 /* UXPageControl.m */; };
+		63657FA61048C6B000844D9A /* UXModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 63657FA41048C6B000844D9A /* UXModelObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63657FA71048C6B000844D9A /* UXModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63657FA51048C6B000844D9A /* UXModelObject.m */; };
+		63843710104000BD00D29404 /* UXNSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436EF104000BD00D29404 /* UXNSArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843711104000BD00D29404 /* UXNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436F0104000BD00D29404 /* UXNSArray.m */; };
+		63843712104000BD00D29404 /* UXNSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436F1104000BD00D29404 /* UXNSDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843713104000BD00D29404 /* UXNSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436F2104000BD00D29404 /* UXNSDate.m */; };
+		63843714104000BD00D29404 /* UXNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436F3104000BD00D29404 /* UXNSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843715104000BD00D29404 /* UXNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436F4104000BD00D29404 /* UXNSObject.m */; };
+		63843716104000BD00D29404 /* UXNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436F5104000BD00D29404 /* UXNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843717104000BD00D29404 /* UXNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436F6104000BD00D29404 /* UXNSString.m */; };
+		63843718104000BD00D29404 /* UIXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436F8104000BD00D29404 /* UIXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843719104000BD00D29404 /* UIXColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436F9104000BD00D29404 /* UIXColor.m */; };
+		6384371A104000BD00D29404 /* UIXFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 638436FA104000BD00D29404 /* UIXFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6384371B104000BD00D29404 /* UIXFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 638436FB104000BD00D29404 /* UIXFont.m */; };
+		63843720104000BD00D29404 /* UIXImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 63843700104000BD00D29404 /* UIXImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843721104000BD00D29404 /* UIXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63843701104000BD00D29404 /* UIXImage.m */; };
+		63843722104000BD00D29404 /* UIXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63843702104000BD00D29404 /* UIXNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843723104000BD00D29404 /* UIXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63843703104000BD00D29404 /* UIXNavigationController.m */; };
+		63843724104000BD00D29404 /* UIXTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63843704104000BD00D29404 /* UIXTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843725104000BD00D29404 /* UIXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63843705104000BD00D29404 /* UIXTabBarController.m */; };
+		63843726104000BD00D29404 /* UIXTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63843706104000BD00D29404 /* UIXTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843727104000BD00D29404 /* UIXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63843707104000BD00D29404 /* UIXTableView.m */; };
+		63843728104000BD00D29404 /* UIXToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 63843708104000BD00D29404 /* UIXToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843729104000BD00D29404 /* UIXToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63843709104000BD00D29404 /* UIXToolbar.m */; };
+		6384372B104000BD00D29404 /* UIXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384370B104000BD00D29404 /* UIXView.m */; };
+		6384372C104000BD00D29404 /* UIXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6384370C104000BD00D29404 /* UIXViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6384372D104000BD00D29404 /* UIXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384370D104000BD00D29404 /* UIXViewController.m */; };
+		6384372E104000BD00D29404 /* UIXWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6384370E104000BD00D29404 /* UIXWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6384372F104000BD00D29404 /* UIXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384370F104000BD00D29404 /* UIXWebView.m */; };
+		63844A861009585C005A6532 /* UXActionSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63844A821009585C005A6532 /* UXActionSheetController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63844A871009585C005A6532 /* UXActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63844A831009585C005A6532 /* UXActionSheetController.m */; };
+		63844A881009585C005A6532 /* UXAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63844A841009585C005A6532 /* UXAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63844A891009585C005A6532 /* UXAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63844A851009585C005A6532 /* UXAlertViewController.m */; };
+		63844A9A10095889005A6532 /* UXPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63844A9810095889005A6532 /* UXPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63844A9B10095889005A6532 /* UXPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63844A9910095889005A6532 /* UXPopupViewController.m */; };
+		638729E610654A3100F078D0 /* UXURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714A11007108B00AD6672 /* UXURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6388A0D510578E47004D3052 /* UXTextBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6388A0D410578E47004D3052 /* UXTextBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6388A0D710578E51004D3052 /* UXTextBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388A0D610578E51004D3052 /* UXTextBarController.m */; };
+		638F35A5108C08DD0021685E /* UIXView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6384370A104000BD00D29404 /* UIXView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63900ECE1041DCEE002FDE89 /* UXLauncherButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 63900EC81041DCEE002FDE89 /* UXLauncherButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63900ECF1041DCEE002FDE89 /* UXLauncherButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63900EC91041DCEE002FDE89 /* UXLauncherButton.m */; };
+		63900ED01041DCEE002FDE89 /* UXLauncherItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 63900ECA1041DCEE002FDE89 /* UXLauncherItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63900ED11041DCEE002FDE89 /* UXLauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63900ECB1041DCEE002FDE89 /* UXLauncherItem.m */; };
+		63900ED21041DCEE002FDE89 /* UXLauncherView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63900ECC1041DCEE002FDE89 /* UXLauncherView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63900ED31041DCEE002FDE89 /* UXLauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63900ECD1041DCEE002FDE89 /* UXLauncherView.m */; };
+		639C41C5100E4B8E0013393A /* UXModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 639C41C1100E4B8D0013393A /* UXModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639C41C7100E4B8E0013393A /* UXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639C41C3100E4B8D0013393A /* UXModel.m */; };
+		639C87EE10997BE600B87173 /* UIXWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 639C87EC10997BE600B87173 /* UIXWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639C87EF10997BE600B87173 /* UIXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 639C87ED10997BE600B87173 /* UIXWindow.m */; };
+		63A9E2061047C26F007FF732 /* UXCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A9E2001047BBE4007FF732 /* UXCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E21910485D5D007FF732 /* UXCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63905D7E104748B200106BC3 /* UXCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E21A10485D63007FF732 /* UXCalendarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63905D7F104748B200106BC3 /* UXCalendarDataSource.m */; };
+		63A9E21D1048843F007FF732 /* UXCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A156EA103358F40083C26C /* UXCalendarViewController.m */; };
+		63A9E21E10488440007FF732 /* UXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A156E8103358F40083C26C /* UXCalendarView.m */; };
+		63A9E21F10488441007FF732 /* UXCalendarTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63905D85104748B200106BC3 /* UXCalendarTileView.m */; };
+		63A9E22010488442007FF732 /* UXCalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63905D83104748B200106BC3 /* UXCalendarLogic.m */; };
+		63A9E22110488443007FF732 /* UXCalendarGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63905D81104748B200106BC3 /* UXCalendarGridView.m */; };
+		63A9E22210488444007FF732 /* UXCalendarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A156E9103358F40083C26C /* UXCalendarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E22310488445007FF732 /* UXCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A156E7103358F40083C26C /* UXCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E22410488446007FF732 /* UXCalendarTileView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63905D84104748B200106BC3 /* UXCalendarTileView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E22510488447007FF732 /* UXCalendarLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 63905D82104748B200106BC3 /* UXCalendarLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A9E22610488448007FF732 /* UXCalendarGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63905D80104748B200106BC3 /* UXCalendarGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63ADE9D01020BA96009B03DF /* UXModelURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 63ADE9CE1020BA96009B03DF /* UXModelURLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63ADE9D11020BA96009B03DF /* UXModelURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ADE9CF1020BA96009B03DF /* UXModelURLResponse.m */; };
+		63B6A7A9104139220049EC9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B6A7A8104139220049EC9C /* QuartzCore.framework */; };
+		63C53B5510ADECF200770A0B /* UXManagedModelDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B5610ADECF200770A0B /* UXManagedModelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */; };
+		63C53B5D10ADF59700770A0B /* UXManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B5B10ADF58A00770A0B /* UXManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B5E10ADF59700770A0B /* UXManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B5C10ADF58A00770A0B /* UXManagedObject.m */; };
+		63C53B6210ADFA0100770A0B /* UXManagedObjectEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B6310ADFA0100770A0B /* UXManagedObjectEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */; };
+		63C53B6710ADFFD400770A0B /* UXStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6510ADFFD400770A0B /* UXStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B6810ADFFD400770A0B /* UXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6610ADFFD400770A0B /* UXStore.m */; };
+		63C53B6B10AE060700770A0B /* UXManagedObjectPropertyEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B6C10AE060700770A0B /* UXManagedObjectPropertyEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */; };
+		63C53B6F10AE065500770A0B /* UXManagedObjectValueEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C53B7010AE065500770A0B /* UXManagedObjectValueEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */; };
+		63C5AFF6100F8F270028F9EF /* UXSearchDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C5AFE9100F8E710028F9EF /* UXSearchDisplayController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C5AFF7100F8F280028F9EF /* UXSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C5AFE8100F8E710028F9EF /* UXSearchDisplayController.m */; };
+		63C714C81007109500AD6672 /* UXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714BE1007108B00AD6672 /* UXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714E41007109C00AD6672 /* UXButtonBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714471007108B00AD6672 /* UXButtonBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714E51007109C00AD6672 /* UXButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714481007108B00AD6672 /* UXButtonBar.m */; };
+		63C714E81007109C00AD6672 /* UXTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7144B1007108B00AD6672 /* UXTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714E91007109C00AD6672 /* UXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7144C1007108B00AD6672 /* UXTabBar.m */; };
+		63C714EA1007109C00AD6672 /* UXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7144E1007108B00AD6672 /* UXButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714EB1007109C00AD6672 /* UXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7144F1007108B00AD6672 /* UXButton.m */; };
+		63C714EC1007109C00AD6672 /* UXLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714501007108B00AD6672 /* UXLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714ED1007109C00AD6672 /* UXLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714511007108B00AD6672 /* UXLink.m */; };
+		63C714EE1007109C00AD6672 /* UXActivityLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714531007108B00AD6672 /* UXActivityLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714EF1007109C00AD6672 /* UXActivityLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714541007108B00AD6672 /* UXActivityLabel.m */; };
+		63C714F01007109C00AD6672 /* UXLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714551007108B00AD6672 /* UXLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714F11007109C00AD6672 /* UXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714561007108B00AD6672 /* UXLabel.m */; };
+		63C714F21007109C00AD6672 /* UXSearchlightLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714571007108B00AD6672 /* UXSearchlightLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714F31007109C00AD6672 /* UXSearchlightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714581007108B00AD6672 /* UXSearchlightLabel.m */; };
+		63C714F41007109C00AD6672 /* UXNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7145A1007108B00AD6672 /* UXNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714F51007109C00AD6672 /* UXNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7145B1007108B00AD6672 /* UXNavigator.m */; };
+		63C714F61007109C00AD6672 /* UXPhotoSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7145D1007108B00AD6672 /* UXPhotoSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714F71007109C00AD6672 /* UXPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7145E1007108B00AD6672 /* UXPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714F81007109C00AD6672 /* UXPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7145F1007108B00AD6672 /* UXPhotoView.m */; };
+		63C714F91007109C00AD6672 /* UXPhotoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714601007108B00AD6672 /* UXPhotoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C714FA1007109C00AD6672 /* UXPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714611007108B00AD6672 /* UXPhotoViewController.m */; };
+		63C715011007109C00AD6672 /* UXDefaultStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714691007108B00AD6672 /* UXDefaultStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715021007109C00AD6672 /* UXDefaultStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7146A1007108B00AD6672 /* UXDefaultStyleSheet.m */; };
+		63C715031007109C00AD6672 /* UXLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7146B1007108B00AD6672 /* UXLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715041007109C00AD6672 /* UXLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7146C1007108B00AD6672 /* UXLayout.m */; };
+		63C715051007109C00AD6672 /* UXShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7146D1007108B00AD6672 /* UXShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715061007109C00AD6672 /* UXShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7146E1007108B00AD6672 /* UXShape.m */; };
+		63C715071007109C00AD6672 /* UXStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7146F1007108B00AD6672 /* UXStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715081007109C00AD6672 /* UXStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714701007108B00AD6672 /* UXStyle.m */; };
+		63C715091007109C00AD6672 /* UXStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714711007108B00AD6672 /* UXStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7150A1007109C00AD6672 /* UXStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714721007108B00AD6672 /* UXStyleSheet.m */; };
+		63C7150B1007109C00AD6672 /* UXStyledFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714741007108B00AD6672 /* UXStyledFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7150C1007109C00AD6672 /* UXStyledFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714751007108B00AD6672 /* UXStyledFrame.m */; };
+		63C7150D1007109C00AD6672 /* UXStyledLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714761007108B00AD6672 /* UXStyledLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7150E1007109C00AD6672 /* UXStyledLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714771007108B00AD6672 /* UXStyledLayout.m */; };
+		63C7150F1007109C00AD6672 /* UXStyledNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714781007108B00AD6672 /* UXStyledNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715101007109C00AD6672 /* UXStyledNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714791007108B00AD6672 /* UXStyledNode.m */; };
+		63C715111007109C00AD6672 /* UXStyledText.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7147A1007108B00AD6672 /* UXStyledText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715121007109C00AD6672 /* UXStyledText.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7147B1007108B00AD6672 /* UXStyledText.m */; };
+		63C715131007109C00AD6672 /* UXStyledTextLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7147C1007108B00AD6672 /* UXStyledTextLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715141007109C00AD6672 /* UXStyledTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7147D1007108B00AD6672 /* UXStyledTextLabel.m */; };
+		63C715151007109C00AD6672 /* UXStyledTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7147E1007108B00AD6672 /* UXStyledTextParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715161007109C00AD6672 /* UXStyledTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7147F1007108B00AD6672 /* UXStyledTextParser.m */; };
+		63C715171007109C00AD6672 /* UXTableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714811007108B00AD6672 /* UXTableHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715181007109C00AD6672 /* UXTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714821007108B00AD6672 /* UXTableHeaderView.m */; };
+		63C7151A1007109C00AD6672 /* UXTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714841007108B00AD6672 /* UXTableItem.m */; };
+		63C7151B1007109C00AD6672 /* UXTableItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714851007108B00AD6672 /* UXTableItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7151C1007109C00AD6672 /* UXTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714861007108B00AD6672 /* UXTableItemCell.m */; };
+		63C7151D1007109C00AD6672 /* UXTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714871007108B00AD6672 /* UXTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7151E1007109C00AD6672 /* UXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714881007108B00AD6672 /* UXTableView.m */; };
+		63C7151F1007109C00AD6672 /* UXTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714891007108B00AD6672 /* UXTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715201007109C00AD6672 /* UXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7148A1007108B00AD6672 /* UXTableViewCell.m */; };
+		63C715211007109C00AD6672 /* UXTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7148B1007108B00AD6672 /* UXTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715221007109C00AD6672 /* UXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7148C1007108B00AD6672 /* UXTableViewController.m */; };
+		63C715241007109C00AD6672 /* UXTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7148E1007108B00AD6672 /* UXTableViewDataSource.m */; };
+		63C715251007109C00AD6672 /* UXTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7148F1007108B00AD6672 /* UXTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715261007109C00AD6672 /* UXTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714901007108B00AD6672 /* UXTableViewDelegate.m */; };
+		63C715271007109C00AD6672 /* UXPickerTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714921007108B00AD6672 /* UXPickerTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715281007109C00AD6672 /* UXPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714931007108B00AD6672 /* UXPickerTextField.m */; };
+		63C715291007109C00AD6672 /* UXPickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714941007108B00AD6672 /* UXPickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7152A1007109C00AD6672 /* UXPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714951007108B00AD6672 /* UXPickerViewCell.m */; };
+		63C7152D1007109C00AD6672 /* UXTextEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714981007108B00AD6672 /* UXTextEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7152E1007109C00AD6672 /* UXTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714991007108B00AD6672 /* UXTextEditor.m */; };
+		63C7152F1007109C00AD6672 /* UXURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C7149B1007108B00AD6672 /* UXURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715301007109C00AD6672 /* UXURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C7149C1007108B00AD6672 /* UXURLCache.m */; };
+		63C715361007109C00AD6672 /* UXURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714A21007108B00AD6672 /* UXURLRequest.m */; };
+		63C715371007109C00AD6672 /* UXURLRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714A31007108B00AD6672 /* UXURLRequestQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715381007109C00AD6672 /* UXURLRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714A41007108B00AD6672 /* UXURLRequestQueue.m */; };
+		63C715391007109C00AD6672 /* UXURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714A51007108B00AD6672 /* UXURLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7153A1007109C00AD6672 /* UXURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714A61007108B00AD6672 /* UXURLResponse.m */; };
+		63C7153B1007109C00AD6672 /* UXErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714A81007108B00AD6672 /* UXErrorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7153C1007109C00AD6672 /* UXErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714A91007108B00AD6672 /* UXErrorView.m */; };
+		63C7153E1007109C00AD6672 /* UXImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714AB1007108B00AD6672 /* UXImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7153F1007109C00AD6672 /* UXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714AC1007108B00AD6672 /* UXImageView.m */; };
+		63C715401007109C00AD6672 /* UXScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714AD1007108B00AD6672 /* UXScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715411007109C00AD6672 /* UXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714AE1007108B00AD6672 /* UXScrollView.m */; };
+		63C715421007109C00AD6672 /* UXUnclippedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714AF1007108B00AD6672 /* UXUnclippedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715431007109C00AD6672 /* UXUnclippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714B01007108B00AD6672 /* UXUnclippedView.m */; };
+		63C715441007109C00AD6672 /* UXView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714B11007108B00AD6672 /* UXView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C715451007109C00AD6672 /* UXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714B21007108B00AD6672 /* UXView.m */; };
+		63C7154A1007109C00AD6672 /* UXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714B81007108B00AD6672 /* UXViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7154B1007109C00AD6672 /* UXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714B91007108B00AD6672 /* UXViewController.m */; };
+		63C7154C1007109C00AD6672 /* UXWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714BA1007108B00AD6672 /* UXWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7154D1007109C00AD6672 /* UXWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C714BB1007108B00AD6672 /* UXWebController.m */; };
+		63C71705100801A000AD6672 /* UXSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C716FA100801A000AD6672 /* UXSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C71706100801A000AD6672 /* UXSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C716FB100801A000AD6672 /* UXSearchBar.m */; };
+		63C71707100801A000AD6672 /* UXSearchTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C716FC100801A000AD6672 /* UXSearchTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C71708100801A000AD6672 /* UXSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C716FD100801A000AD6672 /* UXSearchTextField.m */; };
+		63C71709100801A000AD6672 /* UXThumbsTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C716FF100801A000AD6672 /* UXThumbsTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7170A100801A000AD6672 /* UXThumbsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C71700100801A000AD6672 /* UXThumbsTableViewCell.m */; };
+		63C7170B100801A000AD6672 /* UXThumbsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C71701100801A000AD6672 /* UXThumbsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7170C100801A000AD6672 /* UXThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C71702100801A000AD6672 /* UXThumbsViewController.m */; };
+		63C7170D100801A000AD6672 /* UXThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C71703100801A000AD6672 /* UXThumbView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C7170E100801A000AD6672 /* UXThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C71704100801A000AD6672 /* UXThumbView.m */; };
+		63C830BA10879F9000343E7B /* UXStyledTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C830B810879F9000343E7B /* UXStyledTextViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C830BB10879F9000343E7B /* UXStyledTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C830B910879F9000343E7B /* UXStyledTextViewController.m */; };
+		63C830C910879FD600343E7B /* UXNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C830C710879FD600343E7B /* UXNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C830CA10879FD600343E7B /* UXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C830C810879FD600343E7B /* UXNavigationController.m */; };
+		63CFF895103D44DC00F6E5DD /* UXURLRequestLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CFF893103D44DC00F6E5DD /* UXURLRequestLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CFF896103D44DC00F6E5DD /* UXURLRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFF894103D44DC00F6E5DD /* UXURLRequestLoader.m */; };
+		63D4C78B107E75F500BDD3E4 /* UXSegmentedToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D4C789107E75F500BDD3E4 /* UXSegmentedToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63D4C78C107E75F500BDD3E4 /* UXSegmentedToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D4C78A107E75F500BDD3E4 /* UXSegmentedToolbar.m */; };
+		63DC00C51092EF9800933FBE /* UXURLMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F95F3410083D6200E44B78 /* UXURLMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E2E441101AD03900CC0DDE /* UXGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E2E43F101AD03900CC0DDE /* UXGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E2E442101AD03900CC0DDE /* UXGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2E440101AD03900CC0DDE /* UXGlobal.m */; };
+		63E2E6AC101B806100CC0DDE /* UXMessageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E2E6A8101B806100CC0DDE /* UXMessageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E2E6AD101B806100CC0DDE /* UXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2E6A9101B806100CC0DDE /* UXMessageController.m */; };
+		63E2E6AE101B806100CC0DDE /* UXPostController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E2E6AA101B806100CC0DDE /* UXPostController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E2E6AF101B806100CC0DDE /* UXPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2E6AB101B806100CC0DDE /* UXPostController.m */; };
+		63EA38D7109BE61D002C93F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B6A79A104139220049EC9C /* CoreData.framework */; };
+		63EA38F0109BE6A2002C93F4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EA38EF109BE6A2002C93F4 /* CoreFoundation.framework */; };
+		63F3DC081014D98B00B448E2 /* UXListDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F3DC061014D98B00B448E2 /* UXListDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F3DC091014D98B00B448E2 /* UXListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DC071014D98B00B448E2 /* UXListDataSource.m */; };
+		63F3DC0F1014DAB000B448E2 /* UXTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F3DC0E1014DAB000B448E2 /* UXTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F61CA2103D7510002A1535 /* UXTableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714831007108B00AD6672 /* UXTableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F95F3910083D6200E44B78 /* UXURLMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F95F3510083D6200E44B78 /* UXURLMap.m */; };
+		63F95F3A10083D6200E44B78 /* UXURLPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F95F3610083D6200E44B78 /* UXURLPattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F95F3B10083D6200E44B78 /* UXURLPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F95F3710083D6200E44B78 /* UXURLPattern.m */; };
+		BEF320350F352E7A000DE5D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		BEF320360F352E7A000DE5D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		BEF320370F352E7A000DE5D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		630AC6D810162A90002E6BFF /* UXModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXModelViewController.h; path = Source/Classes/Model/UXModelViewController.h; sourceTree = SOURCE_ROOT; };
+		630AC6D910162A90002E6BFF /* UXModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModelViewController.m; sourceTree = "<group>"; };
+		6319467F109C2A23006E1B56 /* UXPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPanelViewController.h; sourceTree = "<group>"; };
+		63194680109C2A23006E1B56 /* UXPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPanelViewController.m; sourceTree = "<group>"; };
+		63194683109C2B71006E1B56 /* UXPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPanelView.h; sourceTree = "<group>"; };
+		63194684109C2B71006E1B56 /* UXPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPanelView.m; sourceTree = "<group>"; };
+		631EBE38100BC5CD0036C6F7 /* UXKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UXKit.bundle; path = Source/Resources/Bundles/UXKit.bundle; sourceTree = SOURCE_ROOT; };
+		632D5B60109EAF1B00627CEA /* UXManagedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModel.h; sourceTree = "<group>"; };
+		632D5B61109EAF1B00627CEA /* UXManagedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModel.m; sourceTree = "<group>"; };
+		632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModelViewController.h; sourceTree = "<group>"; };
+		632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModelViewController.m; sourceTree = "<group>"; };
+		632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableViewController.h; sourceTree = "<group>"; };
+		632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableViewController.m; sourceTree = "<group>"; };
+		632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableItemCell.h; sourceTree = "<group>"; };
+		632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableItemCell.m; sourceTree = "<group>"; };
+		632D5B7C109EB36000627CEA /* UXManagedTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableItem.h; sourceTree = "<group>"; };
+		632D5B7D109EB36000627CEA /* UXManagedTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableItem.m; sourceTree = "<group>"; };
+		632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableViewDataSource.h; sourceTree = "<group>"; };
+		632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableViewDataSource.m; sourceTree = "<group>"; };
+		632D5B8D109EB56E00627CEA /* UXObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXObjectStore.h; sourceTree = "<group>"; };
+		632D5B8E109EB56E00627CEA /* UXObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXObjectStore.m; sourceTree = "<group>"; };
+		632D5B91109EB57C00627CEA /* UXStoreQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStoreQuery.h; sourceTree = "<group>"; };
+		632D5B92109EB57C00627CEA /* UXStoreQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStoreQuery.m; sourceTree = "<group>"; };
+		632D5B99109EB5EE00627CEA /* UXStoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStoreContext.h; sourceTree = "<group>"; };
+		632D5B9A109EB5EE00627CEA /* UXStoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStoreContext.m; sourceTree = "<group>"; };
+		6354FE23107D5A36006831CE /* UXLauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLauncherViewController.h; path = Source/Classes/Launcher/UXLauncherViewController.h; sourceTree = SOURCE_ROOT; };
+		6354FE24107D5A36006831CE /* UXLauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLauncherViewController.m; sourceTree = "<group>"; };
+		635F5B82102A94D400CF0EF9 /* UXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPageControl.h; sourceTree = "<group>"; };
+		635F5B83102A94D400CF0EF9 /* UXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPageControl.m; sourceTree = "<group>"; };
+		63657FA41048C6B000844D9A /* UXModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXModelObject.h; sourceTree = "<group>"; };
+		63657FA51048C6B000844D9A /* UXModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModelObject.m; sourceTree = "<group>"; };
+		638436EF104000BD00D29404 /* UXNSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSArray.h; path = Source/Categories/Foundation/UXNSArray.h; sourceTree = SOURCE_ROOT; };
+		638436F0104000BD00D29404 /* UXNSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSArray.m; sourceTree = "<group>"; };
+		638436F1104000BD00D29404 /* UXNSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSDate.h; path = Source/Categories/Foundation/UXNSDate.h; sourceTree = SOURCE_ROOT; };
+		638436F2104000BD00D29404 /* UXNSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSDate.m; sourceTree = "<group>"; };
+		638436F3104000BD00D29404 /* UXNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSObject.h; path = Source/Categories/Foundation/UXNSObject.h; sourceTree = SOURCE_ROOT; };
+		638436F4104000BD00D29404 /* UXNSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSObject.m; sourceTree = "<group>"; };
+		638436F5104000BD00D29404 /* UXNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSString.h; path = Source/Categories/Foundation/UXNSString.h; sourceTree = SOURCE_ROOT; };
+		638436F6104000BD00D29404 /* UXNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSString.m; sourceTree = "<group>"; };
+		638436F8104000BD00D29404 /* UIXColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXColor.h; path = Source/Categories/UIKit/UIXColor.h; sourceTree = SOURCE_ROOT; };
+		638436F9104000BD00D29404 /* UIXColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXColor.m; sourceTree = "<group>"; };
+		638436FA104000BD00D29404 /* UIXFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXFont.h; path = Source/Categories/UIKit/UIXFont.h; sourceTree = SOURCE_ROOT; };
+		638436FB104000BD00D29404 /* UIXFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXFont.m; sourceTree = "<group>"; };
+		63843700104000BD00D29404 /* UIXImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXImage.h; path = Source/Categories/UIKit/UIXImage.h; sourceTree = SOURCE_ROOT; };
+		63843701104000BD00D29404 /* UIXImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXImage.m; sourceTree = "<group>"; };
+		63843702104000BD00D29404 /* UIXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXNavigationController.h; path = Source/Categories/UIKit/UIXNavigationController.h; sourceTree = SOURCE_ROOT; };
+		63843703104000BD00D29404 /* UIXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXNavigationController.m; sourceTree = "<group>"; };
+		63843704104000BD00D29404 /* UIXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXTabBarController.h; path = Source/Categories/UIKit/UIXTabBarController.h; sourceTree = SOURCE_ROOT; };
+		63843705104000BD00D29404 /* UIXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXTabBarController.m; sourceTree = "<group>"; };
+		63843706104000BD00D29404 /* UIXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXTableView.h; path = Source/Categories/UIKit/UIXTableView.h; sourceTree = SOURCE_ROOT; };
+		63843707104000BD00D29404 /* UIXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXTableView.m; sourceTree = "<group>"; };
+		63843708104000BD00D29404 /* UIXToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXToolbar.h; path = Source/Categories/UIKit/UIXToolbar.h; sourceTree = SOURCE_ROOT; };
+		63843709104000BD00D29404 /* UIXToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXToolbar.m; sourceTree = "<group>"; };
+		6384370A104000BD00D29404 /* UIXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXView.h; path = Source/Categories/UIKit/UIXView.h; sourceTree = SOURCE_ROOT; };
+		6384370B104000BD00D29404 /* UIXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXView.m; sourceTree = "<group>"; };
+		6384370C104000BD00D29404 /* UIXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXViewController.h; path = Source/Categories/UIKit/UIXViewController.h; sourceTree = SOURCE_ROOT; };
+		6384370D104000BD00D29404 /* UIXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXViewController.m; sourceTree = "<group>"; };
+		6384370E104000BD00D29404 /* UIXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXWebView.h; path = Source/Categories/UIKit/UIXWebView.h; sourceTree = SOURCE_ROOT; };
+		6384370F104000BD00D29404 /* UIXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXWebView.m; sourceTree = "<group>"; };
+		63844A821009585C005A6532 /* UXActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXActionSheetController.h; path = Source/Classes/ViewController/UXActionSheetController.h; sourceTree = SOURCE_ROOT; };
+		63844A831009585C005A6532 /* UXActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXActionSheetController.m; sourceTree = "<group>"; };
+		63844A841009585C005A6532 /* UXAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXAlertViewController.h; path = Source/Classes/ViewController/UXAlertViewController.h; sourceTree = SOURCE_ROOT; };
+		63844A851009585C005A6532 /* UXAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXAlertViewController.m; sourceTree = "<group>"; };
+		63844A9810095889005A6532 /* UXPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPopupViewController.h; path = Source/Classes/ViewController/UXPopupViewController.h; sourceTree = SOURCE_ROOT; };
+		63844A9910095889005A6532 /* UXPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPopupViewController.m; sourceTree = "<group>"; };
+		6388A0D410578E47004D3052 /* UXTextBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTextBarController.h; path = Source/Classes/Composer/UXTextBarController.h; sourceTree = SOURCE_ROOT; };
+		6388A0D610578E51004D3052 /* UXTextBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UXTextBarController.m; path = Source/Classes/Composer/UXTextBarController.m; sourceTree = SOURCE_ROOT; };
+		63900EC81041DCEE002FDE89 /* UXLauncherButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLauncherButton.h; path = Source/Classes/Launcher/UXLauncherButton.h; sourceTree = SOURCE_ROOT; };
+		63900EC91041DCEE002FDE89 /* UXLauncherButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLauncherButton.m; sourceTree = "<group>"; };
+		63900ECA1041DCEE002FDE89 /* UXLauncherItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLauncherItem.h; path = Source/Classes/Launcher/UXLauncherItem.h; sourceTree = SOURCE_ROOT; };
+		63900ECB1041DCEE002FDE89 /* UXLauncherItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLauncherItem.m; sourceTree = "<group>"; };
+		63900ECC1041DCEE002FDE89 /* UXLauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLauncherView.h; path = Source/Classes/Launcher/UXLauncherView.h; sourceTree = SOURCE_ROOT; };
+		63900ECD1041DCEE002FDE89 /* UXLauncherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLauncherView.m; sourceTree = "<group>"; };
+		63905D7E104748B200106BC3 /* UXCalendarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarDataSource.h; path = Source/Classes/Calendar/UXCalendarDataSource.h; sourceTree = SOURCE_ROOT; };
+		63905D7F104748B200106BC3 /* UXCalendarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarDataSource.m; sourceTree = "<group>"; };
+		63905D80104748B200106BC3 /* UXCalendarGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarGridView.h; path = Source/Classes/Calendar/UXCalendarGridView.h; sourceTree = SOURCE_ROOT; };
+		63905D81104748B200106BC3 /* UXCalendarGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarGridView.m; sourceTree = "<group>"; };
+		63905D82104748B200106BC3 /* UXCalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarLogic.h; path = Source/Classes/Calendar/UXCalendarLogic.h; sourceTree = SOURCE_ROOT; };
+		63905D83104748B200106BC3 /* UXCalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarLogic.m; sourceTree = "<group>"; };
+		63905D84104748B200106BC3 /* UXCalendarTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarTileView.h; path = Source/Classes/Calendar/UXCalendarTileView.h; sourceTree = SOURCE_ROOT; };
+		63905D85104748B200106BC3 /* UXCalendarTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarTileView.m; sourceTree = "<group>"; };
+		639C41C1100E4B8D0013393A /* UXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXModel.h; path = Source/Classes/Model/UXModel.h; sourceTree = SOURCE_ROOT; };
+		639C41C3100E4B8D0013393A /* UXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModel.m; sourceTree = "<group>"; };
+		639C87EC10997BE600B87173 /* UIXWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXWindow.h; path = Source/Categories/UIKit/UIXWindow.h; sourceTree = SOURCE_ROOT; };
+		639C87ED10997BE600B87173 /* UIXWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXWindow.m; sourceTree = "<group>"; };
+		63A156E7103358F40083C26C /* UXCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarView.h; path = Source/Classes/Calendar/UXCalendarView.h; sourceTree = SOURCE_ROOT; };
+		63A156E8103358F40083C26C /* UXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarView.m; sourceTree = "<group>"; };
+		63A156E9103358F40083C26C /* UXCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarViewController.h; path = Source/Classes/Calendar/UXCalendarViewController.h; sourceTree = SOURCE_ROOT; };
+		63A156EA103358F40083C26C /* UXCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarViewController.m; sourceTree = "<group>"; };
+		63A9E2001047BBE4007FF732 /* UXCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCoding.h; path = Source/Classes/Utilities/UXCoding.h; sourceTree = SOURCE_ROOT; };
+		63ADE9CE1020BA96009B03DF /* UXModelURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXModelURLResponse.h; sourceTree = "<group>"; };
+		63ADE9CF1020BA96009B03DF /* UXModelURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModelURLResponse.m; sourceTree = "<group>"; };
+		63B6A7521041380F0049EC9C /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Library.xcconfig; path = Configurations/Library.xcconfig; sourceTree = SOURCE_ROOT; };
+		63B6A7531041380F0049EC9C /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = SOURCE_ROOT; };
+		63B6A798104139220049EC9C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		63B6A79A104139220049EC9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63B6A79C104139220049EC9C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63B6A79E104139220049EC9C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		63B6A7A0104139220049EC9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		63B6A7A2104139220049EC9C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		63B6A7A4104139220049EC9C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		63B6A7A6104139220049EC9C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		63B6A7A8104139220049EC9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		63B6A7AA104139220049EC9C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63B6A8FE1041482C0049EC9C /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
+		63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UnitTests.xcconfig; path = Configurations/UnitTests.xcconfig; sourceTree = SOURCE_ROOT; };
+		63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModelDataSource.h; sourceTree = "<group>"; };
+		63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModelDataSource.m; sourceTree = "<group>"; };
+		63C53B5B10ADF58A00770A0B /* UXManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXManagedObject.h; path = Source/Classes/ManagedModel/UXManagedObject.h; sourceTree = SOURCE_ROOT; };
+		63C53B5C10ADF58A00770A0B /* UXManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObject.m; sourceTree = "<group>"; };
+		63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXManagedObjectEditorController.h; path = Source/Classes/ManagedTableEditor/UXManagedObjectEditorController.h; sourceTree = SOURCE_ROOT; };
+		63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectEditorController.m; sourceTree = "<group>"; };
+		63C53B6510ADFFD400770A0B /* UXStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStore.h; sourceTree = "<group>"; };
+		63C53B6610ADFFD400770A0B /* UXStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStore.m; sourceTree = "<group>"; };
+		63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedObjectPropertyEditorController.h; sourceTree = "<group>"; };
+		63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectPropertyEditorController.m; sourceTree = "<group>"; };
+		63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedObjectValueEditorController.h; sourceTree = "<group>"; };
+		63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectValueEditorController.m; sourceTree = "<group>"; };
+		63C5AFE8100F8E710028F9EF /* UXSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSearchDisplayController.m; sourceTree = "<group>"; };
+		63C5AFE9100F8E710028F9EF /* UXSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSearchDisplayController.h; path = Source/Classes/Search/UXSearchDisplayController.h; sourceTree = SOURCE_ROOT; };
+		63C714471007108B00AD6672 /* UXButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXButtonBar.h; path = Source/Classes/Bar/UXButtonBar.h; sourceTree = SOURCE_ROOT; };
+		63C714481007108B00AD6672 /* UXButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXButtonBar.m; sourceTree = "<group>"; };
+		63C7144B1007108B00AD6672 /* UXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTabBar.h; path = Source/Classes/Bar/UXTabBar.h; sourceTree = SOURCE_ROOT; };
+		63C7144C1007108B00AD6672 /* UXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTabBar.m; sourceTree = "<group>"; };
+		63C7144E1007108B00AD6672 /* UXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXButton.h; path = Source/Classes/Control/UXButton.h; sourceTree = SOURCE_ROOT; };
+		63C7144F1007108B00AD6672 /* UXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXButton.m; sourceTree = "<group>"; };
+		63C714501007108B00AD6672 /* UXLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLink.h; path = Source/Classes/Control/UXLink.h; sourceTree = SOURCE_ROOT; };
+		63C714511007108B00AD6672 /* UXLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLink.m; sourceTree = "<group>"; };
+		63C714531007108B00AD6672 /* UXActivityLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXActivityLabel.h; path = Source/Classes/Label/UXActivityLabel.h; sourceTree = SOURCE_ROOT; };
+		63C714541007108B00AD6672 /* UXActivityLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXActivityLabel.m; sourceTree = "<group>"; };
+		63C714551007108B00AD6672 /* UXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLabel.h; path = Source/Classes/Label/UXLabel.h; sourceTree = SOURCE_ROOT; };
+		63C714561007108B00AD6672 /* UXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLabel.m; sourceTree = "<group>"; };
+		63C714571007108B00AD6672 /* UXSearchlightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSearchlightLabel.h; path = Source/Classes/Label/UXSearchlightLabel.h; sourceTree = SOURCE_ROOT; };
+		63C714581007108B00AD6672 /* UXSearchlightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSearchlightLabel.m; sourceTree = "<group>"; };
+		63C7145A1007108B00AD6672 /* UXNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNavigator.h; path = Source/Classes/Navigator/UXNavigator.h; sourceTree = SOURCE_ROOT; };
+		63C7145B1007108B00AD6672 /* UXNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNavigator.m; sourceTree = "<group>"; };
+		63C7145D1007108B00AD6672 /* UXPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPhotoSource.h; path = Source/Classes/Photo/UXPhotoSource.h; sourceTree = SOURCE_ROOT; };
+		63C7145E1007108B00AD6672 /* UXPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPhotoView.h; path = Source/Classes/Photo/UXPhotoView.h; sourceTree = SOURCE_ROOT; };
+		63C7145F1007108B00AD6672 /* UXPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPhotoView.m; sourceTree = "<group>"; };
+		63C714601007108B00AD6672 /* UXPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPhotoViewController.h; path = Source/Classes/Photo/UXPhotoViewController.h; sourceTree = SOURCE_ROOT; };
+		63C714611007108B00AD6672 /* UXPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPhotoViewController.m; sourceTree = "<group>"; };
+		63C714691007108B00AD6672 /* UXDefaultStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXDefaultStyleSheet.h; path = Source/Classes/Style/UXDefaultStyleSheet.h; sourceTree = SOURCE_ROOT; };
+		63C7146A1007108B00AD6672 /* UXDefaultStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXDefaultStyleSheet.m; sourceTree = "<group>"; };
+		63C7146B1007108B00AD6672 /* UXLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLayout.h; path = Source/Classes/Style/UXLayout.h; sourceTree = SOURCE_ROOT; };
+		63C7146C1007108B00AD6672 /* UXLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLayout.m; sourceTree = "<group>"; };
+		63C7146D1007108B00AD6672 /* UXShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXShape.h; path = Source/Classes/Style/UXShape.h; sourceTree = SOURCE_ROOT; };
+		63C7146E1007108B00AD6672 /* UXShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXShape.m; sourceTree = "<group>"; };
+		63C7146F1007108B00AD6672 /* UXStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyle.h; path = Source/Classes/Style/UXStyle.h; sourceTree = SOURCE_ROOT; };
+		63C714701007108B00AD6672 /* UXStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyle.m; sourceTree = "<group>"; };
+		63C714711007108B00AD6672 /* UXStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyleSheet.h; path = Source/Classes/Style/UXStyleSheet.h; sourceTree = SOURCE_ROOT; };
+		63C714721007108B00AD6672 /* UXStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyleSheet.m; sourceTree = "<group>"; };
+		63C714741007108B00AD6672 /* UXStyledFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledFrame.h; path = Source/Classes/StyledText/UXStyledFrame.h; sourceTree = SOURCE_ROOT; };
+		63C714751007108B00AD6672 /* UXStyledFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledFrame.m; sourceTree = "<group>"; };
+		63C714761007108B00AD6672 /* UXStyledLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledLayout.h; path = Source/Classes/StyledText/UXStyledLayout.h; sourceTree = SOURCE_ROOT; };
+		63C714771007108B00AD6672 /* UXStyledLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledLayout.m; sourceTree = "<group>"; };
+		63C714781007108B00AD6672 /* UXStyledNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledNode.h; path = Source/Classes/StyledText/UXStyledNode.h; sourceTree = SOURCE_ROOT; };
+		63C714791007108B00AD6672 /* UXStyledNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledNode.m; sourceTree = "<group>"; };
+		63C7147A1007108B00AD6672 /* UXStyledText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledText.h; path = Source/Classes/StyledText/UXStyledText.h; sourceTree = SOURCE_ROOT; };
+		63C7147B1007108B00AD6672 /* UXStyledText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledText.m; sourceTree = "<group>"; };
+		63C7147C1007108B00AD6672 /* UXStyledTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledTextLabel.h; path = Source/Classes/StyledText/UXStyledTextLabel.h; sourceTree = SOURCE_ROOT; };
+		63C7147D1007108B00AD6672 /* UXStyledTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledTextLabel.m; sourceTree = "<group>"; };
+		63C7147E1007108B00AD6672 /* UXStyledTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXStyledTextParser.h; path = Source/Classes/StyledText/UXStyledTextParser.h; sourceTree = SOURCE_ROOT; };
+		63C7147F1007108B00AD6672 /* UXStyledTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledTextParser.m; sourceTree = "<group>"; };
+		63C714811007108B00AD6672 /* UXTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableHeaderView.h; path = Source/Classes/Table/UXTableHeaderView.h; sourceTree = SOURCE_ROOT; };
+		63C714821007108B00AD6672 /* UXTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableHeaderView.m; sourceTree = "<group>"; };
+		63C714831007108B00AD6672 /* UXTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableItem.h; path = Source/Classes/Table/UXTableItem.h; sourceTree = SOURCE_ROOT; };
+		63C714841007108B00AD6672 /* UXTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableItem.m; sourceTree = "<group>"; };
+		63C714851007108B00AD6672 /* UXTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableItemCell.h; path = Source/Classes/Table/UXTableItemCell.h; sourceTree = SOURCE_ROOT; };
+		63C714861007108B00AD6672 /* UXTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableItemCell.m; sourceTree = "<group>"; };
+		63C714871007108B00AD6672 /* UXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableView.h; path = Source/Classes/Table/UXTableView.h; sourceTree = SOURCE_ROOT; };
+		63C714881007108B00AD6672 /* UXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableView.m; sourceTree = "<group>"; };
+		63C714891007108B00AD6672 /* UXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableViewCell.h; path = Source/Classes/Table/UXTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		63C7148A1007108B00AD6672 /* UXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableViewCell.m; sourceTree = "<group>"; };
+		63C7148B1007108B00AD6672 /* UXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableViewController.h; path = Source/Classes/Table/UXTableViewController.h; sourceTree = SOURCE_ROOT; };
+		63C7148C1007108B00AD6672 /* UXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableViewController.m; sourceTree = "<group>"; };
+		63C7148E1007108B00AD6672 /* UXTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableViewDataSource.m; sourceTree = "<group>"; };
+		63C7148F1007108B00AD6672 /* UXTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableViewDelegate.h; path = Source/Classes/Table/UXTableViewDelegate.h; sourceTree = SOURCE_ROOT; };
+		63C714901007108B00AD6672 /* UXTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTableViewDelegate.m; sourceTree = "<group>"; };
+		63C714921007108B00AD6672 /* UXPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPickerTextField.h; path = Source/Classes/Text/UXPickerTextField.h; sourceTree = SOURCE_ROOT; };
+		63C714931007108B00AD6672 /* UXPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPickerTextField.m; sourceTree = "<group>"; };
+		63C714941007108B00AD6672 /* UXPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPickerViewCell.h; path = Source/Classes/Text/UXPickerViewCell.h; sourceTree = SOURCE_ROOT; };
+		63C714951007108B00AD6672 /* UXPickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPickerViewCell.m; sourceTree = "<group>"; };
+		63C714981007108B00AD6672 /* UXTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTextEditor.h; path = Source/Classes/Text/UXTextEditor.h; sourceTree = SOURCE_ROOT; };
+		63C714991007108B00AD6672 /* UXTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXTextEditor.m; sourceTree = "<group>"; };
+		63C7149B1007108B00AD6672 /* UXURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLCache.h; path = Source/Classes/URL/UXURLCache.h; sourceTree = SOURCE_ROOT; };
+		63C7149C1007108B00AD6672 /* UXURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLCache.m; sourceTree = "<group>"; };
+		63C714A11007108B00AD6672 /* UXURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLRequest.h; path = Source/Classes/URL/UXURLRequest.h; sourceTree = SOURCE_ROOT; };
+		63C714A21007108B00AD6672 /* UXURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLRequest.m; sourceTree = "<group>"; };
+		63C714A31007108B00AD6672 /* UXURLRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLRequestQueue.h; path = Source/Classes/URL/UXURLRequestQueue.h; sourceTree = SOURCE_ROOT; };
+		63C714A41007108B00AD6672 /* UXURLRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLRequestQueue.m; sourceTree = "<group>"; };
+		63C714A51007108B00AD6672 /* UXURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLResponse.h; path = Source/Classes/URL/UXURLResponse.h; sourceTree = SOURCE_ROOT; };
+		63C714A61007108B00AD6672 /* UXURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLResponse.m; sourceTree = "<group>"; };
+		63C714A81007108B00AD6672 /* UXErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXErrorView.h; path = Source/Classes/View/UXErrorView.h; sourceTree = SOURCE_ROOT; };
+		63C714A91007108B00AD6672 /* UXErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXErrorView.m; sourceTree = "<group>"; };
+		63C714AB1007108B00AD6672 /* UXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXImageView.h; path = Source/Classes/View/UXImageView.h; sourceTree = SOURCE_ROOT; };
+		63C714AC1007108B00AD6672 /* UXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXImageView.m; sourceTree = "<group>"; };
+		63C714AD1007108B00AD6672 /* UXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXScrollView.h; path = Source/Classes/View/UXScrollView.h; sourceTree = SOURCE_ROOT; };
+		63C714AE1007108B00AD6672 /* UXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXScrollView.m; sourceTree = "<group>"; };
+		63C714AF1007108B00AD6672 /* UXUnclippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXUnclippedView.h; path = Source/Classes/View/UXUnclippedView.h; sourceTree = SOURCE_ROOT; };
+		63C714B01007108B00AD6672 /* UXUnclippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXUnclippedView.m; sourceTree = "<group>"; };
+		63C714B11007108B00AD6672 /* UXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXView.h; path = Source/Classes/View/UXView.h; sourceTree = SOURCE_ROOT; };
+		63C714B21007108B00AD6672 /* UXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXView.m; sourceTree = "<group>"; };
+		63C714B81007108B00AD6672 /* UXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXViewController.h; path = Source/Classes/ViewController/UXViewController.h; sourceTree = SOURCE_ROOT; };
+		63C714B91007108B00AD6672 /* UXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXViewController.m; sourceTree = "<group>"; };
+		63C714BA1007108B00AD6672 /* UXWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXWebController.h; path = Source/Classes/ViewController/UXWebController.h; sourceTree = SOURCE_ROOT; };
+		63C714BB1007108B00AD6672 /* UXWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXWebController.m; sourceTree = "<group>"; };
+		63C714BE1007108B00AD6672 /* UXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXKit.h; path = Source/Project/UXKit.h; sourceTree = SOURCE_ROOT; };
+		63C716FA100801A000AD6672 /* UXSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSearchBar.h; path = Source/Classes/Search/UXSearchBar.h; sourceTree = SOURCE_ROOT; };
+		63C716FB100801A000AD6672 /* UXSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSearchBar.m; sourceTree = "<group>"; };
+		63C716FC100801A000AD6672 /* UXSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSearchTextField.h; path = Source/Classes/Search/UXSearchTextField.h; sourceTree = SOURCE_ROOT; };
+		63C716FD100801A000AD6672 /* UXSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSearchTextField.m; sourceTree = "<group>"; };
+		63C716FF100801A000AD6672 /* UXThumbsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXThumbsTableViewCell.h; path = Source/Classes/Thumbnail/UXThumbsTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		63C71700100801A000AD6672 /* UXThumbsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXThumbsTableViewCell.m; sourceTree = "<group>"; };
+		63C71701100801A000AD6672 /* UXThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXThumbsViewController.h; path = Source/Classes/Thumbnail/UXThumbsViewController.h; sourceTree = SOURCE_ROOT; };
+		63C71702100801A000AD6672 /* UXThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXThumbsViewController.m; sourceTree = "<group>"; };
+		63C71703100801A000AD6672 /* UXThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXThumbView.h; path = Source/Classes/Thumbnail/UXThumbView.h; sourceTree = SOURCE_ROOT; };
+		63C71704100801A000AD6672 /* UXThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXThumbView.m; sourceTree = "<group>"; };
+		63C830B810879F9000343E7B /* UXStyledTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStyledTextViewController.h; sourceTree = "<group>"; };
+		63C830B910879F9000343E7B /* UXStyledTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStyledTextViewController.m; sourceTree = "<group>"; };
+		63C830C710879FD600343E7B /* UXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNavigationController.h; sourceTree = "<group>"; };
+		63C830C810879FD600343E7B /* UXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNavigationController.m; sourceTree = "<group>"; };
+		63CFF893103D44DC00F6E5DD /* UXURLRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXURLRequestLoader.h; sourceTree = "<group>"; };
+		63CFF894103D44DC00F6E5DD /* UXURLRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLRequestLoader.m; sourceTree = "<group>"; };
+		63D4C789107E75F500BDD3E4 /* UXSegmentedToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSegmentedToolbar.h; path = Source/Classes/Bar/UXSegmentedToolbar.h; sourceTree = SOURCE_ROOT; };
+		63D4C78A107E75F500BDD3E4 /* UXSegmentedToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSegmentedToolbar.m; sourceTree = "<group>"; };
+		63E2E43F101AD03900CC0DDE /* UXGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXGlobal.h; sourceTree = "<group>"; };
+		63E2E440101AD03900CC0DDE /* UXGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXGlobal.m; sourceTree = "<group>"; };
+		63E2E6A8101B806100CC0DDE /* UXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXMessageController.h; path = Source/Classes/Composer/UXMessageController.h; sourceTree = SOURCE_ROOT; };
+		63E2E6A9101B806100CC0DDE /* UXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXMessageController.m; sourceTree = "<group>"; };
+		63E2E6AA101B806100CC0DDE /* UXPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXPostController.h; path = Source/Classes/Composer/UXPostController.h; sourceTree = SOURCE_ROOT; };
+		63E2E6AB101B806100CC0DDE /* UXPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPostController.m; sourceTree = "<group>"; };
+		63EA3829109BE5EE002C93F4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		63EA382B109BE5EE002C93F4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		63EA382D109BE5EE002C93F4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		63EA382F109BE5EE002C93F4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		63EA3831109BE5EE002C93F4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		63EA3833109BE5EE002C93F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		63EA38EF109BE6A2002C93F4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		63EA391B109BE6EE002C93F4 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		63EA391D109BE6EE002C93F4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		63EA391F109BE6EE002C93F4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		63EA3921109BE6EE002C93F4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		63F3DC061014D98B00B448E2 /* UXListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXListDataSource.h; path = Source/Classes/Table/UXListDataSource.h; sourceTree = SOURCE_ROOT; };
+		63F3DC071014D98B00B448E2 /* UXListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXListDataSource.m; sourceTree = "<group>"; };
+		63F3DC0E1014DAB000B448E2 /* UXTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXTableViewDataSource.h; path = Source/Classes/Table/UXTableViewDataSource.h; sourceTree = SOURCE_ROOT; };
+		63F95F3410083D6200E44B78 /* UXURLMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLMap.h; path = Source/Classes/Navigator/UXURLMap.h; sourceTree = SOURCE_ROOT; };
+		63F95F3510083D6200E44B78 /* UXURLMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLMap.m; sourceTree = "<group>"; };
+		63F95F3610083D6200E44B78 /* UXURLPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXURLPattern.h; path = Source/Classes/Navigator/UXURLPattern.h; sourceTree = SOURCE_ROOT; };
+		63F95F3710083D6200E44B78 /* UXURLPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXURLPattern.m; sourceTree = "<group>"; };
+		BEF31F3A0F352DF5000DE5D2 /* libUXKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUXKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF31F380F352DF5000DE5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF320350F352E7A000DE5D2 /* UIKit.framework in Frameworks */,
+				BEF320360F352E7A000DE5D2 /* Foundation.framework in Frameworks */,
+				BEF320370F352E7A000DE5D2 /* CoreGraphics.framework in Frameworks */,
+				63B6A7A9104139220049EC9C /* QuartzCore.framework in Frameworks */,
+				63EA38D7109BE61D002C93F4 /* CoreData.framework in Frameworks */,
+				63EA38F0109BE6A2002C93F4 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF31F3A0F352DF5000DE5D2 /* libUXKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				63C7156A100711B300AD6672 /* References */,
+				63C714271007107800AD6672 /* Configurations */,
+				63C714C01007108B00AD6672 /* Resources */,
+				63C714BC1007108B00AD6672 /* Project */,
+				63C716C31008018900AD6672 /* Categories */,
+				63C714451007108B00AD6672 /* Classes */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63EA3829109BE5EE002C93F4 /* AddressBook.framework */,
+				63EA382B109BE5EE002C93F4 /* AddressBookUI.framework */,
+				63B6A798104139220049EC9C /* AVFoundation.framework */,
+				63EA382D109BE5EE002C93F4 /* CFNetwork.framework */,
+				63B6A79A104139220049EC9C /* CoreData.framework */,
+				63EA38EF109BE6A2002C93F4 /* CoreFoundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				63B6A79C104139220049EC9C /* CoreLocation.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				63B6A79E104139220049EC9C /* GameKit.framework */,
+				63B6A7A0104139220049EC9C /* MapKit.framework */,
+				63B6A7A2104139220049EC9C /* MediaPlayer.framework */,
+				63B6A7A4104139220049EC9C /* MessageUI.framework */,
+				63B6A7A6104139220049EC9C /* MobileCoreServices.framework */,
+				63EA382F109BE5EE002C93F4 /* OpenGLES.framework */,
+				63B6A7A8104139220049EC9C /* QuartzCore.framework */,
+				63EA3831109BE5EE002C93F4 /* Security.framework */,
+				63EA3833109BE5EE002C93F4 /* StoreKit.framework */,
+				63B6A7AA104139220049EC9C /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		631EBD4E100BB0BF0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C714541007108B00AD6672 /* UXActivityLabel.m */,
+				63C714561007108B00AD6672 /* UXLabel.m */,
+				63C714581007108B00AD6672 /* UXSearchlightLabel.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD4F100BB0C50036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C830C810879FD600343E7B /* UXNavigationController.m */,
+				63C7145B1007108B00AD6672 /* UXNavigator.m */,
+				63F95F3510083D6200E44B78 /* UXURLMap.m */,
+				63F95F3710083D6200E44B78 /* UXURLPattern.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD50100BB0D40036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C7145F1007108B00AD6672 /* UXPhotoView.m */,
+				63C714611007108B00AD6672 /* UXPhotoViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD51100BB0DB0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C5AFE8100F8E710028F9EF /* UXSearchDisplayController.m */,
+				63C716FB100801A000AD6672 /* UXSearchBar.m */,
+				63C716FD100801A000AD6672 /* UXSearchTextField.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD52100BB0E00036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C7146A1007108B00AD6672 /* UXDefaultStyleSheet.m */,
+				63C7146C1007108B00AD6672 /* UXLayout.m */,
+				63C7146E1007108B00AD6672 /* UXShape.m */,
+				63C714701007108B00AD6672 /* UXStyle.m */,
+				63C714721007108B00AD6672 /* UXStyleSheet.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD53100BB36F0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C714751007108B00AD6672 /* UXStyledFrame.m */,
+				63C714771007108B00AD6672 /* UXStyledLayout.m */,
+				63C714791007108B00AD6672 /* UXStyledNode.m */,
+				63C7147B1007108B00AD6672 /* UXStyledText.m */,
+				63C7147D1007108B00AD6672 /* UXStyledTextLabel.m */,
+				63C7147F1007108B00AD6672 /* UXStyledTextParser.m */,
+				63C830B910879F9000343E7B /* UXStyledTextViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD54100BB3790036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63F3DC071014D98B00B448E2 /* UXListDataSource.m */,
+				63C714821007108B00AD6672 /* UXTableHeaderView.m */,
+				63C714841007108B00AD6672 /* UXTableItem.m */,
+				63C714861007108B00AD6672 /* UXTableItemCell.m */,
+				63C714881007108B00AD6672 /* UXTableView.m */,
+				63C7148A1007108B00AD6672 /* UXTableViewCell.m */,
+				63C7148C1007108B00AD6672 /* UXTableViewController.m */,
+				63C7148E1007108B00AD6672 /* UXTableViewDataSource.m */,
+				63C714901007108B00AD6672 /* UXTableViewDelegate.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD55100BB6D60036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C714931007108B00AD6672 /* UXPickerTextField.m */,
+				63C714951007108B00AD6672 /* UXPickerViewCell.m */,
+				63C714991007108B00AD6672 /* UXTextEditor.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD56100BB6E80036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C71700100801A000AD6672 /* UXThumbsTableViewCell.m */,
+				63C71702100801A000AD6672 /* UXThumbsViewController.m */,
+				63C71704100801A000AD6672 /* UXThumbView.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD57100BB6F20036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C7149C1007108B00AD6672 /* UXURLCache.m */,
+				63C714A21007108B00AD6672 /* UXURLRequest.m */,
+				63CFF894103D44DC00F6E5DD /* UXURLRequestLoader.m */,
+				63C714A41007108B00AD6672 /* UXURLRequestQueue.m */,
+				63C714A61007108B00AD6672 /* UXURLResponse.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD58100BB79B0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C714A91007108B00AD6672 /* UXErrorView.m */,
+				63C714AC1007108B00AD6672 /* UXImageView.m */,
+				63C714AE1007108B00AD6672 /* UXScrollView.m */,
+				63C714B01007108B00AD6672 /* UXUnclippedView.m */,
+				63C714B21007108B00AD6672 /* UXView.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD59100BB7AB0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63844A831009585C005A6532 /* UXActionSheetController.m */,
+				63844A851009585C005A6532 /* UXAlertViewController.m */,
+				63844A9910095889005A6532 /* UXPopupViewController.m */,
+				63C714B91007108B00AD6672 /* UXViewController.m */,
+				63C714BB1007108B00AD6672 /* UXWebController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD5A100BB84A0036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C714481007108B00AD6672 /* UXButtonBar.m */,
+				63D4C78A107E75F500BDD3E4 /* UXSegmentedToolbar.m */,
+				63C7144C1007108B00AD6672 /* UXTabBar.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		631EBD5B100BB8B20036C6F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C7144F1007108B00AD6672 /* UXButton.m */,
+				63C714511007108B00AD6672 /* UXLink.m */,
+				635F5B83102A94D400CF0EF9 /* UXPageControl.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		632D5B8C109EB55F00627CEA /* ObjectStore */ = {
+			isa = PBXGroup;
+			children = (
+				63C53B6510ADFFD400770A0B /* UXStore.h */,
+				632D5B99109EB5EE00627CEA /* UXStoreContext.h */,
+				632D5B91109EB57C00627CEA /* UXStoreQuery.h */,
+				632D5B8D109EB56E00627CEA /* UXObjectStore.h */,
+				63C53B6410ADFCA000770A0B /* Source */,
+			);
+			name = ObjectStore;
+			path = Source/Classes/ObjectStore;
+			sourceTree = SOURCE_ROOT;
+		};
+		638436EE104000BD00D29404 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				638436EF104000BD00D29404 /* UXNSArray.h */,
+				638436F1104000BD00D29404 /* UXNSDate.h */,
+				638436F3104000BD00D29404 /* UXNSObject.h */,
+				638436F5104000BD00D29404 /* UXNSString.h */,
+				638437311040014200D29404 /* Source */,
+			);
+			name = Foundation;
+			path = Source/Categories/Foundation;
+			sourceTree = SOURCE_ROOT;
+		};
+		638436F7104000BD00D29404 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				638436F8104000BD00D29404 /* UIXColor.h */,
+				638436FA104000BD00D29404 /* UIXFont.h */,
+				63843700104000BD00D29404 /* UIXImage.h */,
+				63843706104000BD00D29404 /* UIXTableView.h */,
+				63843708104000BD00D29404 /* UIXToolbar.h */,
+				6384370A104000BD00D29404 /* UIXView.h */,
+				6384370E104000BD00D29404 /* UIXWebView.h */,
+				63843702104000BD00D29404 /* UIXNavigationController.h */,
+				63843704104000BD00D29404 /* UIXTabBarController.h */,
+				6384370C104000BD00D29404 /* UIXViewController.h */,
+				639C87EC10997BE600B87173 /* UIXWindow.h */,
+				638437301040013B00D29404 /* Source */,
+			);
+			name = UIKit;
+			path = Source/Categories/UIKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		638437301040013B00D29404 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				639C87ED10997BE600B87173 /* UIXWindow.m */,
+				638436F9104000BD00D29404 /* UIXColor.m */,
+				638436FB104000BD00D29404 /* UIXFont.m */,
+				63843701104000BD00D29404 /* UIXImage.m */,
+				63843703104000BD00D29404 /* UIXNavigationController.m */,
+				63843705104000BD00D29404 /* UIXTabBarController.m */,
+				63843707104000BD00D29404 /* UIXTableView.m */,
+				63843709104000BD00D29404 /* UIXToolbar.m */,
+				6384370B104000BD00D29404 /* UIXView.m */,
+				6384370D104000BD00D29404 /* UIXViewController.m */,
+				6384370F104000BD00D29404 /* UIXWebView.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		638437311040014200D29404 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				638436F0104000BD00D29404 /* UXNSArray.m */,
+				638436F2104000BD00D29404 /* UXNSDate.m */,
+				638436F4104000BD00D29404 /* UXNSObject.m */,
+				638436F6104000BD00D29404 /* UXNSString.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		638F365C108C25B40021685E /* ManagedModel */ = {
+			isa = PBXGroup;
+			children = (
+				632D5B60109EAF1B00627CEA /* UXManagedModel.h */,
+				63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */,
+				632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */,
+				63C53B5B10ADF58A00770A0B /* UXManagedObject.h */,
+				63C53B4310ADE9EC00770A0B /* Source */,
+			);
+			name = ManagedModel;
+			path = Source/Classes/ManagedModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		638F365D108C25B40021685E /* ManagedTable */ = {
+			isa = PBXGroup;
+			children = (
+				632D5B7C109EB36000627CEA /* UXManagedTableItem.h */,
+				632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */,
+				632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */,
+				632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */,
+				63C53B5F10ADF9E900770A0B /* Source */,
+			);
+			name = ManagedTable;
+			path = Source/Classes/ManagedTable;
+			sourceTree = SOURCE_ROOT;
+		};
+		63900EC71041DCEE002FDE89 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				63900EC81041DCEE002FDE89 /* UXLauncherButton.h */,
+				63900ECA1041DCEE002FDE89 /* UXLauncherItem.h */,
+				63900ECC1041DCEE002FDE89 /* UXLauncherView.h */,
+				6354FE23107D5A36006831CE /* UXLauncherViewController.h */,
+				63900ED71041DF58002FDE89 /* Source */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		63900ED71041DF58002FDE89 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63900EC91041DCEE002FDE89 /* UXLauncherButton.m */,
+				63900ECB1041DCEE002FDE89 /* UXLauncherItem.m */,
+				63900ECD1041DCEE002FDE89 /* UXLauncherView.m */,
+				6354FE24107D5A36006831CE /* UXLauncherViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		639C41C0100E4B690013393A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				639C41C1100E4B8D0013393A /* UXModel.h */,
+				63657FA41048C6B000844D9A /* UXModelObject.h */,
+				63ADE9CE1020BA96009B03DF /* UXModelURLResponse.h */,
+				630AC6D810162A90002E6BFF /* UXModelViewController.h */,
+				639C4427100E8D950013393A /* Source */,
+			);
+			name = Model;
+			path = Source/Classes/Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		639C4427100E8D950013393A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				639C41C3100E4B8D0013393A /* UXModel.m */,
+				63657FA51048C6B000844D9A /* UXModelObject.m */,
+				63ADE9CF1020BA96009B03DF /* UXModelURLResponse.m */,
+				630AC6D910162A90002E6BFF /* UXModelViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63A156E4103358F40083C26C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				63905D7E104748B200106BC3 /* UXCalendarDataSource.h */,
+				63905D80104748B200106BC3 /* UXCalendarGridView.h */,
+				63905D82104748B200106BC3 /* UXCalendarLogic.h */,
+				63905D84104748B200106BC3 /* UXCalendarTileView.h */,
+				63A156E7103358F40083C26C /* UXCalendarView.h */,
+				63A156E9103358F40083C26C /* UXCalendarViewController.h */,
+				63A156EB103358FB0083C26C /* Source */,
+			);
+			name = Calendar;
+			path = Source/Classes/Calendar;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A156EB103358FB0083C26C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63905D7F104748B200106BC3 /* UXCalendarDataSource.m */,
+				63905D81104748B200106BC3 /* UXCalendarGridView.m */,
+				63905D83104748B200106BC3 /* UXCalendarLogic.m */,
+				63905D85104748B200106BC3 /* UXCalendarTileView.m */,
+				63A156E8103358F40083C26C /* UXCalendarView.m */,
+				63A156EA103358F40083C26C /* UXCalendarViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63B47A2C108EDAF600C2D5B5 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				63194683109C2B71006E1B56 /* UXPanelView.h */,
+				6319467F109C2A23006E1B56 /* UXPanelViewController.h */,
+				63F7FCD3109030B600F96586 /* Source */,
+			);
+			name = Panel;
+			path = Source/Classes/Panel;
+			sourceTree = SOURCE_ROOT;
+		};
+		63B6A82F104139440049EC9C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				63EA391B109BE6EE002C93F4 /* libobjc.dylib */,
+				63EA391D109BE6EE002C93F4 /* libsqlite3.dylib */,
+				63EA391F109BE6EE002C93F4 /* libxml2.dylib */,
+				63EA3921109BE6EE002C93F4 /* libz.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		63B6A8301041394B0049EC9C /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		63C53B4310ADE9EC00770A0B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				632D5B61109EAF1B00627CEA /* UXManagedModel.m */,
+				63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */,
+				632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */,
+				63C53B5C10ADF58A00770A0B /* UXManagedObject.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63C53B5210ADEA4E00770A0B /* ManagedTableEditor */ = {
+			isa = PBXGroup;
+			children = (
+				63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */,
+				63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */,
+				63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */,
+				63C53B7110AE070800770A0B /* Source */,
+			);
+			name = ManagedTableEditor;
+			path = Source/Classes/ManagedTableEditor;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C53B5F10ADF9E900770A0B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				632D5B7D109EB36000627CEA /* UXManagedTableItem.m */,
+				632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */,
+				632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */,
+				632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63C53B6410ADFCA000770A0B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C53B6610ADFFD400770A0B /* UXStore.m */,
+				632D5B9A109EB5EE00627CEA /* UXStoreContext.m */,
+				632D5B92109EB57C00627CEA /* UXStoreQuery.m */,
+				632D5B8E109EB56E00627CEA /* UXObjectStore.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63C53B7110AE070800770A0B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */,
+				63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */,
+				63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63C714271007107800AD6672 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				63B6A8FE1041482C0049EC9C /* Settings.xcconfig */,
+				63B6A7531041380F0049EC9C /* Project.xcconfig */,
+				63B6A7521041380F0049EC9C /* Library.xcconfig */,
+				63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714451007108B00AD6672 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63E2E43E101AD03900CC0DDE /* Utilities */,
+				63C714461007108B00AD6672 /* Bar */,
+				63A156E4103358F40083C26C /* Calendar */,
+				63E2E6A7101B806100CC0DDE /* Composer */,
+				63C7144D1007108B00AD6672 /* Control */,
+				63C714521007108B00AD6672 /* Label */,
+				63900EC71041DCEE002FDE89 /* Launcher */,
+				639C41C0100E4B690013393A /* Model */,
+				638F365C108C25B40021685E /* ManagedModel */,
+				632D5B8C109EB55F00627CEA /* ObjectStore */,
+				638F365D108C25B40021685E /* ManagedTable */,
+				63C53B5210ADEA4E00770A0B /* ManagedTableEditor */,
+				63C714591007108B00AD6672 /* Navigator */,
+				63B47A2C108EDAF600C2D5B5 /* Panel */,
+				63C7145C1007108B00AD6672 /* Photo */,
+				63C716F9100801A000AD6672 /* Search */,
+				63C714681007108B00AD6672 /* Style */,
+				63C714731007108B00AD6672 /* StyledText */,
+				63C714801007108B00AD6672 /* Table */,
+				63C714911007108B00AD6672 /* Text */,
+				63C716FE100801A000AD6672 /* Thumbnail */,
+				63C7149A1007108B00AD6672 /* URL */,
+				63C714A71007108B00AD6672 /* View */,
+				63C714B51007108B00AD6672 /* ViewController */,
+			);
+			name = Classes;
+			path = Source/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714461007108B00AD6672 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				63C714471007108B00AD6672 /* UXButtonBar.h */,
+				63D4C789107E75F500BDD3E4 /* UXSegmentedToolbar.h */,
+				63C7144B1007108B00AD6672 /* UXTabBar.h */,
+				631EBD5A100BB84A0036C6F7 /* Source */,
+			);
+			name = Bar;
+			path = Source/Classes/Bar;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C7144D1007108B00AD6672 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				63C7144E1007108B00AD6672 /* UXButton.h */,
+				63C714501007108B00AD6672 /* UXLink.h */,
+				635F5B82102A94D400CF0EF9 /* UXPageControl.h */,
+				631EBD5B100BB8B20036C6F7 /* Source */,
+			);
+			name = Control;
+			path = Source/Classes/Control;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714521007108B00AD6672 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				63C714531007108B00AD6672 /* UXActivityLabel.h */,
+				63C714551007108B00AD6672 /* UXLabel.h */,
+				63C714571007108B00AD6672 /* UXSearchlightLabel.h */,
+				631EBD4E100BB0BF0036C6F7 /* Source */,
+			);
+			name = Label;
+			path = Source/Classes/Label;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714591007108B00AD6672 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				63C830C710879FD600343E7B /* UXNavigationController.h */,
+				63C7145A1007108B00AD6672 /* UXNavigator.h */,
+				63F95F3410083D6200E44B78 /* UXURLMap.h */,
+				63F95F3610083D6200E44B78 /* UXURLPattern.h */,
+				631EBD4F100BB0C50036C6F7 /* Source */,
+			);
+			name = Navigator;
+			path = Source/Classes/Navigator;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C7145C1007108B00AD6672 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				63C7145D1007108B00AD6672 /* UXPhotoSource.h */,
+				63C7145E1007108B00AD6672 /* UXPhotoView.h */,
+				63C714601007108B00AD6672 /* UXPhotoViewController.h */,
+				631EBD50100BB0D40036C6F7 /* Source */,
+			);
+			name = Photo;
+			path = Source/Classes/Photo;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714681007108B00AD6672 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				63C7146B1007108B00AD6672 /* UXLayout.h */,
+				63C7146D1007108B00AD6672 /* UXShape.h */,
+				63C7146F1007108B00AD6672 /* UXStyle.h */,
+				63C714711007108B00AD6672 /* UXStyleSheet.h */,
+				63C714691007108B00AD6672 /* UXDefaultStyleSheet.h */,
+				631EBD52100BB0E00036C6F7 /* Source */,
+			);
+			name = Style;
+			path = Source/Classes/Style;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714731007108B00AD6672 /* StyledText */ = {
+			isa = PBXGroup;
+			children = (
+				63C714741007108B00AD6672 /* UXStyledFrame.h */,
+				63C714761007108B00AD6672 /* UXStyledLayout.h */,
+				63C714781007108B00AD6672 /* UXStyledNode.h */,
+				63C7147A1007108B00AD6672 /* UXStyledText.h */,
+				63C7147C1007108B00AD6672 /* UXStyledTextLabel.h */,
+				63C7147E1007108B00AD6672 /* UXStyledTextParser.h */,
+				63C830B810879F9000343E7B /* UXStyledTextViewController.h */,
+				631EBD53100BB36F0036C6F7 /* Source */,
+			);
+			name = StyledText;
+			path = Source/Classes/StyledText;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714801007108B00AD6672 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				63C714811007108B00AD6672 /* UXTableHeaderView.h */,
+				63C714831007108B00AD6672 /* UXTableItem.h */,
+				63C714851007108B00AD6672 /* UXTableItemCell.h */,
+				63C714871007108B00AD6672 /* UXTableView.h */,
+				63C714891007108B00AD6672 /* UXTableViewCell.h */,
+				63C7148B1007108B00AD6672 /* UXTableViewController.h */,
+				63C7148F1007108B00AD6672 /* UXTableViewDelegate.h */,
+				63F3DC0E1014DAB000B448E2 /* UXTableViewDataSource.h */,
+				63F3DC061014D98B00B448E2 /* UXListDataSource.h */,
+				631EBD54100BB3790036C6F7 /* Source */,
+			);
+			name = Table;
+			path = Source/Classes/Table;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714911007108B00AD6672 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				63C714921007108B00AD6672 /* UXPickerTextField.h */,
+				63C714941007108B00AD6672 /* UXPickerViewCell.h */,
+				63C714981007108B00AD6672 /* UXTextEditor.h */,
+				631EBD55100BB6D60036C6F7 /* Source */,
+			);
+			name = Text;
+			path = Source/Classes/Text;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C7149A1007108B00AD6672 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				63C7149B1007108B00AD6672 /* UXURLCache.h */,
+				63C714A11007108B00AD6672 /* UXURLRequest.h */,
+				63CFF893103D44DC00F6E5DD /* UXURLRequestLoader.h */,
+				63C714A31007108B00AD6672 /* UXURLRequestQueue.h */,
+				63C714A51007108B00AD6672 /* UXURLResponse.h */,
+				631EBD57100BB6F20036C6F7 /* Source */,
+			);
+			name = URL;
+			path = Source/Classes/URL;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714A71007108B00AD6672 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63C714B11007108B00AD6672 /* UXView.h */,
+				63C714A81007108B00AD6672 /* UXErrorView.h */,
+				63C714AB1007108B00AD6672 /* UXImageView.h */,
+				63C714AD1007108B00AD6672 /* UXScrollView.h */,
+				63C714AF1007108B00AD6672 /* UXUnclippedView.h */,
+				631EBD58100BB79B0036C6F7 /* Source */,
+			);
+			name = View;
+			path = Source/Classes/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714B51007108B00AD6672 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63C714B81007108B00AD6672 /* UXViewController.h */,
+				63844A9810095889005A6532 /* UXPopupViewController.h */,
+				63844A821009585C005A6532 /* UXActionSheetController.h */,
+				63844A841009585C005A6532 /* UXAlertViewController.h */,
+				63C714BA1007108B00AD6672 /* UXWebController.h */,
+				631EBD59100BB7AB0036C6F7 /* Source */,
+			);
+			name = ViewController;
+			path = Source/Classes/ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714BC1007108B00AD6672 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				63C714BE1007108B00AD6672 /* UXKit.h */,
+			);
+			name = Project;
+			path = Source/Project;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714C01007108B00AD6672 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63C714C11007108B00AD6672 /* Bundles */,
+			);
+			name = Resources;
+			path = Source/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C714C11007108B00AD6672 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				631EBE38100BC5CD0036C6F7 /* UXKit.bundle */,
+			);
+			name = Bundles;
+			path = Source/Resources/Bundles;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C7156A100711B300AD6672 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				63B6A82F104139440049EC9C /* Libraries */,
+				63B6A8301041394B0049EC9C /* Projects */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		63C716C31008018900AD6672 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				638436EE104000BD00D29404 /* Foundation */,
+				638436F7104000BD00D29404 /* UIKit */,
+			);
+			name = Categories;
+			path = Source/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C716F9100801A000AD6672 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				63C716FA100801A000AD6672 /* UXSearchBar.h */,
+				63C5AFE9100F8E710028F9EF /* UXSearchDisplayController.h */,
+				63C716FC100801A000AD6672 /* UXSearchTextField.h */,
+				631EBD51100BB0DB0036C6F7 /* Source */,
+			);
+			name = Search;
+			path = Source/Classes/Search;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C716FE100801A000AD6672 /* Thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				63C71701100801A000AD6672 /* UXThumbsViewController.h */,
+				63C716FF100801A000AD6672 /* UXThumbsTableViewCell.h */,
+				63C71703100801A000AD6672 /* UXThumbView.h */,
+				631EBD56100BB6E80036C6F7 /* Source */,
+			);
+			name = Thumbnail;
+			path = Source/Classes/Thumbnail;
+			sourceTree = SOURCE_ROOT;
+		};
+		63E2E43E101AD03900CC0DDE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63E2E43F101AD03900CC0DDE /* UXGlobal.h */,
+				63A9E2001047BBE4007FF732 /* UXCoding.h */,
+				63E2E443101AD04200CC0DDE /* Source */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		63E2E443101AD04200CC0DDE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63E2E440101AD03900CC0DDE /* UXGlobal.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63E2E6A7101B806100CC0DDE /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				63E2E6A8101B806100CC0DDE /* UXMessageController.h */,
+				63E2E6AA101B806100CC0DDE /* UXPostController.h */,
+				6388A0D410578E47004D3052 /* UXTextBarController.h */,
+				63E2E6B0101B806900CC0DDE /* Source */,
+			);
+			name = Composer;
+			path = Source/Classes/Composer;
+			sourceTree = SOURCE_ROOT;
+		};
+		63E2E6B0101B806900CC0DDE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63E2E6A9101B806100CC0DDE /* UXMessageController.m */,
+				63E2E6AB101B806100CC0DDE /* UXPostController.m */,
+				6388A0D610578E51004D3052 /* UXTextBarController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63F7FCD3109030B600F96586 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63194684109C2B71006E1B56 /* UXPanelView.m */,
+				63194680109C2A23006E1B56 /* UXPanelViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BEF31F360F352DF5000DE5D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C714E41007109C00AD6672 /* UXButtonBar.h in Headers */,
+				63C714E81007109C00AD6672 /* UXTabBar.h in Headers */,
+				63C714EA1007109C00AD6672 /* UXButton.h in Headers */,
+				63C714EC1007109C00AD6672 /* UXLink.h in Headers */,
+				63C714EE1007109C00AD6672 /* UXActivityLabel.h in Headers */,
+				63C714F01007109C00AD6672 /* UXLabel.h in Headers */,
+				63C714F21007109C00AD6672 /* UXSearchlightLabel.h in Headers */,
+				63C714F41007109C00AD6672 /* UXNavigator.h in Headers */,
+				63C714F61007109C00AD6672 /* UXPhotoSource.h in Headers */,
+				63C714F71007109C00AD6672 /* UXPhotoView.h in Headers */,
+				63C714F91007109C00AD6672 /* UXPhotoViewController.h in Headers */,
+				63C715011007109C00AD6672 /* UXDefaultStyleSheet.h in Headers */,
+				63C715031007109C00AD6672 /* UXLayout.h in Headers */,
+				63C715051007109C00AD6672 /* UXShape.h in Headers */,
+				63C715071007109C00AD6672 /* UXStyle.h in Headers */,
+				63C715091007109C00AD6672 /* UXStyleSheet.h in Headers */,
+				63C7150B1007109C00AD6672 /* UXStyledFrame.h in Headers */,
+				63C7150D1007109C00AD6672 /* UXStyledLayout.h in Headers */,
+				63C7150F1007109C00AD6672 /* UXStyledNode.h in Headers */,
+				63C715111007109C00AD6672 /* UXStyledText.h in Headers */,
+				63C715131007109C00AD6672 /* UXStyledTextLabel.h in Headers */,
+				63C715151007109C00AD6672 /* UXStyledTextParser.h in Headers */,
+				63C715171007109C00AD6672 /* UXTableHeaderView.h in Headers */,
+				63C7151B1007109C00AD6672 /* UXTableItemCell.h in Headers */,
+				63C7151D1007109C00AD6672 /* UXTableView.h in Headers */,
+				63C7151F1007109C00AD6672 /* UXTableViewCell.h in Headers */,
+				63C715211007109C00AD6672 /* UXTableViewController.h in Headers */,
+				63C715251007109C00AD6672 /* UXTableViewDelegate.h in Headers */,
+				63C715271007109C00AD6672 /* UXPickerTextField.h in Headers */,
+				63C715291007109C00AD6672 /* UXPickerViewCell.h in Headers */,
+				63C7152D1007109C00AD6672 /* UXTextEditor.h in Headers */,
+				63C7152F1007109C00AD6672 /* UXURLCache.h in Headers */,
+				63C715371007109C00AD6672 /* UXURLRequestQueue.h in Headers */,
+				63C715391007109C00AD6672 /* UXURLResponse.h in Headers */,
+				63C7153B1007109C00AD6672 /* UXErrorView.h in Headers */,
+				63C7153E1007109C00AD6672 /* UXImageView.h in Headers */,
+				63C715401007109C00AD6672 /* UXScrollView.h in Headers */,
+				63C715421007109C00AD6672 /* UXUnclippedView.h in Headers */,
+				63C715441007109C00AD6672 /* UXView.h in Headers */,
+				63C7154A1007109C00AD6672 /* UXViewController.h in Headers */,
+				63C7154C1007109C00AD6672 /* UXWebController.h in Headers */,
+				63C71705100801A000AD6672 /* UXSearchBar.h in Headers */,
+				63C71707100801A000AD6672 /* UXSearchTextField.h in Headers */,
+				63C71709100801A000AD6672 /* UXThumbsTableViewCell.h in Headers */,
+				63C7170B100801A000AD6672 /* UXThumbsViewController.h in Headers */,
+				63C7170D100801A000AD6672 /* UXThumbView.h in Headers */,
+				63F95F3A10083D6200E44B78 /* UXURLPattern.h in Headers */,
+				63844A861009585C005A6532 /* UXActionSheetController.h in Headers */,
+				63844A881009585C005A6532 /* UXAlertViewController.h in Headers */,
+				63844A9A10095889005A6532 /* UXPopupViewController.h in Headers */,
+				639C41C5100E4B8E0013393A /* UXModel.h in Headers */,
+				63C5AFF6100F8F270028F9EF /* UXSearchDisplayController.h in Headers */,
+				63F3DC081014D98B00B448E2 /* UXListDataSource.h in Headers */,
+				63F3DC0F1014DAB000B448E2 /* UXTableViewDataSource.h in Headers */,
+				630AC6DA10162A90002E6BFF /* UXModelViewController.h in Headers */,
+				63E2E441101AD03900CC0DDE /* UXGlobal.h in Headers */,
+				63E2E6AC101B806100CC0DDE /* UXMessageController.h in Headers */,
+				63E2E6AE101B806100CC0DDE /* UXPostController.h in Headers */,
+				63ADE9D01020BA96009B03DF /* UXModelURLResponse.h in Headers */,
+				635F5B84102A94D400CF0EF9 /* UXPageControl.h in Headers */,
+				63CFF895103D44DC00F6E5DD /* UXURLRequestLoader.h in Headers */,
+				63F61CA2103D7510002A1535 /* UXTableItem.h in Headers */,
+				63843710104000BD00D29404 /* UXNSArray.h in Headers */,
+				63843712104000BD00D29404 /* UXNSDate.h in Headers */,
+				63843714104000BD00D29404 /* UXNSObject.h in Headers */,
+				63843716104000BD00D29404 /* UXNSString.h in Headers */,
+				63843718104000BD00D29404 /* UIXColor.h in Headers */,
+				6384371A104000BD00D29404 /* UIXFont.h in Headers */,
+				63843720104000BD00D29404 /* UIXImage.h in Headers */,
+				63843722104000BD00D29404 /* UIXNavigationController.h in Headers */,
+				63843724104000BD00D29404 /* UIXTabBarController.h in Headers */,
+				63843726104000BD00D29404 /* UIXTableView.h in Headers */,
+				63843728104000BD00D29404 /* UIXToolbar.h in Headers */,
+				6384372C104000BD00D29404 /* UIXViewController.h in Headers */,
+				6384372E104000BD00D29404 /* UIXWebView.h in Headers */,
+				63900ECE1041DCEE002FDE89 /* UXLauncherButton.h in Headers */,
+				63900ED01041DCEE002FDE89 /* UXLauncherItem.h in Headers */,
+				63900ED21041DCEE002FDE89 /* UXLauncherView.h in Headers */,
+				63A9E2061047C26F007FF732 /* UXCoding.h in Headers */,
+				63A9E21910485D5D007FF732 /* UXCalendarDataSource.h in Headers */,
+				63A9E22210488444007FF732 /* UXCalendarViewController.h in Headers */,
+				63A9E22310488445007FF732 /* UXCalendarView.h in Headers */,
+				63A9E22410488446007FF732 /* UXCalendarTileView.h in Headers */,
+				63A9E22510488447007FF732 /* UXCalendarLogic.h in Headers */,
+				63A9E22610488448007FF732 /* UXCalendarGridView.h in Headers */,
+				63657FA61048C6B000844D9A /* UXModelObject.h in Headers */,
+				63C714C81007109500AD6672 /* UXKit.h in Headers */,
+				6388A0D510578E47004D3052 /* UXTextBarController.h in Headers */,
+				638729E610654A3100F078D0 /* UXURLRequest.h in Headers */,
+				6354FE25107D5A36006831CE /* UXLauncherViewController.h in Headers */,
+				63D4C78B107E75F500BDD3E4 /* UXSegmentedToolbar.h in Headers */,
+				63C830BA10879F9000343E7B /* UXStyledTextViewController.h in Headers */,
+				63C830C910879FD600343E7B /* UXNavigationController.h in Headers */,
+				638F35A5108C08DD0021685E /* UIXView.h in Headers */,
+				63DC00C51092EF9800933FBE /* UXURLMap.h in Headers */,
+				639C87EE10997BE600B87173 /* UIXWindow.h in Headers */,
+				63194681109C2A23006E1B56 /* UXPanelViewController.h in Headers */,
+				63194685109C2B71006E1B56 /* UXPanelView.h in Headers */,
+				632D5B62109EAF1B00627CEA /* UXManagedModel.h in Headers */,
+				632D5B6E109EB00C00627CEA /* UXManagedModelViewController.h in Headers */,
+				632D5B76109EB33A00627CEA /* UXManagedTableViewController.h in Headers */,
+				632D5B7A109EB35400627CEA /* UXManagedTableItemCell.h in Headers */,
+				632D5B7E109EB36000627CEA /* UXManagedTableItem.h in Headers */,
+				632D5B82109EB37200627CEA /* UXManagedTableViewDataSource.h in Headers */,
+				632D5B93109EB57C00627CEA /* UXStoreQuery.h in Headers */,
+				632D5B9B109EB5EE00627CEA /* UXStoreContext.h in Headers */,
+				63C53B5510ADECF200770A0B /* UXManagedModelDataSource.h in Headers */,
+				63C53B5D10ADF59700770A0B /* UXManagedObject.h in Headers */,
+				63C53B6210ADFA0100770A0B /* UXManagedObjectEditorController.h in Headers */,
+				63C53B6710ADFFD400770A0B /* UXStore.h in Headers */,
+				63C53B6B10AE060700770A0B /* UXManagedObjectPropertyEditorController.h in Headers */,
+				63C53B6F10AE065500770A0B /* UXManagedObjectValueEditorController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BEF31F390F352DF5000DE5D2 /* UXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "UXKit" */;
+			buildPhases = (
+				BEF31F360F352DF5000DE5D2 /* Headers */,
+				BEF31F370F352DF5000DE5D2 /* Sources */,
+				BEF31F380F352DF5000DE5D2 /* Frameworks */,
+				63C715561007113600AD6672 /* Deploy Library */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UXKit;
+			productName = UXKit;
+			productReference = BEF31F3A0F352DF5000DE5D2 /* libUXKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UXKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF31F390F352DF5000DE5D2 /* UXKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63C715561007113600AD6672 /* Deploy Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Deploy Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/tcsh;
+			shellScript = "#delete the current deployed library if needed. deleting version also deletes symlinks.\n\nrm -dRfv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\n\n# create build structure if needed\n\nmkdir -pv ${BUILD_SHARED_ROOT_PATH}\nmkdir -pv ${BUILD_SHARED_BUNDLES_PATH}\nmkdir -pv ${BUILD_SHARED_LIBRARIES_PATH}\nmkdir -pv ${BUILD_SHARED_TOOLS_PATH}\nmkdir -pv ${BUILD_SHARED_TESTS_PATH}\n\n# create library structure if needed\n\nmkdir -pv ${DEPLOYED_BUILD_PLATFORM_PATH}\nmkdir -pv ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_RESOURCES_PATH}\n\n# symlink headers\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/usr/local/include/${PRODUCT_NAME}/*.h ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nln -sFfhv ${DEPLOYED_BUILD_HEADER_VERSION_PATH} ${DEPLOYED_BUILD_PRODUCT_NAME_HEADER_PATH}\n\n# symlink library\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME}\nln -sFfhv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}/${FULL_PRODUCT_NAME}\n\n#copy shared resource bundle\n\ncp -Rfv ${SRCROOT}/${LIBRARY_RESOURCE_BUNDLE_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME} ${BUILD_SHARED_BUNDLES_PATH}\n\n# Remove .svn if needed. This requires customization\n\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/en.lproj/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/de.lproj/.svn\n\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Calendar/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Navigation/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Search/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Tab/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/Table/.svn\n\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Models/.svn";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF31F370F352DF5000DE5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C714E51007109C00AD6672 /* UXButtonBar.m in Sources */,
+				63C714E91007109C00AD6672 /* UXTabBar.m in Sources */,
+				63C714EB1007109C00AD6672 /* UXButton.m in Sources */,
+				63C714ED1007109C00AD6672 /* UXLink.m in Sources */,
+				63C714EF1007109C00AD6672 /* UXActivityLabel.m in Sources */,
+				63C714F11007109C00AD6672 /* UXLabel.m in Sources */,
+				63C714F31007109C00AD6672 /* UXSearchlightLabel.m in Sources */,
+				63C714F51007109C00AD6672 /* UXNavigator.m in Sources */,
+				63C714F81007109C00AD6672 /* UXPhotoView.m in Sources */,
+				63C714FA1007109C00AD6672 /* UXPhotoViewController.m in Sources */,
+				63C715021007109C00AD6672 /* UXDefaultStyleSheet.m in Sources */,
+				63C715041007109C00AD6672 /* UXLayout.m in Sources */,
+				63C715061007109C00AD6672 /* UXShape.m in Sources */,
+				63C715081007109C00AD6672 /* UXStyle.m in Sources */,
+				63C7150A1007109C00AD6672 /* UXStyleSheet.m in Sources */,
+				63C7150C1007109C00AD6672 /* UXStyledFrame.m in Sources */,
+				63C7150E1007109C00AD6672 /* UXStyledLayout.m in Sources */,
+				63C715101007109C00AD6672 /* UXStyledNode.m in Sources */,
+				63C715121007109C00AD6672 /* UXStyledText.m in Sources */,
+				63C715141007109C00AD6672 /* UXStyledTextLabel.m in Sources */,
+				63C715161007109C00AD6672 /* UXStyledTextParser.m in Sources */,
+				63C715181007109C00AD6672 /* UXTableHeaderView.m in Sources */,
+				63C7151A1007109C00AD6672 /* UXTableItem.m in Sources */,
+				63C7151C1007109C00AD6672 /* UXTableItemCell.m in Sources */,
+				63C7151E1007109C00AD6672 /* UXTableView.m in Sources */,
+				63C715201007109C00AD6672 /* UXTableViewCell.m in Sources */,
+				63C715221007109C00AD6672 /* UXTableViewController.m in Sources */,
+				63C715241007109C00AD6672 /* UXTableViewDataSource.m in Sources */,
+				63C715261007109C00AD6672 /* UXTableViewDelegate.m in Sources */,
+				63C715281007109C00AD6672 /* UXPickerTextField.m in Sources */,
+				63C7152A1007109C00AD6672 /* UXPickerViewCell.m in Sources */,
+				63C7152E1007109C00AD6672 /* UXTextEditor.m in Sources */,
+				63C715301007109C00AD6672 /* UXURLCache.m in Sources */,
+				63C715361007109C00AD6672 /* UXURLRequest.m in Sources */,
+				63C715381007109C00AD6672 /* UXURLRequestQueue.m in Sources */,
+				63C7153A1007109C00AD6672 /* UXURLResponse.m in Sources */,
+				63C7153C1007109C00AD6672 /* UXErrorView.m in Sources */,
+				63C7153F1007109C00AD6672 /* UXImageView.m in Sources */,
+				63C715411007109C00AD6672 /* UXScrollView.m in Sources */,
+				63C715431007109C00AD6672 /* UXUnclippedView.m in Sources */,
+				63C715451007109C00AD6672 /* UXView.m in Sources */,
+				63C7154B1007109C00AD6672 /* UXViewController.m in Sources */,
+				63C7154D1007109C00AD6672 /* UXWebController.m in Sources */,
+				63C71706100801A000AD6672 /* UXSearchBar.m in Sources */,
+				63C71708100801A000AD6672 /* UXSearchTextField.m in Sources */,
+				63C7170A100801A000AD6672 /* UXThumbsTableViewCell.m in Sources */,
+				63C7170C100801A000AD6672 /* UXThumbsViewController.m in Sources */,
+				63C7170E100801A000AD6672 /* UXThumbView.m in Sources */,
+				63F95F3910083D6200E44B78 /* UXURLMap.m in Sources */,
+				63F95F3B10083D6200E44B78 /* UXURLPattern.m in Sources */,
+				63844A871009585C005A6532 /* UXActionSheetController.m in Sources */,
+				63844A891009585C005A6532 /* UXAlertViewController.m in Sources */,
+				63844A9B10095889005A6532 /* UXPopupViewController.m in Sources */,
+				639C41C7100E4B8E0013393A /* UXModel.m in Sources */,
+				63C5AFF7100F8F280028F9EF /* UXSearchDisplayController.m in Sources */,
+				63F3DC091014D98B00B448E2 /* UXListDataSource.m in Sources */,
+				630AC6DB10162A90002E6BFF /* UXModelViewController.m in Sources */,
+				63E2E442101AD03900CC0DDE /* UXGlobal.m in Sources */,
+				63E2E6AD101B806100CC0DDE /* UXMessageController.m in Sources */,
+				63E2E6AF101B806100CC0DDE /* UXPostController.m in Sources */,
+				63ADE9D11020BA96009B03DF /* UXModelURLResponse.m in Sources */,
+				635F5B85102A94D400CF0EF9 /* UXPageControl.m in Sources */,
+				63CFF896103D44DC00F6E5DD /* UXURLRequestLoader.m in Sources */,
+				63843711104000BD00D29404 /* UXNSArray.m in Sources */,
+				63843713104000BD00D29404 /* UXNSDate.m in Sources */,
+				63843715104000BD00D29404 /* UXNSObject.m in Sources */,
+				63843717104000BD00D29404 /* UXNSString.m in Sources */,
+				63843719104000BD00D29404 /* UIXColor.m in Sources */,
+				6384371B104000BD00D29404 /* UIXFont.m in Sources */,
+				63843721104000BD00D29404 /* UIXImage.m in Sources */,
+				63843723104000BD00D29404 /* UIXNavigationController.m in Sources */,
+				63843725104000BD00D29404 /* UIXTabBarController.m in Sources */,
+				63843727104000BD00D29404 /* UIXTableView.m in Sources */,
+				63843729104000BD00D29404 /* UIXToolbar.m in Sources */,
+				6384372B104000BD00D29404 /* UIXView.m in Sources */,
+				6384372D104000BD00D29404 /* UIXViewController.m in Sources */,
+				6384372F104000BD00D29404 /* UIXWebView.m in Sources */,
+				63900ECF1041DCEE002FDE89 /* UXLauncherButton.m in Sources */,
+				63900ED11041DCEE002FDE89 /* UXLauncherItem.m in Sources */,
+				63900ED31041DCEE002FDE89 /* UXLauncherView.m in Sources */,
+				63A9E21A10485D63007FF732 /* UXCalendarDataSource.m in Sources */,
+				63A9E21D1048843F007FF732 /* UXCalendarViewController.m in Sources */,
+				63A9E21E10488440007FF732 /* UXCalendarView.m in Sources */,
+				63A9E21F10488441007FF732 /* UXCalendarTileView.m in Sources */,
+				63A9E22010488442007FF732 /* UXCalendarLogic.m in Sources */,
+				63A9E22110488443007FF732 /* UXCalendarGridView.m in Sources */,
+				63657FA71048C6B000844D9A /* UXModelObject.m in Sources */,
+				6388A0D710578E51004D3052 /* UXTextBarController.m in Sources */,
+				6354FE26107D5A36006831CE /* UXLauncherViewController.m in Sources */,
+				63D4C78C107E75F500BDD3E4 /* UXSegmentedToolbar.m in Sources */,
+				63C830BB10879F9000343E7B /* UXStyledTextViewController.m in Sources */,
+				63C830CA10879FD600343E7B /* UXNavigationController.m in Sources */,
+				639C87EF10997BE600B87173 /* UIXWindow.m in Sources */,
+				63194682109C2A23006E1B56 /* UXPanelViewController.m in Sources */,
+				63194686109C2B71006E1B56 /* UXPanelView.m in Sources */,
+				632D5B63109EAF1B00627CEA /* UXManagedModel.m in Sources */,
+				632D5B6F109EB00C00627CEA /* UXManagedModelViewController.m in Sources */,
+				632D5B77109EB33A00627CEA /* UXManagedTableViewController.m in Sources */,
+				632D5B7B109EB35400627CEA /* UXManagedTableItemCell.m in Sources */,
+				632D5B7F109EB36000627CEA /* UXManagedTableItem.m in Sources */,
+				632D5B83109EB37200627CEA /* UXManagedTableViewDataSource.m in Sources */,
+				632D5B94109EB57C00627CEA /* UXStoreQuery.m in Sources */,
+				632D5B9C109EB5EE00627CEA /* UXStoreContext.m in Sources */,
+				63C53B5610ADECF200770A0B /* UXManagedModelDataSource.m in Sources */,
+				63C53B5E10ADF59700770A0B /* UXManagedObject.m in Sources */,
+				63C53B6310ADFA0100770A0B /* UXManagedObjectEditorController.m in Sources */,
+				63C53B6810ADFFD400770A0B /* UXStore.m in Sources */,
+				63C53B6C10AE060700770A0B /* UXManagedObjectPropertyEditorController.m in Sources */,
+				63C53B7010AE065500770A0B /* UXManagedObjectValueEditorController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		63C71551100710E100AD6672 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Profile;
+		};
+		63C71552100710E100AD6672 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7521041380F0049EC9C /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		63C71553100710E400AD6672 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Distribution;
+		};
+		63C71554100710E400AD6672 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7521041380F0049EC9C /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		BEF31F3B0F352DF6000DE5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7521041380F0049EC9C /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BEF31F3C0F352DF6000DE5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7521041380F0049EC9C /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "UXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF31F3B0F352DF6000DE5D2 /* Debug */,
+				63C71552100710E100AD6672 /* Profile */,
+				BEF31F3C0F352DF6000DE5D2 /* Release */,
+				63C71554100710E400AD6672 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UXKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				63C71551100710E100AD6672 /* Profile */,
+				C01FCF5008A954540054247B /* Release */,
+				63C71553100710E400AD6672 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,7 @@
+
+//
+//  Platform.xcconfig
+//
+
+SDKROOT						= iphoneos3.1.2
+IPHONEOS_DEPLOYMENT_TARGET	= 3.1

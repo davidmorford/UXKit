@@ -1,0 +1,23 @@
+
+//
+// @project		BuildKit
+// @copyright	(c) 2009 Semantap
+// @file		Project.xcconfig
+//
+
+#include "Settings.xcconfig"
+
+SYMROOT							= Build
+CODE_SIGN_IDENTITY				= iPhone Developer
+
+ZERO_LINK						= NO
+PREBINDING						= NO
+ALWAYS_SEARCH_USER_PATHS		= NO
+
+DEBUG_INFORMATION_FORMAT		= dwarf-with-dsym
+
+GCC_C_LANGUAGE_STANDARD			= c99
+GCC_WARN_ABOUT_RETURN_TYPE		= YES
+GCC_WARN_UNUSED_VARIABLE		= YES
+GCC_ENABLE_OBJC_EXCEPTIONS		= YES
+GCC_ENABLE_FIX_AND_CONTINUE		= NO

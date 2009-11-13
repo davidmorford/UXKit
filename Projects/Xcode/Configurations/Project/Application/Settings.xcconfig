@@ -1,0 +1,9 @@
+//
+// @project		BuildKit
+// @copyright	(c) 2009 Semantap
+// @file		___PROJECTNAME___/Configurations/Settings.xcconfig
+//
+
+#include "../../../Configurations/Settings.xcconfig"
+
+INFOPLIST_ORGANIZATION_NAME	= ___ORGANIZATIONNAME___
