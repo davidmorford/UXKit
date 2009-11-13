@@ -1,0 +1,87 @@
+# UXKit
+
+UXKit is a non-compatible fork of the THree20 iPhone OS Objective-C library. It contains all recent changes up to to 
+commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8183ae25528bbc575ab41a41227756f06c166240)
+
+## Differences with Three20
+
+---
+
+* Project layout and organization.
+* BuildKit to provide an overall structure to easily develop iPhone applications, additional libraries and examples.
+* Different prefix for clases and categories, UX and UIX.
+* UITouch category deleted.
+* UIWindow findFirstResponder from Jonathan Saggnu.
+* Removal viewDidUnload call from dealloc.
+
+## Inclusions from other Three20 forks
+
+---
+
+* LauncherViewController from rodmaz with changes and additions from davidmorford.
+* SegmentedToolbar  from rodmaz.
+* CalendarViewController cluster from klaluza.
+* Numerous bug fixes from other forks. Attribution has been included as much possible. If I've missed you, send a message so proper credit can be added.
+
+
+## Under Development
+
+---
+
+* Input Panel Controller
+* Complete Model Refactor
+* Core Data TableView Model
+* Core Data Storage and Query Class cluster
+* Styles and Shapes via UIView backingLayer
+
+## BuildKit Usage Notes
+
+---
+
+* BuildKit uses the latest iPhone OS SDK and the iPhone OS Deployment Target. Please be aware of the implications of this.
+* ...
+
+
+
+## UXKit Google Group
+
+---
+
+http://groups.google.com/group/uxkit
+
+
+## Three20 License
+
+---
+
+Copyright 2008 Joe Hewitt
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+   http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+## UXKit License
+
+---
+
+Copyright 2009 Semantap
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+   http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
