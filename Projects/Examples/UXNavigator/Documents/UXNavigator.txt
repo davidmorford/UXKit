@@ -1,4 +1,4 @@
 
-UXNavigator Framework
+UXNavigator Application
 
 Created:

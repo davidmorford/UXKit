@@ -12,7 +12,7 @@ commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8
 * Different prefix for clases and categories, UX and UIX.
 * UITouch category deleted.
 * UIWindow findFirstResponder from Jonathan Saggnu.
-* Removal viewDidUnload call from dealloc.
+* Removal viewDidUnload call 
 
 ## Inclusions from other Three20 forks
 

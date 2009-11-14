@@ -10,9 +10,9 @@
 		NSError *error = nil;
 		
 		// Parse the XML document.
-		UXXMLDocument *doc = [[[UXXMLDocument alloc] initWithData:data options:0 error:&error] autorelease];
+		KTXMLDocument *doc = [[[KTXMLDocument alloc] initWithData:data options:0 error:&error] autorelease];
 		NSAssert(doc, @"Failed to parse XML. The document is nil.");
-		UXXMLElement *root = [doc rootElement];
+		KTXMLElement *root = [doc rootElement];
 		
 		// Query the XML tree according to the Flickr image search API specification.
 		NSArray *titles					= [root nodesForXPath:@"//photo/@title" error:&error];

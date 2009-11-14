@@ -10,12 +10,12 @@
 		NSError *error = nil;
 		
 		// Parse the XML document.
-		UXXMLDocument *doc = [[[UXXMLDocument alloc] initWithData:data options:0 error:&error] autorelease];
+		KTXMLDocument *doc = [[[KTXMLDocument alloc] initWithData:data options:0 error:&error] autorelease];
 		NSAssert(doc, @"Failed to parse XML. The document is nil.");
 		
 		// Explicitly specify the default namespace, the only way I was able to get the XPath queries to work.
-		UXXMLElement *root = [doc rootElement];
-		[root addNamespace:[UXXMLNode namespaceWithName:@"foo" stringValue:@"urn:yahoo:srchmi"]];
+		KTXMLElement *root = [doc rootElement];
+		[root addNamespace:[KTXMLNode namespaceWithName:@"foo" stringValue:@"urn:yahoo:srchmi"]];
 		
 		// Query the XML tree according to the Yahoo Image Search API specification.
 		NSArray *titles					= [root nodesForXPath:@"//foo:Title" error:&error];
