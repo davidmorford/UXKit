@@ -1,8 +1,8 @@
 
 //
-// @project		BuildKit
-// @copyright	(c) 2009 Semantap
-// @file		UnitTests.xcconfig
+// @project     BuildKit
+// @file        UnitTests.xcconfig
+// @copyright   (c) 2009 Semantap
 //
 
 #include "Settings.xcconfig"

@@ -1,8 +1,8 @@
 
 //
-// @project		BuildKit
-// @copyright	(c) 2009 Semantap
-// @file		Application.xcconfig
+// @project     BuildKit
+// @file        Application.xcconfig
+// @copyright   (c) 2009 Semantap
 //
 
 SYMROOT							= Build

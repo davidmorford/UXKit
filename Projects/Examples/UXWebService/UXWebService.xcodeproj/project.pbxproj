@@ -51,6 +51,62 @@
 			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
 			remoteInfo = UXWebService;
 		};
+		63C53FF710AE58A900770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = JSONKit;
+		};
+		63C53FF910AE58A900770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63894717103B229E007C9CC9;
+			remoteInfo = JSONKitUnitTests;
+		};
+		63C5400310AE58B600770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = XMLKit;
+		};
+		63C5400510AE58B600770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63D5F635103A814100B546F8;
+			remoteInfo = XMLKitUnitTests;
+		};
+		63C5400E10AE58C400770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C5400710AE58C400770A0B /* UXKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = UXKit;
+		};
+		63C5401C10AE58D900770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C5400710AE58C400770A0B /* UXKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = UXKit;
+		};
+		63C5402010AE58FA00770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = XMLKit;
+		};
+		63C5402210AE58FA00770A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = JSONKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +179,9 @@
 		63C4853E104BF16B00397161 /* WebServiceMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceMenuController.h; sourceTree = "<group>"; };
 		63C4853F104BF16B00397161 /* WebServiceMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceMenuController.m; sourceTree = "<group>"; };
 		63C53CE510AE1D3A00770A0B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Source/Resources/Bundles/Settings.bundle; sourceTree = SOURCE_ROOT; };
+		63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONKit.xcodeproj; path = ../../Vendors/JSONKit/JSONKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XMLKit.xcodeproj; path = ../../Vendors/XMLKit/XMLKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		63C5400710AE58C400770A0B /* UXKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UXKit.xcodeproj; path = ../../Libraries/UXKit/UXKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +439,9 @@
 		6384390E1040F20A00D29404 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				63C5400710AE58C400770A0B /* UXKit.xcodeproj */,
+				63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */,
+				63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
@@ -523,6 +585,32 @@
 			path = Source/Resources/Bundles;
 			sourceTree = SOURCE_ROOT;
 		};
+		63C53FF010AE58A900770A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C53FF810AE58A900770A0B /* libJSONKit.a */,
+				63C53FFA10AE58A900770A0B /* JSONKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C53FFC10AE58B600770A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C5400410AE58B600770A0B /* libXMLKit.a */,
+				63C5400610AE58B600770A0B /* XMLKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C5400810AE58C400770A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C5400F10AE58C400770A0B /* libUXKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -538,6 +626,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				63C5401D10AE58D900770A0B /* PBXTargetDependency */,
+				63C5402310AE58FA00770A0B /* PBXTargetDependency */,
+				63C5402110AE58FA00770A0B /* PBXTargetDependency */,
 			);
 			name = UXWebService;
 			productName = UXWebService;
@@ -583,6 +674,20 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63C53FF010AE58A900770A0B /* Products */;
+					ProjectRef = 63C53FEF10AE58A900770A0B /* JSONKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 63C5400810AE58C400770A0B /* Products */;
+					ProjectRef = 63C5400710AE58C400770A0B /* UXKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 63C53FFC10AE58B600770A0B /* Products */;
+					ProjectRef = 63C53FFB10AE58B600770A0B /* XMLKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* UXWebService */,
@@ -590,6 +695,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63C53FF810AE58A900770A0B /* libJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJSONKit.a;
+			remoteRef = 63C53FF710AE58A900770A0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C53FFA10AE58A900770A0B /* JSONKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONKitUnitTests.octest;
+			remoteRef = 63C53FF910AE58A900770A0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C5400410AE58B600770A0B /* libXMLKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXMLKit.a;
+			remoteRef = 63C5400310AE58B600770A0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C5400610AE58B600770A0B /* XMLKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XMLKitUnitTests.octest;
+			remoteRef = 63C5400510AE58B600770A0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C5400F10AE58C400770A0B /* libUXKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUXKit.a;
+			remoteRef = 63C5400E10AE58C400770A0B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -683,6 +826,21 @@
 			isa = PBXTargetDependency;
 			target = 1D6058900D05DD3D006BFB54 /* UXWebService */;
 			targetProxy = 638439791040F9F000D29404 /* PBXContainerItemProxy */;
+		};
+		63C5401D10AE58D900770A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UXKit;
+			targetProxy = 63C5401C10AE58D900770A0B /* PBXContainerItemProxy */;
+		};
+		63C5402110AE58FA00770A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLKit;
+			targetProxy = 63C5402010AE58FA00770A0B /* PBXContainerItemProxy */;
+		};
+		63C5402310AE58FA00770A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONKit;
+			targetProxy = 63C5402210AE58FA00770A0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

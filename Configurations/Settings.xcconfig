@@ -1,8 +1,8 @@
 
 //
-// @project		BuildKit
-// @copyright	(c) 2009 Semantap
-// @file		Settings.xcconfig
+// @project     BuildKit
+// @file        Settings.xcconfig
+// @copyright   (c) 2009 Semantap
 //
 
 BUILD_SHARED_ROOT_PATH			= $(SRCROOT)/../../../Build

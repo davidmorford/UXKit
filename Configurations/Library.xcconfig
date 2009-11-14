@@ -1,8 +1,8 @@
 
 //
-// @project		BuildKit
-// @copyright	(c) 2009 Semantap
-// @file		Library.xcconfig
+// @project     BuildKit
+// @file        Library.xcconfig
+// @copyright   (c) 2009 Semantap
 //
 
 GCC_PRECOMPILE_PREFIX_HEADER	= NO

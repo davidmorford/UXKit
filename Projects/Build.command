@@ -1,11 +1,18 @@
 
 # ================================================================================
-# Build Kit 
-# Copyright (c) 2009 Semantap 
-# iPhone Application and Libraries Build Script
-# Created: June 12, 2009 - dpm
+# BuildKit - Libraries Build Script
+# Copyright (c) 2009, Semantap.
+# Created: June 12, 2009     - dpm
 # Updated: September 8, 2009 - dpm
-# Updated: November 13, 2009 - dpm
+# Updated: November 13, 2009 - dpm 
+# ================================================================================
+
+# ================================================================================
+# Note
+# ================================================================================
+# The SDKVersion is now ignored but still required. The script and xcconfigs have 
+# been refactored to always use latest SDKROOT and set IPHONEOS_DEPLOYMENT_TARGET
+# to the desired OS version. See Configurations/Platform.xcconfig
 # ================================================================================
 
 Usage()
@@ -13,7 +20,7 @@ Usage()
     builtin echo "iPhone Build Script, version 1.0\n"
     builtin echo "Usage: Build.command <SDKVersion> <BuildConfiguration>"
     builtin echo "\t<SDKVersion>         = A SDK Version"
-    builtin echo "\t\tAvailable          = [3.0 | 3.1 | 3.1.2 (Default)]"
+    builtin echo "\t\tAvailable          = [3.1.2 (Default)]"
     builtin echo "\t<BuildConfiguration> = A Build Configuration"
     builtin echo "\t\tAvailable          = [Debug (Default)| Profile | Release | Adhoc | Distribution]"
     builtin echo "\n"
@@ -124,9 +131,25 @@ rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/UXKit
 
 
 # ================================================================================
+# Libraries
+# ================================================================================ 
+
+echo "Building UXKit"
+echo "________________________________________________________________________________\n"
+cd $LIBRARIES_ROOT/UXKit
+
+echo "Cleaning..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj clean
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj clean
+
+echo "Building..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build
+
+
+# ================================================================================
 # Vendor Libraries
 # ================================================================================
-
 
 echo "Building JSONKit"
 echo "________________________________________________________________________________\n"
@@ -152,20 +175,3 @@ xcodebuild -sdk $BUILD_SIMULATOR_SDK -target XMLKit -configuration $BUILD_CONFIG
 echo "Building..."
 xcodebuild -sdk $BUILD_DEVICE_SDK -target XMLKit -configuration $BUILD_CONFIGURATION -project XMLKit.xcodeproj build
 xcodebuild -sdk $BUILD_SIMULATOR_SDK -target XMLKit -configuration $BUILD_CONFIGURATION -project XMLKit.xcodeproj build
-
-
-# ================================================================================
-# Libraries
-# ================================================================================ 
-
-echo "Building UXKit"
-echo "________________________________________________________________________________\n"
-cd $VENDOR_ROOT/UXKit
-
-echo "Cleaning..."
-xcodebuild -sdk $BUILD_DEVICE_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj clean
-xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj clean
-
-echo "Building..."
-xcodebuild -sdk $BUILD_DEVICE_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build
-xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build

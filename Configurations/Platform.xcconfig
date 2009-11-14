@@ -1,10 +1,19 @@
 
 //
-// @project		BuildKit
-// @copyright	(c) 2009 Semantap
-// @file		Platform.xcconfig
+// @project     BuildKit
+// @file        Platform.xcconfig
+// @copyright   (c) 2009 Semantap
 //
 
+// Always use the latest released SDK... until iPhone OS 4.0 beta
+// comes again in the spring. Sigh...
 SDKROOT						= iphoneos3.1.2
+
+// Set to a desired iPhone OS target.
 IPHONEOS_DEPLOYMENT_TARGET	= 3.1
+
+// This builds *all* libraries and applications with arm6 and arm7,
+// effectively doubling the binary size of libraries and applications.
+// Take this into account as the AppStore limits app downloads to 10mb 
+// when done on the phone over mobile networks.
 ARCHS						= $(ARCHS_UNIVERSAL_IPHONE_OS)

@@ -34,6 +34,6 @@ ln -sFfhv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME} ${DEPLOYED
 
 cp -Rfv ${SRCROOT}/${LIBRARY_RESOURCE_BUNDLE_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME} ${BUILD_SHARED_BUNDLES_PATH}
 
-# Remove .svn if needed. This requires customization... otherwise you willl ship .svn to the AppStore.
+# Remove .svn if needed. This requires customization... otherwise you will ship .svn to the AppStore.
 
 rm -dRfv ${BUILD_SHARED_BUNDLES}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn

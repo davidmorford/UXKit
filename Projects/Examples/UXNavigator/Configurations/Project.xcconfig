@@ -7,3 +7,4 @@
 #include "../../../Configurations/Project.xcconfig"
 
 CODE_SIGN_IDENTITY				= iPhone Developer
+SYMROOT							= Build
