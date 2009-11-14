@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633EDE2D0FCD56EF006B2DFE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633EDE2C0FCD56EF006B2DFE /* CoreFoundation.framework */; };
+		633EDE310FCD5713006B2DFE /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 633EDE300FCD5713006B2DFE /* libxml2.dylib */; };
+		6379604A1039DA29002A61AE /* KTXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 637960421039D751002A61AE /* KTXMLNode.m */; };
+		6379604B1039DA2A002A61AE /* KTXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 637960401039D751002A61AE /* KTXMLElement.m */; };
+		6379604C1039DA2B002A61AE /* KTXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6379603E1039D751002A61AE /* KTXMLDocument.m */; };
+		6379604D1039DA2B002A61AE /* KTXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 637960411039D751002A61AE /* KTXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6379604E1039DA2C002A61AE /* KTXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6379603F1039D751002A61AE /* KTXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6379604F1039DA2D002A61AE /* KTXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 6379603D1039D751002A61AE /* KTXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		637960511039DA2F002A61AE /* KTNSString+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 637960391039D751002A61AE /* KTNSString+XML.m */; };
+		637960531039DA31002A61AE /* KTNSString+XML.h in Headers */ = {isa = PBXBuildFile; fileRef = 637960381039D751002A61AE /* KTNSString+XML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638EBE0E1025755900F1445D /* XMLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 638EBE0D1025755900F1445D /* XMLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CFF822103CCFA900F6E5DD /* bill.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63CFF81F103CCFA900F6E5DD /* bill.xml */; };
+		63CFF823103CCFA900F6E5DD /* committees.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63CFF820103CCFA900F6E5DD /* committees.xml */; };
+		63CFF824103CCFA900F6E5DD /* twitter.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63CFF821103CCFA900F6E5DD /* twitter.xml */; };
+		63D5F649103A828D00B546F8 /* KTXMLDOMUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D5F645103A820600B546F8 /* KTXMLDOMUnitTest.m */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63D5F63D103A814700B546F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = XMLKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630BB0551034BC370064E3AE /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Library.xcconfig; path = Configurations/Library.xcconfig; sourceTree = SOURCE_ROOT; };
+		633EDE040FCD4AF3006B2DFE /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = SOURCE_ROOT; };
+		633EDE2C0FCD56EF006B2DFE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		633EDE300FCD5713006B2DFE /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		637960381039D751002A61AE /* KTNSString+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KTNSString+XML.h"; sourceTree = "<group>"; };
+		637960391039D751002A61AE /* KTNSString+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KTNSString+XML.m"; sourceTree = "<group>"; };
+		6379603D1039D751002A61AE /* KTXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTXMLDocument.h; sourceTree = "<group>"; };
+		6379603E1039D751002A61AE /* KTXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTXMLDocument.m; sourceTree = "<group>"; };
+		6379603F1039D751002A61AE /* KTXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTXMLElement.h; sourceTree = "<group>"; };
+		637960401039D751002A61AE /* KTXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTXMLElement.m; sourceTree = "<group>"; };
+		637960411039D751002A61AE /* KTXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTXMLNode.h; sourceTree = "<group>"; };
+		637960421039D751002A61AE /* KTXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTXMLNode.m; sourceTree = "<group>"; };
+		638EBE0D1025755900F1445D /* XMLKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLKit.h; path = Source/Project/XMLKit.h; sourceTree = SOURCE_ROOT; };
+		63AE4E2610426DF800EE42E9 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
+		63AE4E2810426E2100EE42E9 /* XMLKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = XMLKit.bundle; path = Source/Resources/Bundles/XMLKit.bundle; sourceTree = SOURCE_ROOT; };
+		63CFF81F103CCFA900F6E5DD /* bill.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = bill.xml; path = Source/UnitTests/Resources/Fixtures/bill.xml; sourceTree = SOURCE_ROOT; };
+		63CFF820103CCFA900F6E5DD /* committees.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = committees.xml; path = Source/UnitTests/Resources/Fixtures/committees.xml; sourceTree = SOURCE_ROOT; };
+		63CFF821103CCFA900F6E5DD /* twitter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = twitter.xml; path = Source/UnitTests/Resources/Fixtures/twitter.xml; sourceTree = SOURCE_ROOT; };
+		63D5F635103A814100B546F8 /* XMLKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UnitTests.xcconfig; path = Configurations/UnitTests.xcconfig; sourceTree = SOURCE_ROOT; };
+		63D5F643103A81F600B546F8 /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Source/UnitTests/Resources/PropertyLists/UnitTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		63D5F645103A820600B546F8 /* KTXMLDOMUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTXMLDOMUnitTest.m; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libXMLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXMLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63D5F632103A814100B546F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				633EDE2D0FCD56EF006B2DFE /* CoreFoundation.framework in Frameworks */,
+				633EDE310FCD5713006B2DFE /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libXMLKit.a */,
+				63D5F635103A814100B546F8 /* XMLKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* XMLKit */ = {
+			isa = PBXGroup;
+			children = (
+				034768DFFF38A50411DB9C8B /* Products */,
+				633EDE060FCD4B02006B2DFE /* References */,
+				633EDE030FCD4AF3006B2DFE /* Configurations */,
+				633EDE250FCD4BB6006B2DFE /* Resources */,
+				633EDE240FCD4BB6006B2DFE /* Project */,
+				638EBE1F1025759D00F1445D /* UnitTests */,
+				633EDE190FCD4BB6006B2DFE /* Classes */,
+			);
+			name = XMLKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				633EDE2C0FCD56EF006B2DFE /* CoreFoundation.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633EDE030FCD4AF3006B2DFE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				63AE4E2610426DF800EE42E9 /* Settings.xcconfig */,
+				633EDE040FCD4AF3006B2DFE /* Project.xcconfig */,
+				630BB0551034BC370064E3AE /* Library.xcconfig */,
+				63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
+		633EDE060FCD4B02006B2DFE /* References */ = {
+			isa = PBXGroup;
+			children = (
+				633EDE2B0FCD56DB006B2DFE /* Libraries */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		633EDE190FCD4BB6006B2DFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				637960361039D751002A61AE /* DOM */,
+			);
+			name = Classes;
+			path = Source/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		633EDE240FCD4BB6006B2DFE /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				638EBE0D1025755900F1445D /* XMLKit.h */,
+			);
+			name = Project;
+			path = Source/Project;
+			sourceTree = SOURCE_ROOT;
+		};
+		633EDE250FCD4BB6006B2DFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63AE4E2710426E2100EE42E9 /* Bundles */,
+			);
+			name = Resources;
+			path = Source/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		633EDE2B0FCD56DB006B2DFE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				633EDE300FCD5713006B2DFE /* libxml2.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		637960361039D751002A61AE /* DOM */ = {
+			isa = PBXGroup;
+			children = (
+				637960371039D751002A61AE /* Categories */,
+				6379603C1039D751002A61AE /* Classes */,
+			);
+			name = DOM;
+			path = Source/Classes/DOM;
+			sourceTree = SOURCE_ROOT;
+		};
+		637960371039D751002A61AE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				637960381039D751002A61AE /* KTNSString+XML.h */,
+				637960541039DA3B002A61AE /* Source */,
+			);
+			name = Categories;
+			path = Source/Classes/DOM/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		6379603C1039D751002A61AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6379603D1039D751002A61AE /* KTXMLDocument.h */,
+				6379603F1039D751002A61AE /* KTXMLElement.h */,
+				637960411039D751002A61AE /* KTXMLNode.h */,
+				637960551039DA40002A61AE /* Source */,
+			);
+			name = Classes;
+			path = Source/Classes/DOM/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		637960541039DA3B002A61AE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				637960391039D751002A61AE /* KTNSString+XML.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		637960551039DA40002A61AE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6379603E1039D751002A61AE /* KTXMLDocument.m */,
+				637960401039D751002A61AE /* KTXMLElement.m */,
+				637960421039D751002A61AE /* KTXMLNode.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		638EBE1F1025759D00F1445D /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				638EBE201025759D00F1445D /* Classes */,
+				63D5F641103A81F600B546F8 /* Resources */,
+			);
+			name = UnitTests;
+			path = Source/UnitTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		638EBE201025759D00F1445D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63D5F644103A820600B546F8 /* DOM */,
+			);
+			name = Classes;
+			path = Source/UnitTests/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		63AE4E2710426E2100EE42E9 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				63AE4E2810426E2100EE42E9 /* XMLKit.bundle */,
+			);
+			name = Bundles;
+			path = Source/Resources/Bundles;
+			sourceTree = SOURCE_ROOT;
+		};
+		63CFF81E103CCFA900F6E5DD /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				63CFF81F103CCFA900F6E5DD /* bill.xml */,
+				63CFF820103CCFA900F6E5DD /* committees.xml */,
+				63CFF821103CCFA900F6E5DD /* twitter.xml */,
+			);
+			name = Fixtures;
+			path = Source/UnitTests/Resources/Fixtures;
+			sourceTree = SOURCE_ROOT;
+		};
+		63D5F641103A81F600B546F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63CFF81E103CCFA900F6E5DD /* Fixtures */,
+				63D5F642103A81F600B546F8 /* PropertyLists */,
+			);
+			name = Resources;
+			path = Source/UnitTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63D5F642103A81F600B546F8 /* PropertyLists */ = {
+			isa = PBXGroup;
+			children = (
+				63D5F643103A81F600B546F8 /* UnitTests-Info.plist */,
+			);
+			name = PropertyLists;
+			path = Source/UnitTests/Resources/PropertyLists;
+			sourceTree = SOURCE_ROOT;
+		};
+		63D5F644103A820600B546F8 /* DOM */ = {
+			isa = PBXGroup;
+			children = (
+				63D5F645103A820600B546F8 /* KTXMLDOMUnitTest.m */,
+			);
+			name = DOM;
+			path = Source/UnitTests/Classes/DOM;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638EBE0E1025755900F1445D /* XMLKit.h in Headers */,
+				6379604D1039DA2B002A61AE /* KTXMLNode.h in Headers */,
+				6379604E1039DA2C002A61AE /* KTXMLElement.h in Headers */,
+				6379604F1039DA2D002A61AE /* KTXMLDocument.h in Headers */,
+				637960531039DA31002A61AE /* KTNSString+XML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63D5F634103A814100B546F8 /* XMLKitUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D5F63C103A814200B546F8 /* Build configuration list for PBXNativeTarget "XMLKitUnitTests" */;
+			buildPhases = (
+				63D5F630103A814100B546F8 /* Resources */,
+				63D5F631103A814100B546F8 /* Sources */,
+				63D5F632103A814100B546F8 /* Frameworks */,
+				63D5F633103A814100B546F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63D5F63E103A814700B546F8 /* PBXTargetDependency */,
+			);
+			name = XMLKitUnitTests;
+			productName = XMLKitUnitTests;
+			productReference = 63D5F635103A814100B546F8 /* XMLKitUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* XMLKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "XMLKit" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				633EDE640FCD579C006B2DFE /* Deploy Local SDK */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLKit;
+			productName = XMLKit;
+			productReference = D2AAC07E0554694100DB518D /* libXMLKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Semantap;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "XMLKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* XMLKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* XMLKit */,
+				63D5F634103A814100B546F8 /* XMLKitUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63D5F630103A814100B546F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CFF822103CCFA900F6E5DD /* bill.xml in Resources */,
+				63CFF823103CCFA900F6E5DD /* committees.xml in Resources */,
+				63CFF824103CCFA900F6E5DD /* twitter.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		633EDE640FCD579C006B2DFE /* Deploy Local SDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Deploy Local SDK";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/tcsh;
+			shellScript = "#delete the current deployed library if needed. deleting version also deletes symlinks.\n\nrm -dRfv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\n\n# create build structure if needed\n\nmkdir -pv ${BUILD_SHARED_ROOT_PATH}\nmkdir -pv ${BUILD_SHARED_BUNDLES_PATH}\nmkdir -pv ${BUILD_SHARED_LIBRARIES_PATH}\nmkdir -pv ${BUILD_SHARED_TOOLS_PATH}\nmkdir -pv ${BUILD_SHARED_TESTS_PATH}\n\n# create library structure if needed\n\nmkdir -pv ${DEPLOYED_BUILD_PLATFORM_PATH}\nmkdir -pv ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_RESOURCES_PATH}\n\n# symlink headers\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/usr/local/include/${PRODUCT_NAME}/*.h ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nln -sFfhv ${DEPLOYED_BUILD_HEADER_VERSION_PATH} ${DEPLOYED_BUILD_PRODUCT_NAME_HEADER_PATH}\n\n# symlink library\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME}\nln -sFfhv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}/${FULL_PRODUCT_NAME}\n\n#copy shared resource bundle\n\ncp -Rfv ${SRCROOT}/${LIBRARY_RESOURCE_BUNDLE_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME} ${BUILD_SHARED_BUNDLES_PATH}\n\n# Remove .svn if needed. This requires customization\n\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn";
+		};
+		63D5F633103A814100B546F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63D5F631103A814100B546F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D5F649103A828D00B546F8 /* KTXMLDOMUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6379604A1039DA29002A61AE /* KTXMLNode.m in Sources */,
+				6379604B1039DA2A002A61AE /* KTXMLElement.m in Sources */,
+				6379604C1039DA2B002A61AE /* KTXMLDocument.m in Sources */,
+				637960511039DA2F002A61AE /* KTNSString+XML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63D5F63E103A814700B546F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* XMLKit */;
+			targetProxy = 63D5F63D103A814700B546F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BB0551034BC370064E3AE /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BB0551034BC370064E3AE /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633EDE040FCD4AF3006B2DFE /* Project.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633EDE040FCD4AF3006B2DFE /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		633EDE0A0FCD4B5F006B2DFE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633EDE040FCD4AF3006B2DFE /* Project.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Profile;
+		};
+		633EDE0B0FCD4B5F006B2DFE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BB0551034BC370064E3AE /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Profile;
+		};
+		633EDE0E0FCD4B6A006B2DFE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633EDE040FCD4AF3006B2DFE /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		633EDE0F0FCD4B6A006B2DFE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630BB0551034BC370064E3AE /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		63D5F637103A814200B546F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		63D5F638103A814200B546F8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		63D5F639103A814200B546F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		63D5F63B103A814200B546F8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D5F640103A81AA00B546F8 /* UnitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "XMLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				633EDE0B0FCD4B5F006B2DFE /* Profile */,
+				1DEB922008733DC00010E9CD /* Release */,
+				633EDE0F0FCD4B6A006B2DFE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "XMLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				633EDE0A0FCD4B5F006B2DFE /* Profile */,
+				1DEB922408733DC00010E9CD /* Release */,
+				633EDE0E0FCD4B6A006B2DFE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D5F63C103A814200B546F8 /* Build configuration list for PBXNativeTarget "XMLKitUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D5F637103A814200B546F8 /* Debug */,
+				63D5F638103A814200B546F8 /* Profile */,
+				63D5F639103A814200B546F8 /* Release */,
+				63D5F63B103A814200B546F8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

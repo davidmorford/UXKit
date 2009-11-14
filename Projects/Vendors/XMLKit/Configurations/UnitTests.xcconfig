@@ -1,0 +1,29 @@
+
+//
+// XMLKit/Configurations/UnitTests.xcconfig
+//
+
+#include "../../../Configurations/UnitTests.xcconfig"
+#include "../../../Configurations/Libraries.xcconfig"
+
+// Bundle Name
+
+PRODUCT_NAME			= XMLKitUnitTests
+
+// PropertyList
+
+INFOPLIST_FILE			= Source/UnitTests/Resources/PropertyLists/UnitTests-Info.plist
+
+// Bundle Version
+
+BUILD_BUNDLE_VERSION	= 1.0
+CURRENT_PROJECT_VERSION	= $(BUILD_BUNDLE_VERSION)
+
+// Linker Flags
+
+OTHER_LDFLAGS			= $(OBJC_LIBRARY) $(OBJC_ALLLOAD) $(LIBXML2_LIB) $(FOUNDATION_FX) $(SENTESTINGKIT_FX) $(XML_KIT_LIBRARY_FLAG)
+
+// Search Paths
+
+HEADER_SEARCH_PATHS		= $(STDLIB_HEADERS) $(LIBXML2_HEADERS) $(XML_KIT_HEADER_PATH)
+LIBRARY_SEARCH_PATHS	= $(STDLIB_LIBRARY) $(LIBXML2_LIBRARY) $(XML_KIT_LIBRARY_PATH)

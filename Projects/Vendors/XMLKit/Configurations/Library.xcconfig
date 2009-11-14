@@ -1,0 +1,32 @@
+
+//
+// XMLKit/Configurations/Library.xcconfig
+//
+
+#include "../../../Configurations/Library.xcconfig"
+#include "../../../Configurations/Libraries.xcconfig"
+
+// Product Name
+
+PRODUCT_NAME					= XMLKit
+
+// Library Version
+
+BUILD_LIBRARY_VERSION			= A
+
+// Library Resource Bundle
+
+LIBRARY_RESOURCE_BUNDLE_NAME	= XMLKit.bundle
+
+// Linker Flags
+
+OTHER_LDFLAGS					= $(OBJC_LIBRARY)
+
+// Search Paths
+
+HEADER_SEARCH_PATHS				= $(STDLIB_HEADERS) $(LIBXML2_HEADERS)
+LIBRARY_SEARCH_PATHS			= $(STDLIB_LIBRARY) $(LIBXML2_LIBRARY)
+
+// Clang
+
+RUN_CLANG_STATIC_ANALYZER		= YES
