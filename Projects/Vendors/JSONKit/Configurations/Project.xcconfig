@@ -1,0 +1,10 @@
+
+//
+// JSONKit/Configurations/Project.xcconfig
+//
+
+#include "../../../Configurations/Platform.xcconfig"
+#include "../../../Configurations/Project.xcconfig"
+
+SYM_ROOT						= Build
+CODE_SIGN_IDENTITY				= iPhone Developer
