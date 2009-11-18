@@ -7,6 +7,7 @@
 */
 
 #import <UXKit/UXKit.h>
+#import "UXMessageController.h"
 #import "SearchTestController.h"
 
 @class MockDataSource;

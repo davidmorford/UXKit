@@ -6,7 +6,7 @@
 @changes	(c) 2009 Semantap
 */
 
-#import <UXKit/UXModelViewController.h>
+#import <UXKit/UXViewController.h>
 #import <UXKit/UXTextEditor.h>
 
 @protocol UXTableViewDataSource, UXMessageControllerDelegate;

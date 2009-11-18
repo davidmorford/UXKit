@@ -1,5 +1,5 @@
 
-#import <UXKit/UXMessageController.h>
+#import "UXMessageController.h"
 #import <UXKit/UXDefaultStyleSheet.h>
 #import <UXKit/UXPickerTextField.h>
 #import <UXKit/UXTextEditor.h>

@@ -6,6 +6,7 @@
 */
 
 #import <UXKit/UXKit.h>
+#import "UXYouTubeView.h"
 
 @interface YouTubeTestController : UXViewController {
 	UXYouTubeView *youTubeView;

@@ -75,6 +75,9 @@
 		63AA60BF109D3DB900420C25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638438321040F1D700D29404 /* CoreLocation.framework */; };
 		63AA60C0109D3DBB00420C25 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6384382A1040F1D700D29404 /* AVFoundation.framework */; };
 		63B47A3A108EDB8000C2D5B5 /* PanelTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B47A39108EDB8000C2D5B5 /* PanelTestController.m */; };
+		63DA276C10B3E9D300F27CBA /* UXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DA276610B3E9D300F27CBA /* UXMessageController.m */; };
+		63DA276D10B3E9D300F27CBA /* YouTubeTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DA276810B3E9D300F27CBA /* YouTubeTestController.m */; };
+		63DA276E10B3E9D300F27CBA /* UXYouTubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DA276B10B3E9D300F27CBA /* UXYouTubeView.m */; };
 		63E15EAA10450713000F4135 /* UXDatacase.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E15EA210450713000F4135 /* UXDatacase.png */; };
 		63E15EAB10450713000F4135 /* UXEnvelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E15EA310450713000F4135 /* UXEnvelope.png */; };
 		63E15EAC10450713000F4135 /* UXGame.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E15EA410450713000F4135 /* UXGame.png */; };
@@ -206,6 +209,16 @@
 		63B47A38108EDB8000C2D5B5 /* PanelTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelTestController.h; sourceTree = "<group>"; };
 		63B47A39108EDB8000C2D5B5 /* PanelTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelTestController.m; sourceTree = "<group>"; };
 		63B6A8BB104146B10049EC9C /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
+		63DA275E10B3E8FA00F27CBA /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestModel.h; path = Source/Classes/Model/TestModel.h; sourceTree = SOURCE_ROOT; };
+		63DA275F10B3E8FA00F27CBA /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		63DA276010B3E92000F27CBA /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestTableViewController.h; path = Source/Classes/Controllers/TestTableViewController.h; sourceTree = SOURCE_ROOT; };
+		63DA276110B3E92000F27CBA /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		63DA276510B3E9D300F27CBA /* UXMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXMessageController.h; path = Source/Classes/ViewControllers/UXMessageController.h; sourceTree = SOURCE_ROOT; };
+		63DA276610B3E9D300F27CBA /* UXMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UXMessageController.m; path = Source/Classes/ViewControllers/UXMessageController.m; sourceTree = SOURCE_ROOT; };
+		63DA276710B3E9D300F27CBA /* YouTubeTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YouTubeTestController.h; path = Source/Classes/ViewControllers/YouTubeTestController.h; sourceTree = SOURCE_ROOT; };
+		63DA276810B3E9D300F27CBA /* YouTubeTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YouTubeTestController.m; path = Source/Classes/ViewControllers/YouTubeTestController.m; sourceTree = SOURCE_ROOT; };
+		63DA276A10B3E9D300F27CBA /* UXYouTubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXYouTubeView.h; path = Source/Classes/Views/UXYouTubeView.h; sourceTree = SOURCE_ROOT; };
+		63DA276B10B3E9D300F27CBA /* UXYouTubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UXYouTubeView.m; path = Source/Classes/Views/UXYouTubeView.m; sourceTree = SOURCE_ROOT; };
 		63E15EA210450713000F4135 /* UXDatacase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UXDatacase.png; sourceTree = "<group>"; };
 		63E15EA310450713000F4135 /* UXEnvelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UXEnvelope.png; path = Source/Resources/Media/Icon/UXEnvelope.png; sourceTree = SOURCE_ROOT; };
 		63E15EA410450713000F4135 /* UXGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UXGame.png; path = Source/Resources/Media/Icon/UXGame.png; sourceTree = SOURCE_ROOT; };
@@ -320,6 +333,7 @@
 		6365801A1048CB5500844D9A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63DA275F10B3E8FA00F27CBA /* TestModel.m */,
 				63A9E1EF1047B5BE007FF732 /* HolidayCalendarDataSource.m */,
 				63A381681041566500E4CBB5 /* MockDataSource.m */,
 				63A3816A1041566500E4CBB5 /* MockPhotoSource.m */,
@@ -353,8 +367,10 @@
 			isa = PBXGroup;
 			children = (
 				6384380A1040EB5400D29404 /* ApplicationDelegate */,
-				638438121040EB5400D29404 /* Model */,
 				638438111040EB5400D29404 /* Controllers */,
+				638438121040EB5400D29404 /* Model */,
+				63DA276410B3E9D300F27CBA /* ViewControllers */,
+				63DA276910B3E9D300F27CBA /* Views */,
 			);
 			name = Classes;
 			path = Source/Classes;
@@ -425,6 +441,7 @@
 				63A3818D1041566F00E4CBB5 /* TableItemTestController.h */,
 				63A3818F1041566F00E4CBB5 /* TableTestController.h */,
 				638F36AD108C30D80021685E /* TextBarTestController.h */,
+				63DA276010B3E92000F27CBA /* TestTableViewController.h */,
 				63A381AB1041573C00E4CBB5 /* Source */,
 			);
 			name = Controllers;
@@ -434,6 +451,7 @@
 		638438121040EB5400D29404 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63DA275E10B3E8FA00F27CBA /* TestModel.h */,
 				63A9E1EE1047B5BE007FF732 /* HolidayCalendarDataSource.h */,
 				63A381671041566500E4CBB5 /* MockDataSource.h */,
 				63A381691041566500E4CBB5 /* MockPhotoSource.h */,
@@ -643,10 +661,33 @@
 				63A3818C1041566F00E4CBB5 /* TableImageTestController.m */,
 				63A3818E1041566F00E4CBB5 /* TableItemTestController.m */,
 				63A381901041566F00E4CBB5 /* TableTestController.m */,
+				63DA276110B3E92000F27CBA /* TestTableViewController.m */,
 				638F36AE108C30D80021685E /* TextBarTestController.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
+		};
+		63DA276410B3E9D300F27CBA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63DA276510B3E9D300F27CBA /* UXMessageController.h */,
+				63DA276610B3E9D300F27CBA /* UXMessageController.m */,
+				63DA276710B3E9D300F27CBA /* YouTubeTestController.h */,
+				63DA276810B3E9D300F27CBA /* YouTubeTestController.m */,
+			);
+			name = ViewControllers;
+			path = Source/Classes/ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		63DA276910B3E9D300F27CBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63DA276A10B3E9D300F27CBA /* UXYouTubeView.h */,
+				63DA276B10B3E9D300F27CBA /* UXYouTubeView.m */,
+			);
+			name = Views;
+			path = Source/Classes/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -829,6 +870,9 @@
 				63B47A3A108EDB8000C2D5B5 /* PanelTestController.m in Sources */,
 				6313A4831095529100B7B527 /* StyledTextTestViewController.m in Sources */,
 				63E513E810ABEA9700DB9A80 /* UXCatalogController.m in Sources */,
+				63DA276C10B3E9D300F27CBA /* UXMessageController.m in Sources */,
+				63DA276D10B3E9D300F27CBA /* YouTubeTestController.m in Sources */,
+				63DA276E10B3E9D300F27CBA /* UXYouTubeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
