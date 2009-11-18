@@ -36,8 +36,6 @@
 #import <UXKit/UXPanelViewController.h>
 
 #import <UXKit/UXWebController.h>
-
-#import <UXKit/UXMessageController.h>
 #import <UXKit/UXPostController.h>
 #import <UXKit/UXTextBarController.h>
 

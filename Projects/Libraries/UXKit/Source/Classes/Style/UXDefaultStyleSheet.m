@@ -343,6 +343,9 @@
 		return [self tabGridTab:state corner:0];
 	}
 
+
+	#pragma mark -
+
 	-(UXStyle *) tab:(UIControlState)state {
 		if (state == UIControlStateSelected) {
 			UIColor *border = [UXSTYLEVAR(tabBarTintColor) multiplyHue:0 saturation:0 value:0.7];
@@ -388,13 +391,20 @@
 
 	-(UXStyle *) tabOverflowLeft {
 		UIImage *image = UXIMAGE(@"bundle://UXKit.bundle/Images/Tab/overflowLeft.png");
-		return [UXImageStyle styleWithImage:image next:nil];
+		UXImageStyle *style = [UXImageStyle styleWithImage:image next:nil];
+		style.contentMode = UIViewContentModeCenter;
+		return style;
 	}
 
 	-(UXStyle *) tabOverflowRight {
-		UIImage *image = UXIMAGE(@"bundle://UXKit.bundle/Images/Tab/overflowRight.png");
-		return [UXImageStyle styleWithImage:image next:nil];
+		UIImage *image		= UXIMAGE(@"bundle://UXKit.bundle/Images/Tab/overflowRight.png");
+		UXImageStyle *style = [UXImageStyle styleWithImage:image next:nil];
+		style.contentMode	= UIViewContentModeCenter;
+		return style;
 	}
+
+
+	#pragma mark -
 
 	-(UXStyle *) rounded {
 		return [UXShapeStyle styleWithShape:[UXRoundedRectangleShape shapeWithRadius:8] next:[UXContentStyle styleWithNext:nil]];

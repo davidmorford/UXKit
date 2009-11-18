@@ -6,17 +6,17 @@
 @changes	(c) 2009 Semantap
 */
 
-#import <UXKit/UXModelViewController.h>
+#import <UXKit/UXViewController.h>
 
 @protocol UXWebControllerDelegate;
 
 /*!
 @class UXWebController
-@superclass UXModelViewController <UIWebViewDelegate, UIActionSheetDelegate>
+@superclass UXViewController <UIWebViewDelegate, UIActionSheetDelegate>
 @abstract
 @discussion
 */
-@interface UXWebController : UXModelViewController <UIWebViewDelegate, UIActionSheetDelegate> {
+@interface UXWebController : UXViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 	id <UXWebControllerDelegate> _delegate;
 	UIWebView *_webView;
 	UIToolbar *_toolbar;

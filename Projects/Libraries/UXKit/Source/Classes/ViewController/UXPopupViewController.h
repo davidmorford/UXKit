@@ -6,7 +6,7 @@
 @changes	(c) 2009 Semantap
 */
 
-#import <UXKit/UXModelViewController.h>
+#import <UXKit/UXViewController.h>
 
 /*!
 @class UXPopupViewController
@@ -18,7 +18,7 @@ controller, and even remove its view from the view hierarchy.  Popup view contro
 you to present a "modal" view which overlaps the parent view controller but does not
 necessarily hide it.
 */
-@interface UXPopupViewController : UXModelViewController {
+@interface UXPopupViewController : UXViewController {
 
 }
 

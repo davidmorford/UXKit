@@ -117,6 +117,7 @@
 		// viewDidUnload, so my solution is just to call viewDidUnload here.
 		// DPM - This is WRONG! According to Apple and myself. DO NOT DO THIS!
 		//[self viewDidUnload];
+		UX_SAFE_RELEASE(_searchController);
 		
 		[super dealloc];
 	}
@@ -207,8 +208,7 @@
 		}
 	}
 
-	-(void) willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-											 duration:(NSTimeInterval)duration {
+	-(void) willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation duration:(NSTimeInterval)duration {
 		UIViewController *popup = [self popupViewController];
 		if (popup) {
 			return [popup willAnimateRotationToInterfaceOrientation:fromInterfaceOrientation
