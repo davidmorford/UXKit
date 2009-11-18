@@ -131,4 +131,10 @@
 		return poppedController;
 	}
 
+	#pragma mark -
+
+	-(void) resetWithRootController:(UIViewController *)aViewController {
+		self.viewControllers = [NSArray arrayWithObject:aViewController];
+	}
+
 @end

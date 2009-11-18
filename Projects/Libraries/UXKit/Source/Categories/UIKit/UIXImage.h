@@ -48,9 +48,6 @@
 	-(void) drawInRect:(CGRect)rect radius:(CGFloat)radius;
 	-(void) drawInRect:(CGRect)rect radius:(CGFloat)radius contentMode:(UIViewContentMode)contentMode;
 
-	-(void) drawInRect:(CGRect)rect asAlphaMaskForColor:(CGFloat[])color;
-	-(void) drawInRect:(CGRect)rect asAlphaMaskForGradient:(CGFloat[])colors;
-
 @end
 
 #pragma mark -

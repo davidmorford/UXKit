@@ -153,6 +153,13 @@
 
 	#pragma mark -
 
+	-(CGContextRef) currentCGContext {
+		return UIGraphicsGetCurrentContext();
+	}
+
+
+	#pragma mark -
+
 	-(CGPoint) offsetFromView:(UIView *)otherView {
 		CGFloat x = 0; 
 		CGFloat y = 0;
@@ -293,46 +300,6 @@
 			}
 		}
 		return nil;
-	}
-
-@end
-
-#pragma mark -
-
-@implementation UIView (UIXViewDrawing)
-
-	+(void) drawLinearGradientInRect:(CGRect)rect colors:(CGFloat[])colours {
-		CGContextRef context = UIGraphicsGetCurrentContext();
-		CGContextSaveGState(context);
-		{
-			CGColorSpaceRef rgb		= CGColorSpaceCreateDeviceRGB();
-			CGGradientRef gradient	= CGGradientCreateWithColorComponents(rgb, colours, NULL, 2);
-			CGColorSpaceRelease(rgb);
-			
-			CGPoint start;
-			start = CGPointMake(rect.origin.x, rect.origin.y + rect.size.height * 0.25);
-			
-			CGPoint end;
-			end = CGPointMake(rect.origin.x, rect.origin.y + rect.size.height * 0.75);
-			
-			CGContextClipToRect(context, rect);
-			CGContextDrawLinearGradient(context, gradient, start, end, kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
-			CGGradientRelease(gradient);
-		}
-		CGContextRestoreGState(context);
-	}
-
-	+(void) drawLineInRect:(CGRect)rect colors:(CGFloat[])colors {
-		CGContextRef context = UIGraphicsGetCurrentContext();
-		CGContextSaveGState(context);
-		{
-			CGContextSetRGBStrokeColor(context, colors[0], colors[1], colors[2], colors[3]);
-			CGContextSetLineWidth(context, 1);
-			CGContextMoveToPoint(context, rect.origin.x, rect.origin.y);
-			CGContextAddLineToPoint(context, rect.size.width, rect.size.height);
-			CGContextStrokePath(context);
-		}
-		CGContextRestoreGState(context);
 	}
 
 @end

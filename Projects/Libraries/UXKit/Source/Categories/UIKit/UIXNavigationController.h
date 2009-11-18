@@ -26,4 +26,8 @@
 	*/
 	-(UIViewController *) popViewControllerAnimatedWithTransition:(UIViewAnimationTransition)transition;
 
+	#pragma mark -
+
+	-(void) resetWithRootController:(UIViewController *)aViewController;
+
 @end

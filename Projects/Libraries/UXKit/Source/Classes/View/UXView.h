@@ -27,3 +27,24 @@
 	-(void) drawContent:(CGRect)rect;
 
 @end
+
+#pragma mark -
+
+/*!
+@class UXKVOView
+@superclass UXView
+@abstract
+@discussion
+*/
+@interface UXKVOView : UXView {
+	BOOL observingForDisplay;
+	BOOL observingForLayout;
+}
+
+	@property (nonatomic, readonly) BOOL isObservingForDisplay;
+	@property (nonatomic, readonly) BOOL isObservingForLayout;
+
+	-(NSArray *) keysAffectingDisplay;
+	-(NSArray *) keysAffectingLayout;
+
+@end

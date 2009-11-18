@@ -37,6 +37,9 @@
 
 	@property (nonatomic, readonly) CGFloat orientationWidth;
 	@property (nonatomic, readonly) CGFloat orientationHeight;
+	
+	@property (nonatomic, readonly) CGContextRef currentCGContext;
+
 
 	#pragma mark -
 
@@ -84,19 +87,5 @@
 	@abstract The view controller whose view contains this view.
 	*/
 	-(UIViewController *) viewController;
-
-@end
-
-#pragma mark -
-
-/*!
-@category UIView (UIXViewDrawing)
-@abstract
-@discussion
-*/
-@interface UIView (UIXViewDrawing)
-
-	+(void) drawLinearGradientInRect:(CGRect)rect colors:(CGFloat[])colors;
-	+(void) drawLineInRect:(CGRect)rect colors:(CGFloat[])colors;
 
 @end

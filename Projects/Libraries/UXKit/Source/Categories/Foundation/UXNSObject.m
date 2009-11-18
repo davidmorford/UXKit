@@ -3,6 +3,16 @@
 #import <UXKit/UXNavigator.h>
 #import <UXKit/UXURLMap.h>
 
+@implementation NSObject (UXClassName)
+
+	-(NSString *) className {
+		return NSStringFromClass([self class]);
+	}
+
+@end
+
+#pragma mark -
+
 @implementation NSObject (UXNSObject)
 
 	-(id) performSelector:(SEL)selector withObject:(id)p1 withObject:(id)p2 withObject:(id)p3 {
@@ -161,6 +171,8 @@
 			return nil;
 		}
 	}
+
+	#pragma mark -
 
 	-(NSString *) URLValue {
 		return [[UXNavigator navigator].URLMap URLForObject:self];

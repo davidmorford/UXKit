@@ -15,7 +15,9 @@
 #import <UXKit/UXNSDate.h>
 #import <UXKit/UXNSArray.h>
 
+#import <UXKit/UIXApplication.h>
 #import <UXKit/UIXColor.h>
+#import <UXKit/UIXDevice.h>
 #import <UXKit/UIXFont.h>
 #import <UXKit/UIXImage.h>
 #import <UXKit/UIXViewController.h>
