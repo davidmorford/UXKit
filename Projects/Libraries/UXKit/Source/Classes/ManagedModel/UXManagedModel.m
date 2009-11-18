@@ -37,7 +37,7 @@
 	}
 
 	+(UXManagedModel *) managedObjectModelWithName:(NSString *)modelName {
-		return [[UXManagedModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[UXManagedModel filePathForModelNamed:modelName]]];
+		return [[[UXManagedModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[UXManagedModel filePathForModelNamed:modelName]]] autorelease];
 	}
 
 

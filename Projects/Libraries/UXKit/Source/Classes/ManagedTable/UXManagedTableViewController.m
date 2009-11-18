@@ -5,14 +5,16 @@
 
 	@synthesize fetchedResultsController;
 	@synthesize managedObjectContext;
+	@synthesize entityName;
 
 	-(id) initWithEntityName:(NSString *)anEntityName {
 		self = [super init];
 		if (self != nil) {
-			entityName = anEntityName;
+			self.entityName = anEntityName;
 		}
 		return self;
 	}
+
 
 	#pragma mark UIViewController
 

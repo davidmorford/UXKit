@@ -6,14 +6,15 @@
 */
 
 #import <UXKit/UXKit.h>
+#import <UXKit/UXManagedObjectEditorController.h>
 
 /*!
 @class UXManagedObjectPropertyEditorController
-@superclass UITableViewController
+@superclass UXManagedObjectEditorController
 @abstract
 @discussion
 */
-@interface UXManagedObjectPropertyEditorController : UITableViewController {
+@interface UXManagedObjectPropertyEditorController : UXManagedObjectEditorController {
 
 }
 

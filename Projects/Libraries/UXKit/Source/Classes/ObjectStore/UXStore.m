@@ -91,7 +91,7 @@
 			}
 		}
 		
-		UXObjectStoreContext *context = [self newManagedObjectContextWithIdentifier:@"Default"];
+		UXObjectStoreContext *context = (UXObjectStoreContext *)[self newManagedObjectContextWithIdentifier:@"Default"];
 		[context save:nil];
 	}
 
@@ -273,7 +273,7 @@
 	}
 
 	-(BOOL) saveContextWithIdentifier:(NSString *)aName {
-		UXObjectStoreContext * context = [self managedObjectContextWithIdentifier:aName];
+		UXObjectStoreContext *context = (UXObjectStoreContext *)[self managedObjectContextWithIdentifier:aName];
 		NSError * error = nil;
 		BOOL saved = NO;
 		

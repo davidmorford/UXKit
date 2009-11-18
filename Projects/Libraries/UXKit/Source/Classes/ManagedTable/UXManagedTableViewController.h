@@ -22,7 +22,8 @@
 
 	@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 	@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-	
+	@property (nonatomic, retain) NSString *entityName;
+
 	-(id) initWithEntityName:(NSString *)anEntityName;
 	
 	//-(id) initWithManagedObjectURI:(NSString *)objectURI;

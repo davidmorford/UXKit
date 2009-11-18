@@ -27,7 +27,7 @@
 	#pragma mark -
 	
 	/*!
-	@abstract
+	@abstract Should prolly be a class method.
 	*/
 	-(id) initAndInsertIntoManagedObjectContext:(NSManagedObjectContext *)aContext;
 

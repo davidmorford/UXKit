@@ -10,19 +10,17 @@
 
 /*!
 @class UXManagedObjectEditorController
-@superclass UITableViewController
+@superclass UXViewController <UITableViewDataSource, UITableViewDelegate>
 @abstract
 @discussion
 */
-@interface UXManagedObjectEditorController : UITableViewController {
+@interface UXManagedObjectEditorController : UXViewController <UITableViewDataSource, UITableViewDelegate> {
 	NSManagedObject *object;
 	NSString *keyPath;
-	NSString *label;
 }
 
 	@property (nonatomic, retain) NSManagedObject *object;
 	@property (nonatomic, retain) NSString *keyPath;
-	@property (nonatomic, retain) NSString *label;
 
 	#pragma mark Actions
 

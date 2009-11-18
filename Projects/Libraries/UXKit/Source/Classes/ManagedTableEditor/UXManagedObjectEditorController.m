@@ -5,7 +5,6 @@
 
 	@synthesize object;
 	@synthesize keyPath;
-	@synthesize label;
 
 	#pragma mark Initializer
 
@@ -33,6 +32,25 @@
 		self.navigationItem.rightBarButtonItem = saveButton;
 		[saveButton release];
 	}
+	
+	
+	// This will be a replaced by either a data source (or UXController subclass of UXArrayController or UXObjectController.
+	
+	#pragma mark <UITableViewDataSource>
+
+	-(NSInteger) tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+		return 0;
+	}
+
+	/*!
+	@abstract Row display. Implementers should *always* try to reuse cells by setting each cell's 
+	reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+	Cell gets various attributes set automatically based on table (separators) and data source 
+	(accessory views, editing controls)
+	*/
+	-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
+		return nil;
+	}
 
 
 	#pragma mark Actions
@@ -49,7 +67,6 @@
 	#pragma mark -
 
 	-(void) dealloc {
-		[label release]; label = nil;
 		[keyPath release]; keyPath = nil;
 		[object release]; object = nil;
 		[super dealloc];
