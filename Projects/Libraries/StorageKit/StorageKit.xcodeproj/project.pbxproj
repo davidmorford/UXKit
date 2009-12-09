@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630D4F2B10C5819E0009D749 /* STKObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 630D4F2910C5819E0009D749 /* STKObjectStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		630D4F2C10C5819E0009D749 /* STKObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 630D4F2A10C5819E0009D749 /* STKObjectStore.m */; };
+		634FCDE610CDCEFE004D48BE /* STKNSSortDescriptorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 635242E410AC9B5100817E67 /* STKNSSortDescriptorTest.m */; };
+		634FCDF310CDCF90004D48BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B024210885C8F00B8E1B2 /* UIKit.framework */; };
+		634FCDF410CDCF93004D48BE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B022410885C8F00B8E1B2 /* CoreData.framework */; };
+		634FCE9210CE197D004D48BE /* STKStoreRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 634FCE9010CE197D004D48BE /* STKStoreRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		634FCE9310CE197D004D48BE /* STKStoreRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 634FCE9110CE197D004D48BE /* STKStoreRequest.m */; };
+		635242C410AC98EB00817E67 /* STKNSFetchedResultsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 635242C210AC98EB00817E67 /* STKNSFetchedResultsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635242C510AC98EB00817E67 /* STKNSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635242C310AC98EB00817E67 /* STKNSFetchedResultsController.m */; };
+		635242FB10ACCE7B00817E67 /* STKNSSortDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 635242F910ACCDF700817E67 /* STKNSSortDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635242FC10ACCE7C00817E67 /* STKNSSortDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 635242FA10ACCDF700817E67 /* STKNSSortDescriptor.m */; };
+		635243A610ACE37600817E67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B024210885C8F00B8E1B2 /* UIKit.framework */; };
+		63843AB2104120A300D29404 /* StorageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 63894BEB103BD5C1007C9CC9 /* StorageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63843AB61041212000D29404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		63843ACD1041218700D29404 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63843AB91041214400D29404 /* SenTestingKit.framework */; };
+		6392DA9C10C79EC000494AFD /* STKStoreDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6352435E10ACE0ED00817E67 /* STKStoreDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6392DA9D10C79EC100494AFD /* STKStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6352435D10ACE0ED00817E67 /* STKStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639B022510885C8F00B8E1B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639B022410885C8F00B8E1B2 /* CoreData.framework */; };
+		63BE2FA910CB5E4900FBB27C /* STKManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6352434210ACE0ED00817E67 /* STKManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BE2FAA10CB5E4B00FBB27C /* STKManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6352434310ACE0ED00817E67 /* STKManagedObjectContext.m */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63843AB3104120FE00D29404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = StorageKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630D4F2910C5819E0009D749 /* STKObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKObjectStore.h; sourceTree = "<group>"; };
+		630D4F2A10C5819E0009D749 /* STKObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKObjectStore.m; sourceTree = "<group>"; };
+		634FCE9010CE197D004D48BE /* STKStoreRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStoreRequest.h; sourceTree = "<group>"; };
+		634FCE9110CE197D004D48BE /* STKStoreRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKStoreRequest.m; sourceTree = "<group>"; };
+		635242C210AC98EB00817E67 /* STKNSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STKNSFetchedResultsController.h; path = Source/Categories/FetchedResultsController/STKNSFetchedResultsController.h; sourceTree = SOURCE_ROOT; };
+		635242C310AC98EB00817E67 /* STKNSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKNSFetchedResultsController.m; sourceTree = "<group>"; };
+		635242E410AC9B5100817E67 /* STKNSSortDescriptorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKNSSortDescriptorTest.m; sourceTree = "<group>"; };
+		635242F910ACCDF700817E67 /* STKNSSortDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKNSSortDescriptor.h; sourceTree = "<group>"; };
+		635242FA10ACCDF700817E67 /* STKNSSortDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKNSSortDescriptor.m; sourceTree = "<group>"; };
+		6352434210ACE0ED00817E67 /* STKManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKManagedObjectContext.h; sourceTree = "<group>"; };
+		6352434310ACE0ED00817E67 /* STKManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKManagedObjectContext.m; sourceTree = "<group>"; };
+		6352435D10ACE0ED00817E67 /* STKStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStore.h; sourceTree = "<group>"; };
+		6352435E10ACE0ED00817E67 /* STKStoreDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKStoreDelegate.h; sourceTree = "<group>"; };
+		63843AB91041214400D29404 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
+		63843ADE10412D8800D29404 /* StorageKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = StorageKit.bundle; path = Source/Resources/Bundles/StorageKit.bundle; sourceTree = SOURCE_ROOT; };
+		63894BE4103BD59B007C9CC9 /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Library.xcconfig; path = Configurations/Library.xcconfig; sourceTree = SOURCE_ROOT; };
+		63894BE5103BD59B007C9CC9 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = SOURCE_ROOT; };
+		63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UnitTests.xcconfig; path = Configurations/UnitTests.xcconfig; sourceTree = SOURCE_ROOT; };
+		63894BEB103BD5C1007C9CC9 /* StorageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorageKit.h; path = Source/Project/StorageKit.h; sourceTree = SOURCE_ROOT; };
+		63894BF5103BE15E007C9CC9 /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Source/UnitTests/Resources/PropertyLists/UnitTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		63894BFB103BE194007C9CC9 /* StorageKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorageKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		639B021C10885C8F00B8E1B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		639B021E10885C8F00B8E1B2 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		639B022010885C8F00B8E1B2 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		639B022210885C8F00B8E1B2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		639B022410885C8F00B8E1B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		639B022610885C8F00B8E1B2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		639B022810885C8F00B8E1B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		639B022A10885C8F00B8E1B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		639B022C10885C8F00B8E1B2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		639B022E10885C8F00B8E1B2 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		639B023010885C8F00B8E1B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		639B023210885C8F00B8E1B2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		639B023410885C8F00B8E1B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		639B023610885C8F00B8E1B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		639B023810885C8F00B8E1B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		639B023A10885C8F00B8E1B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		639B023C10885C8F00B8E1B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		639B023E10885C8F00B8E1B2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		639B024010885C8F00B8E1B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		639B024210885C8F00B8E1B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63B6A8911041465B0049EC9C /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
+		63EC371810CF6DB20079A71F /* Movies.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Movies.xcdatamodel; path = Source/UnitTests/Models/Movies.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libStorageKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStorageKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63894BF8103BE194007C9CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63843AB61041212000D29404 /* Foundation.framework in Frameworks */,
+				63843ACD1041218700D29404 /* SenTestingKit.framework in Frameworks */,
+				634FCDF310CDCF90004D48BE /* UIKit.framework in Frameworks */,
+				634FCDF410CDCF93004D48BE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				639B022510885C8F00B8E1B2 /* CoreData.framework in Frameworks */,
+				635243A610ACE37600817E67 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libStorageKit.a */,
+				63894BFB103BE194007C9CC9 /* StorageKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* StorageKit */ = {
+			isa = PBXGroup;
+			children = (
+				034768DFFF38A50411DB9C8B /* Products */,
+				63894BE0103BD587007C9CC9 /* References */,
+				63894BE2103BD59B007C9CC9 /* Configurations */,
+				63894BEC103BD5C1007C9CC9 /* Resources */,
+				63894BEA103BD5C1007C9CC9 /* Project */,
+				63894BF0103BE15E007C9CC9 /* UnitTests */,
+				6352419110AC772900817E67 /* Categories */,
+				63894BE9103BD5C1007C9CC9 /* Classes */,
+			);
+			name = StorageKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639B021E10885C8F00B8E1B2 /* AddressBook.framework */,
+				639B022010885C8F00B8E1B2 /* AddressBookUI.framework */,
+				639B021C10885C8F00B8E1B2 /* AVFoundation.framework */,
+				639B022210885C8F00B8E1B2 /* CFNetwork.framework */,
+				639B022410885C8F00B8E1B2 /* CoreData.framework */,
+				639B022610885C8F00B8E1B2 /* CoreFoundation.framework */,
+				639B022810885C8F00B8E1B2 /* CoreGraphics.framework */,
+				639B022A10885C8F00B8E1B2 /* CoreLocation.framework */,
+				639B022C10885C8F00B8E1B2 /* ExternalAccessory.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				639B022E10885C8F00B8E1B2 /* GameKit.framework */,
+				639B023010885C8F00B8E1B2 /* MapKit.framework */,
+				639B023210885C8F00B8E1B2 /* MediaPlayer.framework */,
+				639B023410885C8F00B8E1B2 /* MessageUI.framework */,
+				639B023610885C8F00B8E1B2 /* MobileCoreServices.framework */,
+				639B023810885C8F00B8E1B2 /* OpenGLES.framework */,
+				639B023A10885C8F00B8E1B2 /* QuartzCore.framework */,
+				639B023C10885C8F00B8E1B2 /* Security.framework */,
+				639B023E10885C8F00B8E1B2 /* StoreKit.framework */,
+				639B024010885C8F00B8E1B2 /* SystemConfiguration.framework */,
+				639B024210885C8F00B8E1B2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6352419110AC772900817E67 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				635242C110AC98EB00817E67 /* FetchedResultsController */,
+				635242F810ACCDF700817E67 /* SortDescriptor */,
+			);
+			name = Categories;
+			path = Source/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		635242C110AC98EB00817E67 /* FetchedResultsController */ = {
+			isa = PBXGroup;
+			children = (
+				635242C210AC98EB00817E67 /* STKNSFetchedResultsController.h */,
+				63BE878510AEA6CA008BE0B8 /* Source */,
+			);
+			name = FetchedResultsController;
+			path = Source/Categories/FetchedResultsController;
+			sourceTree = SOURCE_ROOT;
+		};
+		635242F810ACCDF700817E67 /* SortDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				635242F910ACCDF700817E67 /* STKNSSortDescriptor.h */,
+				63BE878110AEA6BC008BE0B8 /* Source */,
+			);
+			name = SortDescriptor;
+			path = Source/Categories/SortDescriptor;
+			sourceTree = SOURCE_ROOT;
+		};
+		6352434110ACE0ED00817E67 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				6352434210ACE0ED00817E67 /* STKManagedObjectContext.h */,
+				63BE878010AEA6B5008BE0B8 /* Source */,
+			);
+			name = Context;
+			path = Source/Classes/Context;
+			sourceTree = SOURCE_ROOT;
+		};
+		6352435410ACE0ED00817E67 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6352435D10ACE0ED00817E67 /* STKStore.h */,
+				6352435E10ACE0ED00817E67 /* STKStoreDelegate.h */,
+				634FCE9010CE197D004D48BE /* STKStoreRequest.h */,
+				630D4F2910C5819E0009D749 /* STKObjectStore.h */,
+				63BE877B10AEA6A3008BE0B8 /* Source */,
+			);
+			name = Store;
+			path = Source/Classes/Store;
+			sourceTree = SOURCE_ROOT;
+		};
+		6352439610ACE27A00817E67 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			path = Source/UnitTests/Entities;
+			sourceTree = SOURCE_ROOT;
+		};
+		63843AB11041209C00D29404 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fixtures;
+			path = Source/UnitTests/Resources/Fixtures;
+			sourceTree = SOURCE_ROOT;
+		};
+		63843AB71041212700D29404 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				63843AB91041214400D29404 /* SenTestingKit.framework */,
+			);
+			name = UnitTest;
+			sourceTree = "<group>";
+		};
+		63843AB81041213200D29404 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		63894BE0103BD587007C9CC9 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				63894C11103BE467007C9CC9 /* Libraries */,
+				63843AB81041213200D29404 /* Project */,
+				63843AB71041212700D29404 /* UnitTest */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		63894BE2103BD59B007C9CC9 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				63B6A8911041465B0049EC9C /* Settings.xcconfig */,
+				63894BE5103BD59B007C9CC9 /* Project.xcconfig */,
+				63894BE4103BD59B007C9CC9 /* Library.xcconfig */,
+				63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BE9103BD5C1007C9CC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6352434110ACE0ED00817E67 /* Context */,
+				6352435410ACE0ED00817E67 /* Store */,
+			);
+			name = Classes;
+			path = Source/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BEA103BD5C1007C9CC9 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				63894BEB103BD5C1007C9CC9 /* StorageKit.h */,
+			);
+			name = Project;
+			path = Source/Project;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BEC103BD5C1007C9CC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63894BED103BD5C1007C9CC9 /* Bundles */,
+			);
+			name = Resources;
+			path = Source/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BED103BD5C1007C9CC9 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				63843ADE10412D8800D29404 /* StorageKit.bundle */,
+			);
+			name = Bundles;
+			path = Source/Resources/Bundles;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BF0103BE15E007C9CC9 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				63894BF1103BE15E007C9CC9 /* Classes */,
+				6352439610ACE27A00817E67 /* Entities */,
+				63EC371710CF6DB20079A71F /* Models */,
+				63894BF2103BE15E007C9CC9 /* Resources */,
+			);
+			name = UnitTests;
+			path = Source/UnitTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BF1103BE15E007C9CC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				635242E410AC9B5100817E67 /* STKNSSortDescriptorTest.m */,
+			);
+			name = Classes;
+			path = Source/UnitTests/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BF2103BE15E007C9CC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63843AB11041209C00D29404 /* Fixtures */,
+				63894BF4103BE15E007C9CC9 /* PropertyLists */,
+			);
+			name = Resources;
+			path = Source/UnitTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894BF4103BE15E007C9CC9 /* PropertyLists */ = {
+			isa = PBXGroup;
+			children = (
+				63894BF5103BE15E007C9CC9 /* UnitTests-Info.plist */,
+			);
+			name = PropertyLists;
+			path = Source/UnitTests/Resources/PropertyLists;
+			sourceTree = SOURCE_ROOT;
+		};
+		63894C11103BE467007C9CC9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		63BE877B10AEA6A3008BE0B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				630D4F2A10C5819E0009D749 /* STKObjectStore.m */,
+				634FCE9110CE197D004D48BE /* STKStoreRequest.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63BE878010AEA6B5008BE0B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6352434310ACE0ED00817E67 /* STKManagedObjectContext.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63BE878110AEA6BC008BE0B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				635242FA10ACCDF700817E67 /* STKNSSortDescriptor.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63BE878510AEA6CA008BE0B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				635242C310AC98EB00817E67 /* STKNSFetchedResultsController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		63EC371710CF6DB20079A71F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63EC371810CF6DB20079A71F /* Movies.xcdatamodel */,
+			);
+			name = Models;
+			path = Source/UnitTests/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63843AB2104120A300D29404 /* StorageKit.h in Headers */,
+				635242C410AC98EB00817E67 /* STKNSFetchedResultsController.h in Headers */,
+				635242FB10ACCE7B00817E67 /* STKNSSortDescriptor.h in Headers */,
+				630D4F2B10C5819E0009D749 /* STKObjectStore.h in Headers */,
+				6392DA9C10C79EC000494AFD /* STKStoreDelegate.h in Headers */,
+				6392DA9D10C79EC100494AFD /* STKStore.h in Headers */,
+				63BE2FA910CB5E4900FBB27C /* STKManagedObjectContext.h in Headers */,
+				634FCE9210CE197D004D48BE /* STKStoreRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63894BFA103BE194007C9CC9 /* StorageKitUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63894BFF103BE195007C9CC9 /* Build configuration list for PBXNativeTarget "StorageKitUnitTests" */;
+			buildPhases = (
+				63894BF6103BE194007C9CC9 /* Resources */,
+				63894BF7103BE194007C9CC9 /* Sources */,
+				63894BF8103BE194007C9CC9 /* Frameworks */,
+				63894BF9103BE194007C9CC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63843AB4104120FE00D29404 /* PBXTargetDependency */,
+			);
+			name = StorageKitUnitTests;
+			productName = StorageKitUnitTests;
+			productReference = 63894BFB103BE194007C9CC9 /* StorageKitUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* StorageKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "StorageKit" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				63843AD0104121F600D29404 /* Deploy Library */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageKit;
+			productName = StorageKit;
+			productReference = D2AAC07E0554694100DB518D /* libStorageKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Semantap;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "StorageKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* StorageKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* StorageKit */,
+				63894BFA103BE194007C9CC9 /* StorageKitUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63894BF6103BE194007C9CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63843AD0104121F600D29404 /* Deploy Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Deploy Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/tcsh;
+			shellScript = "#delete the current deployed library if needed. deleting version also deletes symlinks.\n\nrm -dRfv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\n\n# create build structure if needed\n\nmkdir -pv ${BUILD_SHARED_ROOT_PATH}\nmkdir -pv ${BUILD_SHARED_BUNDLES_PATH}\nmkdir -pv ${BUILD_SHARED_LIBRARIES_PATH}\nmkdir -pv ${BUILD_SHARED_TOOLS_PATH}\nmkdir -pv ${BUILD_SHARED_TESTS_PATH}\n\n# create library structure if needed\n\nmkdir -pv ${DEPLOYED_BUILD_PLATFORM_PATH}\nmkdir -pv ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_VERSION_PATH}\nmkdir -pv ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nmkdir -pv ${DEPLOYED_BUILD_RESOURCES_PATH}\n\n# symlink headers\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/usr/local/include/${PRODUCT_NAME}/*.h ${DEPLOYED_BUILD_HEADER_PRODUCT_NAME_PATH}\nln -sFfhv ${DEPLOYED_BUILD_HEADER_VERSION_PATH} ${DEPLOYED_BUILD_PRODUCT_NAME_HEADER_PATH}\n\n# symlink library\n\ncp -Rfv ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME}\nln -sFfhv ${DEPLOYED_BUILD_LIBRARY_VERSION_PATH}/${FULL_PRODUCT_NAME} ${DEPLOYED_BUILD_PRODUCT_NAME_PATH}/${FULL_PRODUCT_NAME}\n\n#copy shared resource bundle\n\ncp -Rfv ${SRCROOT}/${LIBRARY_RESOURCE_BUNDLE_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME} ${BUILD_SHARED_BUNDLES_PATH}\n\n# Remove .svn if needed. This requires customization\n\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Images/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Localizations/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Localizations/en.lproj/.svn\nrm -dRfv ${BUILD_SHARED_BUNDLES_PATH}/${LIBRARY_RESOURCE_BUNDLE_NAME}/Models/.svn\n";
+			showEnvVarsInLog = 0;
+		};
+		63894BF9103BE194007C9CC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63894BF7103BE194007C9CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634FCDE610CDCEFE004D48BE /* STKNSSortDescriptorTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635242C510AC98EB00817E67 /* STKNSFetchedResultsController.m in Sources */,
+				635242FC10ACCE7C00817E67 /* STKNSSortDescriptor.m in Sources */,
+				630D4F2C10C5819E0009D749 /* STKObjectStore.m in Sources */,
+				63BE2FAA10CB5E4B00FBB27C /* STKManagedObjectContext.m in Sources */,
+				634FCE9310CE197D004D48BE /* STKStoreRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63843AB4104120FE00D29404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* StorageKit */;
+			targetProxy = 63843AB3104120FE00D29404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE4103BD59B007C9CC9 /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE4103BD59B007C9CC9 /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE5103BD59B007C9CC9 /* Project.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE5103BD59B007C9CC9 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		63894BFD103BE195007C9CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		63894BFE103BE195007C9CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		63894C01103BE1FD007C9CC9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE5103BD59B007C9CC9 /* Project.xcconfig */;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Profile;
+		};
+		63894C02103BE1FD007C9CC9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE4103BD59B007C9CC9 /* Library.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Profile;
+		};
+		63894C03103BE1FD007C9CC9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Profile;
+		};
+		63894C04103BE202007C9CC9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE5103BD59B007C9CC9 /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		63894C05103BE202007C9CC9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE4103BD59B007C9CC9 /* Library.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
+		63894C06103BE202007C9CC9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63894BE6103BD59B007C9CC9 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "StorageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				63894C02103BE1FD007C9CC9 /* Profile */,
+				1DEB922008733DC00010E9CD /* Release */,
+				63894C05103BE202007C9CC9 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "StorageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				63894C01103BE1FD007C9CC9 /* Profile */,
+				1DEB922408733DC00010E9CD /* Release */,
+				63894C04103BE202007C9CC9 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63894BFF103BE195007C9CC9 /* Build configuration list for PBXNativeTarget "StorageKitUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63894BFD103BE195007C9CC9 /* Debug */,
+				63894C03103BE1FD007C9CC9 /* Profile */,
+				63894BFE103BE195007C9CC9 /* Release */,
+				63894C06103BE202007C9CC9 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
