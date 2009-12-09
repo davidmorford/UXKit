@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		630BB0AD1034C3000064E3AE /* JKNSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB0A91034C3000064E3AE /* JKNSObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		630BB0AE1034C3000064E3AE /* UXNSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB0AA1034C3000064E3AE /* UXNSObject+JSON.m */; };
 		630BB0AF1034C3000064E3AE /* JKNSString+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB0AB1034C3000064E3AE /* JKNSString+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		630BB0B01034C3000064E3AE /* UXNSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB0AC1034C3000064E3AE /* UXNSString+JSON.m */; };
 		630BB0B91034C30A0064E3AE /* JKJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB0B11034C30A0064E3AE /* JKJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		630BB0BA1034C30A0064E3AE /* JKJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB0B21034C30A0064E3AE /* JKJSON.m */; };
 		630BB0BB1034C30A0064E3AE /* JKJSONBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB0B31034C30A0064E3AE /* JKJSONBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +17,8 @@
 		630BB0BE1034C30A0064E3AE /* JKJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB0B61034C30A0064E3AE /* JKJSONParser.m */; };
 		630BB0BF1034C30A0064E3AE /* JKJSONWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB0B71034C30A0064E3AE /* JKJSONWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		630BB0C01034C30A0064E3AE /* JKJSONWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB0B81034C30A0064E3AE /* JKJSONWriter.m */; };
+		6340D67210D029C700324F4D /* JKNSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6340D67010D029C700324F4D /* JKNSObject+JSON.m */; };
+		6340D67310D029C700324F4D /* JKNSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6340D67110D029C700324F4D /* JKNSString+JSON.m */; };
 		63894726103B2377007C9CC9 /* JKJSONTypeUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 638946D3103B2280007C9CC9 /* JKJSONTypeUnitTest.m */; };
 		63894727103B2377007C9CC9 /* JKJSONPrettyUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 638946D1103B2280007C9CC9 /* JKJSONPrettyUnitTest.m */; };
 		63894728103B2378007C9CC9 /* JKJSONProxyUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 638946D2103B2280007C9CC9 /* JKJSONProxyUnitTest.m */; };
@@ -109,9 +109,7 @@
 /* Begin PBXFileReference section */
 		630BB0A11034C2640064E3AE /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Library.xcconfig; path = Configurations/Library.xcconfig; sourceTree = SOURCE_ROOT; };
 		630BB0A91034C3000064E3AE /* JKNSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JKNSObject+JSON.h"; sourceTree = "<group>"; };
-		630BB0AA1034C3000064E3AE /* UXNSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UXNSObject+JSON.m"; sourceTree = "<group>"; };
 		630BB0AB1034C3000064E3AE /* JKNSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JKNSString+JSON.h"; sourceTree = "<group>"; };
-		630BB0AC1034C3000064E3AE /* UXNSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UXNSString+JSON.m"; sourceTree = "<group>"; };
 		630BB0B11034C30A0064E3AE /* JKJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJSON.h; sourceTree = "<group>"; };
 		630BB0B21034C30A0064E3AE /* JKJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJSON.m; sourceTree = "<group>"; };
 		630BB0B31034C30A0064E3AE /* JKJSONBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJSONBase.h; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		630BB0B71034C30A0064E3AE /* JKJSONWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJSONWriter.h; sourceTree = "<group>"; };
 		630BB0B81034C30A0064E3AE /* JKJSONWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJSONWriter.m; sourceTree = "<group>"; };
 		633EDBAE0FCD3DF6006B2DFE /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = SOURCE_ROOT; };
+		6340D67010D029C700324F4D /* JKNSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JKNSObject+JSON.m"; path = "Source/Categories/JKNSObject+JSON.m"; sourceTree = SOURCE_ROOT; };
+		6340D67110D029C700324F4D /* JKNSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JKNSString+JSON.m"; path = "Source/Categories/JKNSString+JSON.m"; sourceTree = SOURCE_ROOT; };
 		638946CE103B2280007C9CC9 /* JKJSONErrorUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJSONErrorUnitTest.m; sourceTree = "<group>"; };
 		638946CF103B2280007C9CC9 /* JKJSONExampleUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJSONExampleUnitTest.m; sourceTree = "<group>"; };
 		638946D0103B2280007C9CC9 /* JKJSONMaxDepthUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJSONMaxDepthUnitTest.m; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		630BB0C41034C3780064E3AE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				630BB0AA1034C3000064E3AE /* UXNSObject+JSON.m */,
-				630BB0AC1034C3000064E3AE /* UXNSString+JSON.m */,
+				6340D67010D029C700324F4D /* JKNSObject+JSON.m */,
+				6340D67110D029C700324F4D /* JKNSString+JSON.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -677,12 +677,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630BB0AE1034C3000064E3AE /* UXNSObject+JSON.m in Sources */,
-				630BB0B01034C3000064E3AE /* UXNSString+JSON.m in Sources */,
 				630BB0BA1034C30A0064E3AE /* JKJSON.m in Sources */,
 				630BB0BC1034C30A0064E3AE /* JKJSONBase.m in Sources */,
 				630BB0BE1034C30A0064E3AE /* JKJSONParser.m in Sources */,
 				630BB0C01034C30A0064E3AE /* JKJSONWriter.m in Sources */,
+				6340D67210D029C700324F4D /* JKNSObject+JSON.m in Sources */,
+				6340D67310D029C700324F4D /* JKNSString+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
