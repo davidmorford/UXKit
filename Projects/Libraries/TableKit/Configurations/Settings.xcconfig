@@ -1,0 +1,8 @@
+
+//
+// TableKit/Configurations/Settings.xcconfig
+//
+
+#include "../../../Configurations/Settings.xcconfig"
+
+INFOPLIST_ORGANIZATION_NAME	= Semantap
