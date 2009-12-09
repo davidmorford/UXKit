@@ -13,7 +13,9 @@
 #import <UXKit/UXNSObject.h>
 #import <UXKit/UXNSString.h>
 #import <UXKit/UXNSDate.h>
+#import <UXKit/UXNSData.h>
 #import <UXKit/UXNSArray.h>
+#import <UXKit/UXNSDictionary.h>
 
 #import <UXKit/UIXApplication.h>
 #import <UXKit/UIXColor.h>
@@ -28,6 +30,7 @@
 #import <UXKit/UIXWebView.h>
 #import <UXKit/UIXToolbar.h>
 #import <UXKit/UIXWindow.h>
+//#import <UXKit/UXDebug.h>
 
 #pragma mark Logging
 
@@ -52,9 +55,8 @@
 
 #pragma mark Errors
 
-#define UX_ERROR_DOMAIN		@"semantap.com"
-#define UX_EC_INVALID_IMAGE	101
-
+extern NSString * const UXKitErrorDomain;
+extern NSUInteger const UXKitInvalidImageErrorCode;
 
 #pragma mark Common Dimensions
 
@@ -79,11 +81,12 @@
 
 #pragma mark Style
 
-#define UXSTYLE(_SELECTOR)				[[UXStyleSheet globalStyleSheet] styleWithSelector:@#_SELECTOR]
-#define UXSTYLESTATE(_SELECTOR, _STATE)	[[UXStyleSheet globalStyleSheet] styleWithSelector:@#_SELECTOR forState:_STATE]
-#define UXSTYLESHEET					((id)[UXStyleSheet globalStyleSheet])
-#define UXSTYLEVAR(_VARNAME)			[UXSTYLESHEET _VARNAME]
-#define UXIMAGE(_URL)					[[UXURLCache sharedCache] imageForURL:_URL]
+#define UXSTYLEWITHSELECTOR(_SELECTOR)				[[UXStyleSheet globalStyleSheet] styleWithSelector:@#_SELECTOR]
+#define UXSTYLEWITHSELECTORSTATE(_SELECTOR, _STATE)	[[UXStyleSheet globalStyleSheet] styleWithSelector:@#_SELECTOR forState:_STATE]
+#define UXSTYLESHEET								((id)[UXStyleSheet globalStyleSheet])
+#define UXSTYLESHEETPROPERTY(_VARNAME)				[UXSTYLESHEET _VARNAME]
+
+#define UXIMAGE(_URL)								[[UXURLCache sharedCache] imageForURL:_URL]
 
 typedef NSUInteger UXPosition;
 enum {
@@ -115,7 +118,13 @@ enum {
 /*!
 @abstract 1 week 
 */
-#define UX_DEFAULT_CACHE_EXPIRATION_AGE	(60 * 60 * 24 *7)
+#define UX_DEFAULT_CACHE_EXPIRATION_AGE		(60 * 60 * 24 *7)
+
+/*!
+@abstract Never
+*/
+#define UX_CACHE_EXPIRATION_AGE_NEVER		(1.0 / 0.0)
+
 
 #pragma mark Time
 
@@ -147,7 +156,7 @@ enum {
 #define UX_SAFE_RELEASE(__POINTER)		{ [__POINTER release];  __POINTER = nil; }
 #define UX_SAFE_AUTORELEASE(__POINTER)	{ [__POINTER autorelease]; __POINTER = nil; }
 #define UX_INVALIDATE_TIMER(__TIMER)	{ [__TIMER invalidate]; __TIMER   = nil; }
-
+#define UX_RELEASE_CF_SAFELY(__REF)		{ if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }
 
 #pragma mark Collections
 
@@ -217,6 +226,8 @@ UXScreenBounds();
 
 /*!
 @abstract Tests if the keyboard is visible.
+@discussion Operates on the assumption that the keyboard is visible if 
+and only if there is a first responder; i.e. a control responding to key events.
 */
 BOOL 
 UXIsKeyboardVisible();

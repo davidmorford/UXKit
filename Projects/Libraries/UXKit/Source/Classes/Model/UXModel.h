@@ -8,6 +8,8 @@
 
 #import <UXKit/UXURLRequest.h>
 
+// This protocol is about state, seemingly network based...
+
 /*!
 @protocol UXModel <NSObject>
 @abstract Describes the state of an object that can be loaded from a remote source.
@@ -69,8 +71,9 @@ of network activity in an object.
 @optional
 	-(void) modelDidStartLoad:(id <UXModel>)aModel;
 	-(void) modelDidFinishLoad:(id <UXModel>)aModel;
-	-(void) model:(id <UXModel>)aModel didFailLoadWithError:(NSError *)error;
 	-(void) modelDidCancelLoad:(id <UXModel>)aModel;
+
+	-(void) model:(id <UXModel>)aModel didFailLoadWithError:(NSError *)error;
 
 	/*!
 	@abstract Informs the delegate that the model has changed in some fundamental way.

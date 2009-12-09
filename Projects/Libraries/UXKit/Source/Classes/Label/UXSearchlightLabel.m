@@ -58,7 +58,7 @@
 		if (self = [super initWithFrame:frame]) {
 			_timer		= nil;
 			self.text	= @"";
-			self.font	= UXSTYLEVAR(font);
+			self.font	= UXSTYLESHEETPROPERTY(font);
 			self.textColor			= [UIColor colorWithWhite:0.25 alpha:1];
 			self.spotlightColor		= [UIColor whiteColor];
 			self.textAlignment		= UITextAlignmentLeft;

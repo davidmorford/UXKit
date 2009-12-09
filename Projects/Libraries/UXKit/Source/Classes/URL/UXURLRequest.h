@@ -39,6 +39,7 @@
 	BOOL _respondedFromCache;
 //	BOOL postShouldSendMultipartFormData;
 	NSURLCredential *_credential;
+	BOOL _filterPasswordLogging;
 }
 
 	/*!
@@ -106,8 +107,12 @@
 	@property (nonatomic) NSInteger totalBytesExpected;
 
 	@property (nonatomic) BOOL respondedFromCache;
-	
-//	@property (nonatomic) BOOL postShouldSendMultipartFormData;
+
+	/*!
+	@abstract Whether parameters named "password" should be suppressed in log messages.
+	*/
+	@property (nonatomic, assign) BOOL filterPasswordLogging;
+
 
 	/*!
 	@abstract The credential to use for an authentication challenge
@@ -153,6 +158,14 @@
 	@result YES if the request was loaded synchronously from the cache.
 	*/
 	-(BOOL) send;
+
+	/*!
+	@abstract Attempts to send a Synchronous request.
+	@discussion	The request will happen Synchronously, regardless of whether the data is being grabbed from
+	the network or from the cache.
+	@result YES if the request was loaded from the cache.
+	*/
+	-(BOOL) sendSynchronously;
 
 	/*!
 	@abstract Cancels the request. If there are multiple requests going to the same URL as this request, 

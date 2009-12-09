@@ -13,6 +13,8 @@ static const CGFloat kSpringLoadFraction			= 0.18;
 
 static const NSTimeInterval kEditHoldTimeInterval	= 1;
 static const NSTimeInterval kSpringLoadTimeInterval = 0.5;
+static const NSTimeInterval kWobbleTime				= 0.07;
+
 static const NSInteger		kPromptTag				= 997;
 static const NSInteger		kDefaultColumnCount		= 3;
 
@@ -384,6 +386,47 @@ static const NSInteger		kDefaultColumnCount		= 3;
 		static BOOL wobblesLeft = NO;
 		
 		if (_editing) {
+			CGFloat rotation = (kWobbleRadians * M_PI) / 180.0;
+			CGAffineTransform wobbleLeft	= CGAffineTransformMakeRotation(rotation);
+			CGAffineTransform wobbleRight	= CGAffineTransformMakeRotation(-rotation);
+			
+			[UIView beginAnimations:nil context:nil];
+			
+			NSInteger i = 0;
+			NSInteger nWobblyButtons = 0;
+			for (NSArray *buttonPage in _buttons) {
+				for (UXLauncherButton *button in buttonPage) {
+					if (button != _dragButton) {
+						++nWobblyButtons;
+						if (i % 2) {
+							button.transform = wobblesLeft ? wobbleRight : wobbleLeft;
+						}
+						else {
+							button.transform = wobblesLeft ? wobbleLeft : wobbleRight;
+						}
+					}
+					++i;
+				}
+			}
+			
+			if (nWobblyButtons >= 1) {
+				[UIView setAnimationDuration:kWobbleTime];
+				[UIView setAnimationDelegate:self];
+				[UIView setAnimationDidStopSelector:@selector(wobble)];
+				wobblesLeft = !wobblesLeft;
+			}
+			else {
+				[NSObject cancelPreviousPerformRequestsWithTarget:self];
+				[self performSelector:@selector(wobble) withObject:nil afterDelay:kWobbleTime];
+			}
+			[UIView commitAnimations];
+		}
+	}
+
+	/*-(void) wobble {
+		static BOOL wobblesLeft = NO;
+		
+		if (_editing) {
 			CGFloat rotation				= (kWobbleRadians * M_PI) / 180.0;
 			CGAffineTransform wobbleLeft	= CGAffineTransformMakeRotation(rotation);
 			CGAffineTransform wobbleRight	= CGAffineTransformMakeRotation(-rotation);
@@ -411,7 +454,7 @@ static const NSInteger		kDefaultColumnCount		= 3;
 			[UIView commitAnimations];
 			wobblesLeft = !wobblesLeft;
 		}
-	}
+	}*/
 
 	-(void) editHoldTimer:(NSTimer *)timer {
 		_editHoldTimer = nil;
@@ -487,7 +530,7 @@ static const NSInteger		kDefaultColumnCount		= 3;
 		}
 		
 		CGFloat springLoadDistance	= _dragButton.width * kSpringLoadFraction;
-		UXLOG(@"%f < %f", springLoadDistance, _dragButton.center.x);
+		//UXLOG(@"%f < %f", springLoadDistance, _dragButton.center.x);
 		BOOL goToPreviousPage		= _dragButton.center.x - springLoadDistance < 0;
 		BOOL goToNextPage			= ((_scrollView.width - _dragButton.center.x) - springLoadDistance) < 0;
 		if (goToPreviousPage || goToNextPage) {
@@ -623,7 +666,7 @@ static const NSInteger		kDefaultColumnCount		= 3;
 	
 	#pragma mark API
 
-	-(NSArray *)pages {
+	-(NSArray *) pages {
 		return _pages;
 	}
 

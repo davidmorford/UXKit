@@ -94,7 +94,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 			_tabItems			= nil;
 			_tabViews			= [[NSMutableArray alloc] init];
 			_tabStyle			= nil;
-			self.style			= UXSTYLE(tabBar);
+			self.style			= UXSTYLEWITHSELECTOR(tabBar);
 			self.tabStyle		= @"tab:";
 		}
 		return self;
@@ -214,7 +214,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 		if (_scrollView.contentOffset.x < (_scrollView.contentSize.width - self.width)) {
 			if (!_overflowRight) {
 				_overflowRight							= [[UXView alloc] init];
-				_overflowRight.style					= UXSTYLE(tabOverflowRight);
+				_overflowRight.style					= UXSTYLEWITHSELECTOR(tabOverflowRight);
 				_overflowRight.userInteractionEnabled	= NO;
 				_overflowRight.backgroundColor			= [UIColor clearColor];
 				[_overflowRight sizeToFit];
@@ -230,7 +230,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 		if (_scrollView.contentOffset.x > 0) {
 			if (!_overflowLeft) {
 				_overflowLeft							= [[UXView alloc] init];
-				_overflowLeft.style						= UXSTYLE(tabOverflowLeft);
+				_overflowLeft.style						= UXSTYLEWITHSELECTOR(tabOverflowLeft);
 				_overflowLeft.userInteractionEnabled	= NO;
 				_overflowLeft.backgroundColor			= [UIColor clearColor];
 				[_overflowLeft sizeToFit];
@@ -266,7 +266,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 			_scrollView.showsHorizontalScrollIndicator	= NO;
 			[self addSubview:_scrollView];
 
-			self.style		= UXSTYLE(tabStrip);
+			self.style		= UXSTYLEWITHSELECTOR(tabStrip);
 			self.tabStyle	= @"tabRound:";
 		}
 		return self;
@@ -372,7 +372,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 
 	-(id) initWithFrame:(CGRect)frame  {
 		if (self = [super initWithFrame:frame]) {
-			self.style		= UXSTYLE(tabGrid);
+			self.style		= UXSTYLEWITHSELECTOR(tabGrid);
 			_columnCount	= 3;
 		}
 		return self;
@@ -428,7 +428,7 @@ static const NSInteger	kMaxBadgeNumber = 99;
 		if (_tabItem.badgeNumber) {
 			if (!_badge) {
 				_badge							= [[UXLabel alloc] init];
-				_badge.style					= UXSTYLE(badge);
+				_badge.style					= UXSTYLEWITHSELECTOR(badge);
 				_badge.backgroundColor			= [UIColor clearColor];
 				_badge.userInteractionEnabled	= NO;
 				[self addSubview:_badge];

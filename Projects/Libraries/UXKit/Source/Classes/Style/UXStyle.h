@@ -329,11 +329,14 @@
 */
 @interface UXReflectiveFillStyle : UXStyle {
 	UIColor *_color;
+	BOOL _withBottomHighlight;
 }
 
 	@property (nonatomic, retain) UIColor *color;
+	@property (nonatomic, assign) BOOL withBottomHighlight;
 
 	+(UXReflectiveFillStyle *) styleWithColor:(UIColor *)aColor next:(UXStyle *)aStyle;
+	+(UXReflectiveFillStyle *) styleWithColor:(UIColor *)aColor withBottomHighlight:(BOOL)flag next:(UXStyle *)aStyle;
 
 @end
 
@@ -390,6 +393,22 @@
 	@property (nonatomic) CGFloat width;
 
 	+(UXSolidBorderStyle *) styleWithColor:(UIColor *)aColor width:(CGFloat)aWidth next:(UXStyle *)aStyle;
+
+@end
+
+#pragma mark -
+
+@interface UXHighlightBorderStyle : UXStyle {
+	UIColor *_color;
+	UIColor *_highlightColor;
+	CGFloat _width;
+}
+
+	@property (nonatomic, retain) UIColor *color;
+	@property (nonatomic, retain) UIColor *highlightColor;
+	@property (nonatomic) CGFloat width;
+
+	+(UXHighlightBorderStyle *) styleWithColor:(UIColor *)aColor highlightColor:(UIColor *)aHighlightColor width:(CGFloat)aWidth next:(UXStyle *)aStyle;
 
 @end
 

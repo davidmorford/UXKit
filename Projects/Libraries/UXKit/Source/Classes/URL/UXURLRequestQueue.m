@@ -361,6 +361,42 @@ static UXURLRequestQueue *gMainQueue = nil;
 		return NO;
 	}
 
+	-(BOOL) sendSynchronousRequest:(UXURLRequest *)aRequest {
+		if ([self loadRequestFromCache:aRequest]) {
+			return YES;
+		}
+		
+		for (id <UXURLRequestDelegate> requestDelegate in aRequest.delegates) {
+			if ([requestDelegate respondsToSelector:@selector(requestDidStartLoad:)]) {
+				[requestDelegate requestDidStartLoad:aRequest];
+			}
+		}
+		
+		if (!aRequest.URL.length) {
+			NSError *error = [NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorBadURL userInfo:nil];
+			for (id <UXURLRequestDelegate> requestDelegate in aRequest.delegates) {
+				if ([requestDelegate respondsToSelector:@selector(request:didFailLoadWithError:)]) {
+					[requestDelegate request:aRequest didFailLoadWithError:error];
+				}
+			}
+			return NO;
+		}
+		
+		aRequest.isLoading = YES;
+		
+		// Finally, create a new loader and hit the network (unless we are suspended)
+		UXURLRequestLoader *loader = [[UXURLRequestLoader alloc] initForRequest:aRequest queue:self];
+		[_loaders setObject:loader forKey:aRequest.cacheKey];
+		
+		// Should be decremented eventually by loadSynchronously
+		++_totalLoading;
+		
+		[loader loadSynchronously:[NSURL URLWithString:aRequest.URL]];
+		UX_SAFE_RELEASE(loader);
+		
+		return NO;
+	}
+
 	-(void) cancelRequest:(UXURLRequest *)request {
 		if (request) {
 			UXURLRequestLoader *loader = [_loaders objectForKey:request.cacheKey];

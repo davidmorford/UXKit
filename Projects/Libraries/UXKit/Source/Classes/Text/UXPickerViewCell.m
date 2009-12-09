@@ -20,8 +20,8 @@ static CGFloat kMaxWidth = 250;
 			
 			_labelView						= [[UILabel alloc] init];
 			_labelView.backgroundColor		= [UIColor clearColor];
-			_labelView.textColor			= UXSTYLEVAR(textColor);
-			_labelView.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			_labelView.textColor			= UXSTYLESHEETPROPERTY(textColor);
+			_labelView.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			_labelView.lineBreakMode		= UILineBreakModeTailTruncation;
 			
 			[self addSubview:_labelView];
@@ -51,10 +51,10 @@ static CGFloat kMaxWidth = 250;
 
 	-(UXStyle *) style {
 		if (self.selected) {
-			return UXSTYLESTATE(pickerCell :, UIControlStateSelected);
+			return UXSTYLEWITHSELECTORSTATE(pickerCell :, UIControlStateSelected);
 		}
 		else {
-			return UXSTYLESTATE(pickerCell :, UIControlStateNormal);
+			return UXSTYLEWITHSELECTORSTATE(pickerCell :, UIControlStateNormal);
 		}
 	}
 

@@ -27,15 +27,15 @@ static CGFloat kHPadding	= 10;
 			
 			_titleView						= [[UILabel alloc] init];
 			_titleView.backgroundColor		= [UIColor clearColor];
-			_titleView.textColor			= UXSTYLEVAR(tableErrorTextColor);
-			_titleView.font					= UXSTYLEVAR(errorTitleFont);
+			_titleView.textColor			= UXSTYLESHEETPROPERTY(tableErrorTextColor);
+			_titleView.font					= UXSTYLESHEETPROPERTY(errorTitleFont);
 			_titleView.textAlignment		= UITextAlignmentCenter;
 			[self addSubview:_titleView];
 			
 			_subtitleView					= [[UILabel alloc] init];
 			_subtitleView.backgroundColor	= [UIColor clearColor];
-			_subtitleView.textColor			= UXSTYLEVAR(tableErrorTextColor);
-			_subtitleView.font				= UXSTYLEVAR(errorSubtitleFont);
+			_subtitleView.textColor			= UXSTYLESHEETPROPERTY(tableErrorTextColor);
+			_subtitleView.font				= UXSTYLESHEETPROPERTY(errorSubtitleFont);
 			_subtitleView.textAlignment		= UITextAlignmentCenter;
 			_subtitleView.numberOfLines		= 0;
 			[self addSubview:_subtitleView];

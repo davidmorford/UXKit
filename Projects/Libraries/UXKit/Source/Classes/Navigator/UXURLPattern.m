@@ -109,32 +109,32 @@ UXURLArgumentTypeForProperty(Class cls, NSString *propertyName) {
 					return @"";
 				}
 				case UXURLArgumentTypeInteger: {
-					int val;
+					int val = 0;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%d", val];
 				}
 				case UXURLArgumentTypeLongLong: {
-					long long val;
+					long long val = 0;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%lld", val];
 				}
 				case UXURLArgumentTypeFloat: {
-					float val;
+					float val = 0.0;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%f", val];
 				}
 				case UXURLArgumentTypeDouble: {
-					double val;
+					double val = 0.0;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%f", val];
 				}
 				case UXURLArgumentTypeBool: {
-					BOOL val;
+					BOOL val = FALSE;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%d", val];
 				}
 				default: {
-					id val;
+					id val = nil;
 					[invocation getReturnValue:&val];
 					return [NSString stringWithFormat:@"%@", val];
 				}

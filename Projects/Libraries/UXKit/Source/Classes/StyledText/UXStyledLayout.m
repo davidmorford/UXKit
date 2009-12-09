@@ -38,7 +38,7 @@
 
 	-(UXStyle *) linkStyle {
 		if (!_linkStyle) {
-			_linkStyle = [UXSTYLE(linkText:) retain];
+			_linkStyle = [UXSTYLEWITHSELECTOR(linkText:) retain];
 		}
 		return _linkStyle;
 	}
@@ -703,7 +703,7 @@
 
 	-(UIFont *) font {
 		if (!_font) {
-			self.font = UXSTYLEVAR(font);
+			self.font = UXSTYLESHEETPROPERTY(font);
 		}
 		return _font;
 	}

@@ -224,6 +224,35 @@ NSInteger const UXURLRequestLoaderMaxRetries = 2;
 		}
 	}
 
+	-(void) loadSynchronously:(NSURL *)aURL {
+		// This method simulates an asynchronous network connection. If your delegate isn't being called
+		// correctly, this would be the place to start tracing for errors.
+		UXNetworkRequestStarted();
+		
+		UXURLRequest *request		= _requests.count == 1 ? [_requests objectAtIndex:0] : nil;
+		NSURLRequest *URLRequest	= [_queue createNSURLRequest:request URL:aURL];
+		
+		NSHTTPURLResponse *response = nil;
+		NSError *error = nil;
+		NSData *data = [NSURLConnection sendSynchronousRequest:URLRequest
+											 returningResponse:&response
+														 error:&error];
+		
+		if (nil != error) {
+			UXNetworkRequestStopped();
+			UX_SAFE_RELEASE(_responseData);
+			UX_SAFE_RELEASE(_connection);
+			[_queue performSelector:@selector(loader:didFailLoadWithError:) 
+						 withObject:self 
+						 withObject:error];
+		}
+		else {
+			[self connection:nil didReceiveResponse:(NSHTTPURLResponse *)response];
+			[self connection:nil didReceiveData:data];
+			[self connectionDidFinishLoading:nil];
+		}
+	}
+
 	-(void) cancel {
 		NSArray *requestsToCancel = [_requests copy];
 		for (id request in requestsToCancel) {

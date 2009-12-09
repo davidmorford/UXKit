@@ -29,7 +29,7 @@
 	-(void) loadView {
 		[super loadView];
 		_launcherView					= [[UXLauncherView alloc] initWithFrame:self.view.bounds];
-		_launcherView.backgroundColor	= UXSTYLEVAR(launcherBackgroundColor);
+		_launcherView.backgroundColor	= UXSTYLESHEETPROPERTY(launcherBackgroundColor);
 		self.view						= _launcherView;
 	}
 

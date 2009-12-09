@@ -34,7 +34,7 @@
 			if (!_captionLabel) {
 				_captionLabel			= [[UXLabel alloc] init];
 				_captionLabel.opaque	= NO;
-				_captionLabel.style		= _captionStyle ? _captionStyle : UXSTYLE(photoCaption);
+				_captionLabel.style		= _captionStyle ? _captionStyle : UXSTYLEWITHSELECTOR(photoCaption);
 				_captionLabel.alpha		= _hidesCaption ? 0 : 1;
 				[self addSubview:_captionLabel];
 			}
@@ -248,7 +248,7 @@
 		if (text) {
 			if (!_statusLabel) {
 				_statusLabel		= [[UXLabel alloc] init];
-				_statusLabel.style	= UXSTYLE(photoStatusLabel);
+				_statusLabel.style	= UXSTYLEWITHSELECTOR(photoStatusLabel);
 				_statusLabel.opaque = NO;
 				[self addSubview:_statusLabel];
 			}

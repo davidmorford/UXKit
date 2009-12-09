@@ -8,6 +8,8 @@
 
 #import <UXKit/UXGlobal.h>
 
+extern NSString * const UXStyleSheetChangedNotification;
+
 @class UXStyle;
 
 /*!

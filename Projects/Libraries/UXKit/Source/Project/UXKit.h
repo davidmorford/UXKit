@@ -33,7 +33,7 @@
 #import <UXKit/UXPopupViewController.h>
 #import <UXKit/UXAlertViewController.h>
 #import <UXKit/UXActionSheetController.h>
-#import <UXKit/UXPanelViewController.h>
+#import <UXKit/UXInputPanelController.h>
 
 #import <UXKit/UXWebController.h>
 #import <UXKit/UXPostController.h>

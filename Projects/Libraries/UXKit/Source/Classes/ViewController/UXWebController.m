@@ -2,6 +2,8 @@
 #import <UXKit/UXWebController.h>
 #import <UXKit/UXDefaultStyleSheet.h>
 #import <UXKit/UXURLCache.h>
+#import <UXKit/UXNavigator.h>
+#import <UXKit/UXURLMap.h>
 
 @implementation UXWebController
 
@@ -136,7 +138,7 @@
 		
 		_toolbar						= [[UIToolbar alloc] initWithFrame: CGRectMake(0, self.view.height - UXToolbarHeight(), self.view.width, UXToolbarHeight())];
 		_toolbar.autoresizingMask		= UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
-		_toolbar.tintColor				= UXSTYLEVAR(navigationBarTintColor);
+		_toolbar.tintColor				= UXSTYLESHEETPROPERTY(navigationBarTintColor);
 		_toolbar.items					= [NSArray arrayWithObjects: _backButton, space, _forwardButton, space, _refreshButton, space, actionButton, nil];
 		
 		[self.view addSubview:_toolbar];
@@ -183,11 +185,15 @@
 	#pragma mark (UIXViewController)
 
 	-(BOOL) persistView:(NSMutableDictionary *)state {
-		NSString *URL = self.URL.absoluteString;
-		if (URL.length) {
-			[state setObject:URL forKey:@"URL"];
+		NSString *URLString = self.URL.absoluteString;
+		if (URLString.length) {
+			[state setObject:URLString forKey:@"URL"];
+			return YES;
 		}
-		return [super persistView:state];
+		else {
+			return NO;
+		}
+		//return [super persistView:state];
 	}
 
 	-(void) restoreView:(NSDictionary *)state {
@@ -201,6 +207,13 @@
 	#pragma mark <UIWebViewDelegate>
 
 	-(BOOL) webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+		if ([[UXNavigator navigator].URLMap isAppURL:request.URL]) {
+			[_loadingURL release];
+			_loadingURL = [[NSURL URLWithString:@"about:blank"] retain];
+			[[UIApplication sharedApplication] openURL:request.URL];
+			return FALSE;
+		}
+		
 		[_loadingURL release];
 		_loadingURL				= [request.URL retain];
 		_backButton.enabled		= [_webView canGoBack];

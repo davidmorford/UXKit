@@ -368,7 +368,7 @@ static const CGFloat kVPadding = 7;
 
 	-(UIFont *) font {
 		if (!_font) {
-			_font = [UXSTYLEVAR(buttonFont) retain];
+			_font = [UXSTYLESHEETPROPERTY(buttonFont) retain];
 		}
 		return _font;
 	}

@@ -49,6 +49,7 @@ extern NSInteger const UXURLRequestLoaderMaxRetries;
 	-(void) removeRequest:(UXURLRequest *)aRequest;
 
 	-(void) load:(NSURL *)aURL;
+	-(void) loadSynchronously:(NSURL*)aURL;
 	
 	-(void) cancel;
 	-(BOOL) cancel:(UXURLRequest *)aRequest;

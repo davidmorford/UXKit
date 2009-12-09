@@ -84,7 +84,7 @@
 
 	-(UIFont *) font {
 		if (!_font) {
-			_font = [UXSTYLEVAR(font) retain];
+			_font = [UXSTYLESHEETPROPERTY(font) retain];
 		}
 		return _font;
 	}

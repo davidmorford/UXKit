@@ -95,6 +95,12 @@
 	-(BOOL) sendRequest:(UXURLRequest *)aRequest;
 
 	/*!
+	@abstract Synchronously loads a request from the cache or the network if it is not in the cache.
+	@result YES if the request was loaded from the cache.
+	*/
+	-(BOOL) sendSynchronousRequest:(UXURLRequest *)request;
+
+	/*!
 	@abstract Cancels a request that is in progress.
 	*/
 	-(void) cancelRequest:(UXURLRequest *)aRequest;

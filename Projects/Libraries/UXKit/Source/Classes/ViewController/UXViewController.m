@@ -92,7 +92,7 @@
 			_hasViewAppeared			= NO;
 			_isViewAppearing			= NO;
 			_autoresizesForKeyboard		= NO;
-			self.navigationBarTintColor = UXSTYLEVAR(navigationBarTintColor);
+			self.navigationBarTintColor = UXSTYLESHEETPROPERTY(navigationBarTintColor);
 		}
 		return self;
 	}
@@ -103,7 +103,6 @@
 
 	-(void) dealloc {
 		UXLOG(@"DEALLOC %@", self);
-		
 		[[UXURLRequestQueue mainQueue] cancelRequestsWithDelegate:self];
 		
 		UX_SAFE_RELEASE(_navigationBarTintColor);
@@ -111,14 +110,7 @@
 		
 		// Removes keyboard notification observers for
 		self.autoresizesForKeyboard = NO;
-		
-		// You would think UIViewController would call this in dealloc, but it doesn't!
-		// I would prefer not to have to redundantly put all view releases in dealloc and
-		// viewDidUnload, so my solution is just to call viewDidUnload here.
-		// DPM - This is WRONG! According to Apple and myself. DO NOT DO THIS!
-		//[self viewDidUnload];
 		UX_SAFE_RELEASE(_searchController);
-		
 		[super dealloc];
 	}
 
@@ -140,7 +132,7 @@
 		self.view						= [[[UIView alloc] initWithFrame:frame] autorelease];
 		self.view.autoresizesSubviews	= YES;
 		self.view.autoresizingMask		= UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-		self.view.backgroundColor		= UXSTYLEVAR(backgroundColor);
+		self.view.backgroundColor		= UXSTYLESHEETPROPERTY(backgroundColor);
 	}
 
 	-(void) viewDidUnload {
@@ -187,7 +179,8 @@
 			NSMutableDictionary *state = [[[NSMutableDictionary alloc] init] autorelease]; // ???:
 			[self persistView:state];
 			self.frozenState = state;
-			
+			// ???:
+			UX_SAFE_RELEASE(state);
 			// This will come around to calling viewDidUnload
 			[super didReceiveMemoryWarning];
 			

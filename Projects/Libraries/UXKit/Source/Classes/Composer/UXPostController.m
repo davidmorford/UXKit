@@ -178,14 +178,14 @@ static const CGFloat kMarginY = 6;
 		
 		_screenView						= [[UXView alloc] init];
 		_screenView.backgroundColor		= [UIColor clearColor];
-		_screenView.style				= UXSTYLE(postTextEditor);
+		_screenView.style				= UXSTYLEWITHSELECTOR(postTextEditor);
 		_screenView.autoresizingMask	= UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		_screenView.autoresizesSubviews = YES;
 		[self.view addSubview:_screenView];
 		
 		_textView							= [[UITextView alloc] init];
 		_textView.delegate					= self;
-		_textView.font						= UXSTYLEVAR(font);
+		_textView.font						= UXSTYLESHEETPROPERTY(font);
 		_textView.textColor					= [UIColor blackColor];
 		_textView.contentInset				= UIEdgeInsetsMake(0, 4, 0, 4);
 		_textView.keyboardAppearance		= UIKeyboardAppearanceAlert;

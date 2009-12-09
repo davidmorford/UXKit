@@ -60,6 +60,7 @@
 	}
 
 	-(void) scrollFirstResponderIntoView {
+		// UITableViewController handles this correctly in 3.0... Does it require UITVC or just UITV? Check docs...
 		UIView *responder		= [self.window findFirstResponder];
 		UITableViewCell *cell	= (UITableViewCell *)[responder ancestorOrSelfWithClass:[UITableViewCell class]];
 		if (cell) {

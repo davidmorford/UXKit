@@ -1245,20 +1245,28 @@ static const NSInteger kDefaultLightSource = 125;
 @implementation UXReflectiveFillStyle
 
 	@synthesize color = _color;
+	@synthesize withBottomHighlight = _withBottomHighlight;
 
 	#pragma mark Constructor
 
 	+(UXReflectiveFillStyle *) styleWithColor:(UIColor *)color next:(UXStyle *)next {
 		UXReflectiveFillStyle *style	= [[[self alloc] initWithNext:next] autorelease];
 		style.color						= color;
+		style.withBottomHighlight		= NO;
 		return style;
 	}
 
+	+(UXReflectiveFillStyle *) styleWithColor:(UIColor *)aColor withBottomHighlight:(BOOL)flag next:(UXStyle *)aStyle {
+		UXReflectiveFillStyle *style	= [[[self alloc] initWithNext:aStyle] autorelease];
+		style.color						= aColor;
+		style.withBottomHighlight		= flag;
+		return style;
+	}
 
 	#pragma mark @UXStyle
 
-	-(id) initWithNext:(UXStyle *)next {
-		if (self = [super initWithNext:next]) {
+	-(id) initWithNext:(UXStyle *)aStyle {
+		if (self = [super initWithNext:aStyle]) {
 			_color = nil;
 		}
 		return self;
@@ -1270,6 +1278,7 @@ static const NSInteger kDefaultLightSource = 125;
 	-(id) initWithCoder:(NSCoder *)decoder {
 		BEGIN_DECODER();
 			DECODE_OBJ(@"color");
+			//DECODE_BOOL(@"withBottomHighlight");
 		END_DECODER();
 		return self;
 	}
@@ -1277,59 +1286,60 @@ static const NSInteger kDefaultLightSource = 125;
 	-(void) encodeWithCoder:(NSCoder *)encoder {
 		BEGIN_ENCODER();
 			ENCODE_OBJ(@"color");
+			//ENCODE_BOOL(@"withBottomHighlight");
 		END_ENCODER();
-	}
-
-
-	#pragma mark <NSObject>
-
-	-(void) dealloc {
-		UX_SAFE_RELEASE(_color);
-		[super dealloc];
 	}
 
 
 	#pragma mark @UXStyle
 
 	-(void) draw:(UXStyleContext *)context {
-		CGContextRef ctx = UIGraphicsGetCurrentContext();
-		CGRect rect = context.frame;
+		CGContextRef ctx	= UIGraphicsGetCurrentContext();
+		CGRect rect			= context.frame;
 		
 		CGContextSaveGState(ctx);
 		[context.shape addToPath:rect];
 		CGContextClip(ctx);
 		
+		// Draw the background color
 		[_color setFill];
 		CGContextFillRect(ctx, rect);
 		
-		// These numbers are totally biased towards the colors I tested with.  I need to figure out
-		// a formula that works well for all colors
-		UIColor *lighter = nil, *darker = nil;
-		if (_color.value < 0.5) {
-			lighter = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation - 0.5), ZEROLIMIT(_color.value + 0.25));
-			darker = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation - 0.1), ZEROLIMIT(_color.value + 0.1));
-		}
-		else if (_color.saturation > 0.6) {
-			lighter = HSVCOLOR(_color.hue, _color.saturation * 0.3, _color.value * 1);
-			darker = HSVCOLOR(_color.hue, _color.saturation * 0.9, _color.value + 0.05);
+		// The highlights are drawn using an overlayed, semi-transparent gradient.
+		// The values here are absolutely arbitrary. They were nabbed by inspecting the colors of
+		// the "Delete Contact" button in the Contacts app.
+		UIColor *topStartHighlight	= [UIColor colorWithWhite:1.0 alpha:0.685];
+		UIColor *topEndHighlight	= [UIColor colorWithWhite:1.0 alpha:0.13];
+		UIColor *clearColor			= [UIColor colorWithWhite:1.0 alpha:0.0];
+		
+		UIColor *botEndHighlight;
+		if ( _withBottomHighlight ) {
+			botEndHighlight = [UIColor colorWithWhite:1.0 alpha:0.27];
 		}
 		else {
-			lighter = HSVCOLOR(_color.hue, _color.saturation * 0.4, _color.value * 1.2);
-			darker = HSVCOLOR(_color.hue, _color.saturation * 0.9, _color.value + 0.05);
+			botEndHighlight = clearColor;
 		}
-		//  //UIColor* lighter = [_color multiplyHue:1 saturation:0.5 value:1.35];
-		//  //UIColor* darker = [_color multiplyHue:1 saturation:0.88 value:1.05];
-		UIColor *colors[] = { lighter, darker};
 		
-		CGGradientRef gradient = [self newGradientWithColors:colors count:2];
-		CGContextDrawLinearGradient(ctx, gradient, CGPointMake(rect.origin.x, rect.origin.y),
-									CGPointMake(rect.origin.x, rect.origin.y + rect.size.height * 0.5),
-									kCGGradientDrawsBeforeStartLocation);
+		UIColor *colors[] = {
+			topStartHighlight, topEndHighlight,
+			clearColor,
+			clearColor, botEndHighlight
+		};
+		CGFloat locations[] = {0, 0.5, 0.5, 0.6, 1.0};
+		
+		CGGradientRef gradient = [self newGradientWithColors:colors locations:locations count:5];
+		CGContextDrawLinearGradient(ctx, gradient, CGPointMake(rect.origin.x, rect.origin.y), CGPointMake(rect.origin.x, rect.origin.y + rect.size.height), 0);
 		CGGradientRelease(gradient);
-		
 		CGContextRestoreGState(ctx);
-		
+
 		return [self.next draw:context];
+	}
+
+	#pragma mark <NSObject>
+
+	-(void) dealloc {
+		UX_SAFE_RELEASE(_color);
+		[super dealloc];
 	}
 
 @end
@@ -1550,6 +1560,76 @@ static const NSInteger kDefaultLightSource = 125;
 		CGContextRestoreGState(ctx);
 		
 		context.frame = CGRectInset(context.frame, _width, _width);
+		return [self.next draw:context];
+	}
+
+@end
+
+#pragma mark -
+
+@implementation UXHighlightBorderStyle
+
+	@synthesize color = _color;
+	@synthesize highlightColor = _highlightColor;
+	@synthesize width = _width;
+
+	#pragma mark Constructor
+
+	+(UXHighlightBorderStyle *) styleWithColor:(UIColor *)aColor highlightColor:(UIColor *)aHighlightColor width:(CGFloat)aWidth next:(UXStyle *)aStyle {
+		UXHighlightBorderStyle *style = [[[self alloc] initWithNext:aStyle] autorelease];
+		style.color				= aColor;
+		style.highlightColor	= aHighlightColor;
+		style.width				= aWidth;
+		return style;
+	}
+
+
+	#pragma mark Initialzier
+
+	-(id) initWithNext:(UXStyle *)aStyle {
+		if (self = [super initWithNext:aStyle]) {
+			_color			= nil;
+			_highlightColor = nil;
+			_width			= 1;
+		}
+		return self;
+	}
+
+	-(void) dealloc {
+		UX_SAFE_RELEASE(_color);
+		UX_SAFE_RELEASE(_highlightColor);
+		[super dealloc];
+	}
+
+	#pragma mark UXStyle
+
+	-(void) draw:(UXStyleContext *)context {
+		
+		CGContextRef ctx = UIGraphicsGetCurrentContext();
+		CGContextSaveGState(ctx);
+		
+		{
+			CGRect strokeRect = CGRectInset(context.frame, (_width / 2), (_width / 2));
+			strokeRect.size.height -= 2;
+			strokeRect.origin.y++;
+			[context.shape addToPath:strokeRect];
+			
+			[_highlightColor setStroke];
+			CGContextSetLineWidth(ctx, _width);
+			CGContextStrokePath(ctx);
+		}
+		
+		{
+			CGRect strokeRect = CGRectInset(context.frame, (_width / 2), (_width / 2));
+			strokeRect.size.height -= 2;
+			[context.shape addToPath:strokeRect];
+			
+			[_color setStroke];
+			CGContextSetLineWidth(ctx, _width);
+			CGContextStrokePath(ctx);
+		}
+		
+		context.frame = CGRectInset(context.frame, _width, (_width * 2));
 		return [self.next draw:context];
 	}
 

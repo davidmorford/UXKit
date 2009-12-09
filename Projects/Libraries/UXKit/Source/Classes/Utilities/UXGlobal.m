@@ -5,6 +5,12 @@
 
 static NSInteger gNetworkTaskCount = 0;
 
+#pragma mark -
+
+NSString * const UXKitErrorDomain = @"uxkit";
+NSUInteger const UXKitInvalidImageErrorCode	= 101;
+
+
 #pragma mark Collections
 
 static const void * 

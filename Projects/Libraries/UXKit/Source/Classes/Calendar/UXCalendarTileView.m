@@ -139,7 +139,7 @@
 	}
 
 	-(void) reloadStyle {
-		self.style = UXSTYLESTATE(calendarTileForState:, [self state]);
+		self.style = UXSTYLEWITHSELECTORSTATE(calendarTileForState:, [self state]);
 		[self setNeedsDisplay];
 	}
 

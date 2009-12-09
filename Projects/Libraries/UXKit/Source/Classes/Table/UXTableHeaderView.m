@@ -7,15 +7,15 @@
 	-(id) initWithTitle:(NSString *)aTitle {
 		if (self = [super init]) {
 			self.backgroundColor	= [UIColor clearColor];
-			self.style				= UXSTYLE(tableHeader);
+			self.style				= UXSTYLEWITHSELECTOR(tableHeader);
 			
 			_label					= [[UILabel alloc] init];
 			_label.text				= aTitle;
 			_label.backgroundColor	= [UIColor clearColor];
-			_label.textColor		= UXSTYLEVAR(tableHeaderTextColor) ? UXSTYLEVAR(tableHeaderTextColor) : UXSTYLEVAR(linkTextColor);
-			_label.shadowColor		= UXSTYLEVAR(tableHeaderShadowColor) ? UXSTYLEVAR(tableHeaderShadowColor) : [UIColor clearColor];
+			_label.textColor		= UXSTYLESHEETPROPERTY(tableHeaderTextColor) ? UXSTYLESHEETPROPERTY(tableHeaderTextColor) : UXSTYLESHEETPROPERTY(linkTextColor);
+			_label.shadowColor		= UXSTYLESHEETPROPERTY(tableHeaderShadowColor) ? UXSTYLESHEETPROPERTY(tableHeaderShadowColor) : [UIColor clearColor];
 			_label.shadowOffset		= CGSizeMake(0, -1);
-			_label.font				= UXSTYLEVAR(tableHeaderPlainFont);
+			_label.font				= UXSTYLESHEETPROPERTY(tableHeaderPlainFont);
 			[self addSubview:_label];
 		}
 		return self;
@@ -41,8 +41,8 @@
 
 	-(id) initWithTitle:(NSString *)title {
 		if (self = [super initWithTitle:title]) {
-			self.style	= UXSTYLE(tableGroupedHeader);
-			_label.font = UXSTYLEVAR(tableHeaderGroupedFont);
+			self.style	= UXSTYLEWITHSELECTOR(tableGroupedHeader);
+			_label.font = UXSTYLESHEETPROPERTY(tableHeaderGroupedFont);
 		}
 		return self;
 	}

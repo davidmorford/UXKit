@@ -199,7 +199,7 @@ static const CGFloat kDesiredTableHeight	= 150;
 	-(void) showDarkScreen:(BOOL)show {
 		if (show && !_screenView) {
 			_screenView					= [[UIButton buttonWithType:UIButtonTypeCustom] retain];
-			_screenView.backgroundColor = UXSTYLEVAR(screenBackgroundColor);
+			_screenView.backgroundColor = UXSTYLESHEETPROPERTY(screenBackgroundColor);
 			_screenView.frame			= [self rectForSearchResults:NO];
 			_screenView.alpha			= 0;
 			[_screenView addTarget:self action:@selector(doneAction) forControlEvents:UIControlEventTouchUpInside];
@@ -390,8 +390,8 @@ static const CGFloat kDesiredTableHeight	= 150;
 	-(UITableView *) tableView {
 		if (!_tableView) {
 			_tableView					= [[UXTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-			_tableView.backgroundColor	= UXSTYLEVAR(searchTableBackgroundColor);
-			_tableView.separatorColor	= UXSTYLEVAR(searchTableSeparatorColor);
+			_tableView.backgroundColor	= UXSTYLESHEETPROPERTY(searchTableBackgroundColor);
+			_tableView.separatorColor	= UXSTYLESHEETPROPERTY(searchTableSeparatorColor);
 			_tableView.rowHeight		= _rowHeight;
 			_tableView.dataSource		= _dataSource;
 			_tableView.delegate			= self;
@@ -430,7 +430,7 @@ static const CGFloat kDesiredTableHeight	= 150;
 			
 			if (!_shadowView) {
 				_shadowView							= [[UXView alloc] init];
-				_shadowView.style					= UXSTYLE(searchTableShadow);
+				_shadowView.style					= UXSTYLEWITHSELECTOR(searchTableShadow);
 				_shadowView.backgroundColor			= [UIColor clearColor];
 				_shadowView.userInteractionEnabled	= NO;
 			}

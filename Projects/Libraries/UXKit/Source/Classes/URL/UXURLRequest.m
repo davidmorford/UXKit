@@ -26,7 +26,7 @@ static NSString *kStringBoundary = @"3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f";
 	@synthesize totalBytesExpected	= _totalBytesExpected;
 	@synthesize respondedFromCache	= _respondedFromCache;
 	@synthesize headers				= _headers;
-//	@synthesize postShouldSendMultipartFormData;
+	@synthesize filterPasswordLogging = _filterPasswordLogging;
 	@synthesize credential			= _credential;
 	@synthesize bodySize			= _bodySize;
 
@@ -65,7 +65,7 @@ static NSString *kStringBoundary = @"3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f";
 			_files					= nil;
 			_response				= nil;
 			_cachePolicy			= UXURLRequestCachePolicyDefault;
-			_cacheExpirationAge		= 0;
+			_cacheExpirationAge		= UX_DEFAULT_CACHE_EXPIRATION_AGE;
 			_timestamp				= nil;
 			_cacheKey				= nil;
 			_userInfo				= nil;
@@ -75,7 +75,7 @@ static NSString *kStringBoundary = @"3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f";
 			_totalBytesExpected		= 0;
 			_bodySize				= 0;
 			_respondedFromCache		= NO;
-			//postShouldSendMultipartFormData = TRUE;
+			 _filterPasswordLogging = NO;
 			_credential				= nil;
 		}
 		return self;
@@ -344,9 +344,24 @@ static NSString *kStringBoundary = @"3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f";
 
 	-(BOOL) send {
 		if (_parameters) {
-			UXLOG(@"SEND %@ %@", self.URL, self.parameters);
+			// Don't log passwords. Save now, restore after logging
+			NSString *password = [_parameters objectForKey:@"password"];
+			if (_filterPasswordLogging && password) {
+				[_parameters setObject:@"[FILTERED]" forKey:@"password"];
+			}
+			
+			//TTDINFO(@"SEND %@ %@", self.URL, self.parameters);
+			
+			if (password) {
+				[_parameters setObject:password forKey:@"password"];
+			}
 		}
 		return [[UXURLRequestQueue mainQueue] sendRequest:self];
+	}
+
+
+	-(BOOL) sendSynchronously {
+		return [[UXURLRequestQueue mainQueue] sendSynchronousRequest:self];
 	}
 
 	-(void) cancel {

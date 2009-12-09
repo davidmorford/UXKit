@@ -69,16 +69,16 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 				if (item.accessoryURL) {
 					self.accessoryType	= UITableViewCellAccessoryDetailDisclosureButton;
 				}
-				else if (navigationMode == UXNavigationModeCreate) {
+				else if (navigationMode == UXNavigationModeCreate || navigationMode == UXNavigationModeShare) {
 					self.accessoryType	= UITableViewCellAccessoryDisclosureIndicator;
 				}
 				else if (navigationMode == UXNavigationModeNone) {
-					self.accessoryType	= UITableViewCellAccessoryDisclosureIndicator;
+					self.accessoryType	= UITableViewCellAccessoryNone;
 				}
 				else {
 					self.accessoryType	= UITableViewCellAccessoryNone;
 				}
-				self.selectionStyle		= UXSTYLEVAR(tableSelectionStyle);
+				self.selectionStyle		= UXSTYLESHEETPROPERTY(tableSelectionStyle);
 			}
 			else {
 				self.accessoryType		= UITableViewCellAccessoryNone;
@@ -95,13 +95,13 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	+(UIFont *) textFontForItem:(UXTableTextItem *)item {
 		if ([item isKindOfClass:[UXTableLongTextItem class]]) {
-			return UXSTYLEVAR(font);
+			return UXSTYLESHEETPROPERTY(font);
 		}
 		else if ([item isKindOfClass:[UXTableGrayTextItem class]]) {
-			return UXSTYLEVAR(font);
+			return UXSTYLESHEETPROPERTY(font);
 		}
 		else {
-			return UXSTYLEVAR(tableFont);
+			return UXSTYLESHEETPROPERTY(tableFont);
 		}
 	}
 
@@ -124,7 +124,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	-(id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier {
 		if (self = [super initWithStyle:style reuseIdentifier:identifier]) {
-			self.textLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.lineBreakMode		= UILineBreakModeWordWrap;
 			self.textLabel.numberOfLines		= 0;
 		}
@@ -154,35 +154,35 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			self.textLabel.text = item.text;
 			
 			if ([object isKindOfClass:[UXTableButton class]]) {
-				self.textLabel.font				= UXSTYLEVAR(tableButtonFont);
-				self.textLabel.textColor		= UXSTYLEVAR(linkTextColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableButtonFont);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(linkTextColor);
 				self.textLabel.textAlignment	= UITextAlignmentCenter;
 				self.accessoryType				= UITableViewCellAccessoryNone;
-				self.selectionStyle				= UXSTYLEVAR(tableSelectionStyle);
+				self.selectionStyle				= UXSTYLESHEETPROPERTY(tableSelectionStyle);
 			}
 			else if ([object isKindOfClass:[UXTableLink class]]) {
-				self.textLabel.font				= UXSTYLEVAR(tableFont);
-				self.textLabel.textColor		= UXSTYLEVAR(linkTextColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableFont);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(linkTextColor);
 				self.textLabel.textAlignment	= UITextAlignmentLeft;
 			}
 			else if ([object isKindOfClass:[UXTableSummaryItem class]]) {
-				self.textLabel.font				= UXSTYLEVAR(tableSummaryFont);
-				self.textLabel.textColor		= UXSTYLEVAR(tableSubTextColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableSummaryFont);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(tableSubTextColor);
 				self.textLabel.textAlignment	= UITextAlignmentCenter;
 			}
 			else if ([object isKindOfClass:[UXTableLongTextItem class]]) {
-				self.textLabel.font				= UXSTYLEVAR(font);
-				self.textLabel.textColor		= UXSTYLEVAR(textColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(font);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(textColor);
 				self.textLabel.textAlignment	= UITextAlignmentLeft;
 			}
 			else if ([object isKindOfClass:[UXTableGrayTextItem class]]) {
-				self.textLabel.font				= UXSTYLEVAR(font);
-				self.textLabel.textColor		= UXSTYLEVAR(tableSubTextColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(font);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(tableSubTextColor);
 				self.textLabel.textAlignment	= UITextAlignmentLeft;
 			}
 			else {
-				self.textLabel.font				= UXSTYLEVAR(tableFont);
-				self.textLabel.textColor		= UXSTYLEVAR(textColor);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableFont);
+				self.textLabel.textColor		= UXSTYLESHEETPROPERTY(textColor);
 				self.textLabel.textAlignment	= UITextAlignmentLeft;
 			}
 		}
@@ -202,7 +202,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 		
 		CGFloat margin			= [tableView tableCellMargin];
 		CGFloat width			= tableView.width - (kKeyWidth + kKeySpacing + kHPadding * 2 + margin * 2);
-		CGSize detailTextSize	= [item.text sizeWithFont:UXSTYLEVAR(tableSmallFont) constrainedToSize:CGSizeMake(width, CGFLOAT_MAX) lineBreakMode:UILineBreakModeWordWrap];
+		CGSize detailTextSize	= [item.text sizeWithFont:UXSTYLESHEETPROPERTY(tableSmallFont) constrainedToSize:CGSizeMake(width, CGFLOAT_MAX) lineBreakMode:UILineBreakModeWordWrap];
 		
 		return detailTextSize.height + kVPadding * 2;
 	}
@@ -212,17 +212,17 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	-(id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier {
 		if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
-			self.textLabel.font = UXSTYLEVAR(tableTitleFont);
-			self.textLabel.textColor = UXSTYLEVAR(linkTextColor);
-			self.textLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.font = UXSTYLESHEETPROPERTY(tableTitleFont);
+			self.textLabel.textColor = UXSTYLESHEETPROPERTY(linkTextColor);
+			self.textLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.textAlignment = UITextAlignmentRight;
 			self.textLabel.lineBreakMode = UILineBreakModeTailTruncation;
 			self.textLabel.numberOfLines = 1;
 			self.textLabel.adjustsFontSizeToFitWidth = YES;
 			
-			self.detailTextLabel.font = UXSTYLEVAR(tableSmallFont);
-			self.detailTextLabel.textColor = UXSTYLEVAR(textColor);
-			self.detailTextLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.detailTextLabel.font = UXSTYLESHEETPROPERTY(tableSmallFont);
+			self.detailTextLabel.textColor = UXSTYLESHEETPROPERTY(textColor);
+			self.detailTextLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
 			self.detailTextLabel.minimumFontSize = 8;
 			self.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
@@ -287,11 +287,11 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			width -= kDisclosureIndicatorWidth;
 		}
 		
-		CGSize detailTextSize = [item.text sizeWithFont:UXSTYLEVAR(tableFont)
+		CGSize detailTextSize = [item.text sizeWithFont:UXSTYLESHEETPROPERTY(tableFont)
 									  constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
 										  lineBreakMode:UILineBreakModeTailTruncation];
 		
-		CGSize textSize = [item.caption sizeWithFont:UXSTYLEVAR(font)
+		CGSize textSize = [item.caption sizeWithFont:UXSTYLESHEETPROPERTY(font)
 								   constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
 									   lineBreakMode:UILineBreakModeWordWrap];
 		
@@ -303,14 +303,14 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	-(id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier {
 		if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
-			self.detailTextLabel.font = UXSTYLEVAR(tableFont);
-			self.detailTextLabel.textColor = UXSTYLEVAR(textColor);
-			self.detailTextLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.detailTextLabel.font = UXSTYLESHEETPROPERTY(tableFont);
+			self.detailTextLabel.textColor = UXSTYLESHEETPROPERTY(textColor);
+			self.detailTextLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
 			
-			self.textLabel.font = UXSTYLEVAR(font);
-			self.textLabel.textColor = UXSTYLEVAR(tableSubTextColor);
-			self.textLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.font = UXSTYLESHEETPROPERTY(font);
+			self.textLabel.textColor = UXSTYLESHEETPROPERTY(tableSubTextColor);
+			self.textLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.textAlignment = UITextAlignmentLeft;
 			self.textLabel.contentMode = UIViewContentModeTop;
 			self.textLabel.lineBreakMode = UILineBreakModeWordWrap;
@@ -385,11 +385,11 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	-(id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier {
 		if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
-			self.textLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.lineBreakMode = UILineBreakModeWordWrap;
 			self.textLabel.numberOfLines = 0;
 			
-			self.detailTextLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.detailTextLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			
 			// TODO
 		}
@@ -440,9 +440,9 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	+(CGFloat) tableView:(UITableView *)tableView rowHeightForObject:(id)object {
 		UXTableSubtitleItem *item = object;
-		CGFloat height = UXSTYLEVAR(tableFont).lineHeight + kVPadding * 2;
+		CGFloat height = UXSTYLESHEETPROPERTY(tableFont).lineHeight + kVPadding * 2;
 		if (item.subtitle) {
-			height += UXSTYLEVAR(font).lineHeight;
+			height += UXSTYLESHEETPROPERTY(font).lineHeight;
 		}
 		
 		return height;
@@ -455,16 +455,16 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 		if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
 			_imageView2 = nil;
 			
-			self.textLabel.font = UXSTYLEVAR(tableFont);
-			self.textLabel.textColor = UXSTYLEVAR(textColor);
-			self.textLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.font = UXSTYLESHEETPROPERTY(tableFont);
+			self.textLabel.textColor = UXSTYLESHEETPROPERTY(textColor);
+			self.textLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.textAlignment = UITextAlignmentLeft;
 			self.textLabel.lineBreakMode = UILineBreakModeTailTruncation;
 			self.textLabel.adjustsFontSizeToFitWidth = YES;
 			
-			self.detailTextLabel.font = UXSTYLEVAR(font);
-			self.detailTextLabel.textColor = UXSTYLEVAR(tableSubTextColor);
-			self.detailTextLabel.highlightedTextColor = UXSTYLEVAR(highlightedTextColor);
+			self.detailTextLabel.font = UXSTYLESHEETPROPERTY(font);
+			self.detailTextLabel.textColor = UXSTYLESHEETPROPERTY(tableSubTextColor);
+			self.detailTextLabel.highlightedTextColor = UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.detailTextLabel.textAlignment = UITextAlignmentLeft;
 			self.detailTextLabel.contentMode = UIViewContentModeTop;
 			self.detailTextLabel.lineBreakMode = UILineBreakModeTailTruncation;
@@ -543,8 +543,8 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	-(UXImageView *) imageView2 {
 		if (!_imageView2) {
 			_imageView2 = [[UXImageView alloc] init];
-			//_imageView2.defaultImage = UXSTYLEVAR(personImageSmall);
-			//imageView2.style = UXSTYLE(threadActorIcon);
+			//_imageView2.defaultImage = UXSTYLESHEETPROPERTY(personImageSmall);
+			//imageView2.style = UXSTYLEWITHSELECTOR(threadActorIcon);
 			[self.contentView addSubview:_imageView2];
 		}
 		return _imageView2;
@@ -573,17 +573,17 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			_timestampLabel = nil;
 			_imageView2		= nil;
 			
-			self.textLabel.font							= UXSTYLEVAR(font);
-			self.textLabel.textColor					= UXSTYLEVAR(textColor);
-			self.textLabel.highlightedTextColor			= UXSTYLEVAR(highlightedTextColor);
+			self.textLabel.font							= UXSTYLESHEETPROPERTY(font);
+			self.textLabel.textColor					= UXSTYLESHEETPROPERTY(textColor);
+			self.textLabel.highlightedTextColor			= UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.textLabel.textAlignment				= UITextAlignmentLeft;
 			self.textLabel.lineBreakMode				= UILineBreakModeTailTruncation;
 			self.textLabel.adjustsFontSizeToFitWidth	= YES;
 			self.textLabel.contentMode					= UIViewContentModeLeft;
 			
-			self.detailTextLabel.font					= UXSTYLEVAR(font);
-			self.detailTextLabel.textColor				= UXSTYLEVAR(tableSubTextColor);
-			self.detailTextLabel.highlightedTextColor	= UXSTYLEVAR(highlightedTextColor);
+			self.detailTextLabel.font					= UXSTYLESHEETPROPERTY(font);
+			self.detailTextLabel.textColor				= UXSTYLESHEETPROPERTY(tableSubTextColor);
+			self.detailTextLabel.highlightedTextColor	= UXSTYLESHEETPROPERTY(highlightedTextColor);
 			self.detailTextLabel.textAlignment			= UITextAlignmentLeft;
 			self.detailTextLabel.contentMode			= UIViewContentModeTop;
 			self.detailTextLabel.lineBreakMode			= UILineBreakModeTailTruncation;
@@ -701,7 +701,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			_titleLabel							= [[UILabel alloc] init];
 			_titleLabel.textColor				= [UIColor blackColor];
 			_titleLabel.highlightedTextColor	= [UIColor whiteColor];
-			_titleLabel.font					= UXSTYLEVAR(tableFont);
+			_titleLabel.font					= UXSTYLESHEETPROPERTY(tableFont);
 			_titleLabel.contentMode				= UIViewContentModeLeft;
 			[self.contentView addSubview:_titleLabel];
 		}
@@ -715,8 +715,8 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	-(UILabel *) timestampLabel {
 		if (!_timestampLabel) {
 			_timestampLabel							= [[UILabel alloc] init];
-			_timestampLabel.font					= UXSTYLEVAR(tableTimestampFont);
-			_timestampLabel.textColor				= UXSTYLEVAR(timestampTextColor);
+			_timestampLabel.font					= UXSTYLESHEETPROPERTY(tableTimestampFont);
+			_timestampLabel.textColor				= UXSTYLESHEETPROPERTY(timestampTextColor);
 			_timestampLabel.highlightedTextColor	= [UIColor whiteColor];
 			_timestampLabel.contentMode				= UIViewContentModeLeft;
 			[self.contentView addSubview:_timestampLabel];
@@ -727,8 +727,8 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	-(UXImageView *) imageView2 {
 		if (!_imageView2) {
 			_imageView2 = [[UXImageView alloc] init];
-			//    _imageView2.defaultImage = UXSTYLEVAR(personImageSmall);
-			//    _imageView2.style = UXSTYLE(threadActorIcon);
+			//    _imageView2.defaultImage = UXSTYLESHEETPROPERTY(personImageSmall);
+			//    _imageView2.style = UXSTYLEWITHSELECTOR(threadActorIcon);
 			[self.contentView addSubview:_imageView2];
 		}
 		return _imageView2;
@@ -761,7 +761,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 
 	-(id) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier {
 		if (self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier]) {
-			self.textLabel.font		= UXSTYLEVAR(tableSmallFont);
+			self.textLabel.font		= UXSTYLESHEETPROPERTY(tableSmallFont);
 			_animating				= NO;
 			_activityIndicatorView	= nil;
 		}
@@ -799,8 +799,8 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			[super setObject:object];
 			UXTableMoreButton *item	= object;
 			self.animating				= item.isLoading;
-			self.textLabel.textColor	= UXSTYLEVAR(moreLinkTextColor);
-			self.selectionStyle			= UXSTYLEVAR(tableSelectionStyle);
+			self.textLabel.textColor	= UXSTYLESHEETPROPERTY(moreLinkTextColor);
+			self.selectionStyle			= UXSTYLESHEETPROPERTY(tableSelectionStyle);
 		}
 	}
 
@@ -859,7 +859,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 		}
 		
 		CGFloat maxWidth		= tableView.width - (imageWidth + kHPadding * 2 + kMargin * 2);
-		CGSize textSize			= [imageItem.text sizeWithFont:UXSTYLEVAR(tableSmallFont) constrainedToSize:CGSizeMake(maxWidth, CGFLOAT_MAX) lineBreakMode:UILineBreakModeTailTruncation];
+		CGSize textSize			= [imageItem.text sizeWithFont:UXSTYLESHEETPROPERTY(tableSmallFont) constrainedToSize:CGSizeMake(maxWidth, CGFLOAT_MAX) lineBreakMode:UILineBreakModeTailTruncation];
 		CGFloat contentHeight	= textSize.height > imageHeight ? textSize.height : imageHeight;
 		return contentHeight + kVPadding * 2;
 	}
@@ -957,12 +957,12 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 			_imageView2.URL				= item.imageURL;
 			
 			if ([_item isKindOfClass:[UXTableRightImageItem class]]) {
-				self.textLabel.font				= UXSTYLEVAR(tableSmallFont);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableSmallFont);
 				self.textLabel.textAlignment	= UITextAlignmentCenter;
 				self.accessoryType				= UITableViewCellAccessoryNone;
 			}
 			else {
-				self.textLabel.font				= UXSTYLEVAR(tableFont);
+				self.textLabel.font				= UXSTYLESHEETPROPERTY(tableFont);
 				self.textLabel.textAlignment	= UITextAlignmentLeft;
 			}
 		}
@@ -1033,7 +1033,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	+(CGFloat) tableView:(UITableView *)tableView rowHeightForObject:(id)object {
 		UXTableStyledTextItem *item = object;
 		if (!item.text.font) {
-			item.text.font = UXSTYLEVAR(font);
+			item.text.font = UXSTYLESHEETPROPERTY(font);
 		}
 		CGFloat padding = [tableView tableCellMargin] * 2 + item.padding.left + item.padding.right;
 		if (item.URL) {
@@ -1103,7 +1103,7 @@ static const CGFloat kDefaultMessageImageHeight = 34;
 	+(CGFloat)tableView:(UITableView *)tableView rowHeightForObject:(id)object {
 		UXStyledText *text = object;
 		if (!text.font) {
-			text.font = UXSTYLEVAR(font);
+			text.font = UXSTYLESHEETPROPERTY(font);
 		}
 		text.width = tableView.width - [tableView tableCellMargin] * 2;
 		return text.height;

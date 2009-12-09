@@ -107,10 +107,10 @@ static const CGFloat kIndexViewMargin	= 4;
 			
 			[self addSubview:_searchField];
 			
-			self.tintColor			= UXSTYLEVAR(searchBarTintColor);
-			self.style				= UXSTYLE(searchBar);
-			self.textFieldStyle		= UXSTYLE(searchTextField);
-			self.font				= UXSTYLEVAR(font);
+			self.tintColor			= UXSTYLESHEETPROPERTY(searchBarTintColor);
+			self.style				= UXSTYLEWITHSELECTOR(searchBar);
+			self.textFieldStyle		= UXSTYLEWITHSELECTOR(searchTextField);
+			self.font				= UXSTYLESHEETPROPERTY(font);
 			self.showsSearchIcon	= YES;
 			self.showsCancelButton	= NO;
 		}

@@ -34,7 +34,7 @@ static const CGFloat kHeaderHeight = 42.f;
 			// Header
 			UXView *headerView	= [[[UXView alloc] initWithFrame:CGRectMake(0.f, 0.f, frame.size.width, kHeaderHeight)] autorelease];
 			headerView.style	= [UXFourBorderStyle styleWithTop:[UIColor whiteColor] right:nil bottom:nil left:nil width:1.f 
-															 next:[UXLinearGradientFillStyle styleWithColor1:UXSTYLEVAR(calendarHeaderTopColor) color2:UXSTYLEVAR(calendarHeaderBottomColor) 
+															 next:[UXLinearGradientFillStyle styleWithColor1:UXSTYLESHEETPROPERTY(calendarHeaderTopColor) color2:UXSTYLESHEETPROPERTY(calendarHeaderBottomColor) 
 															 next:nil]];
 			[self addSubviewsToHeaderView:headerView];
 			[self addSubview:headerView];
@@ -96,7 +96,7 @@ static const CGFloat kHeaderHeight = 42.f;
 		headerTitleLabel.backgroundColor	= [UIColor clearColor];
 		headerTitleLabel.font				= [UIFont boldSystemFontOfSize:21.f];
 		headerTitleLabel.textAlignment		= UITextAlignmentCenter;
-		headerTitleLabel.textColor			= UXSTYLEVAR(calendarTextColor);
+		headerTitleLabel.textColor			= UXSTYLESHEETPROPERTY(calendarTextColor);
 		headerTitleLabel.shadowColor		= [UIColor whiteColor];
 		headerTitleLabel.shadowOffset		= CGSizeMake(0.f, 1.f);
 		headerTitleLabel.text				= [logic selectedMonthNameAndYear];
@@ -134,7 +134,7 @@ static const CGFloat kHeaderHeight = 42.f;
 			weekdayLabel.backgroundColor	= [UIColor clearColor];
 			weekdayLabel.font				= [UIFont boldSystemFontOfSize:10.f];
 			weekdayLabel.textAlignment		= UITextAlignmentCenter;
-			weekdayLabel.textColor			= UXSTYLEVAR(calendarTextColor);
+			weekdayLabel.textColor			= UXSTYLESHEETPROPERTY(calendarTextColor);
 			weekdayLabel.shadowColor		= [UIColor whiteColor];
 			weekdayLabel.shadowOffset		= CGSizeMake(0.f, 1.f);
 			weekdayLabel.text				= [weekdayNames objectAtIndex:i];

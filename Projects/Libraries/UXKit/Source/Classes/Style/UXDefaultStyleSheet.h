@@ -204,6 +204,11 @@
 	-(UXStyle *) textBarTextField;
 	-(UXStyle *) textBarPostButton:(UIControlState)state;
 
+	#pragma mark Input Panel
+	
+	-(UXStyle *) panelContent;
+	-(UXStyle *) panel;
+
 @end
 
 #pragma mark -

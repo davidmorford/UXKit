@@ -3,6 +3,7 @@
 #import <UXKit/UXDefaultStyleSheet.h>
 
 static UXStyleSheet *gStyleSheet = nil;
+NSString *const UXStyleSheetChangedNotification = @"UXStyleSheetChangedNotification";
 
 @implementation UXStyleSheet
 
@@ -18,6 +19,8 @@ static UXStyleSheet *gStyleSheet = nil;
 	+(void) setGlobalStyleSheet:(UXStyleSheet *)styleSheet {
 		[gStyleSheet release];
 		gStyleSheet = [styleSheet retain];
+		[[NSNotificationCenter defaultCenter] postNotificationName:UXStyleSheetChangedNotification
+															object:gStyleSheet];
 	}
 
 

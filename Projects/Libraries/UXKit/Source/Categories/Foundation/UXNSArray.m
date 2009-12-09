@@ -1,5 +1,6 @@
 
 #import <UXKit/UXNSArray.h>
+#import <UXKit/UXGlobal.h>
 
 @implementation NSArray (UXNSArray)
 
@@ -78,11 +79,28 @@
 		return nil;
 	}
 
+	-(BOOL) containsObject:(id)object withSelector:(SEL)selector {
+		for (id item in self) {
+			if ([item performSelector:selector withObject:object]) {
+				return TRUE;
+			}
+		}
+		return FALSE;
+	}
 
 @end
 
 #pragma mark -
 
+@implementation NSMutableArray (UXNSMutableArray)
+
+	-(void) addNonEmptyString:(NSString *)string {
+		if ((nil != string) && !UXIsEmptyString(string)) {
+			[self addObject:string];
+		}
+	}
+
+@end
 
 #pragma mark -
 

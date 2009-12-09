@@ -11,7 +11,7 @@
 	-(id) initWithFrame:(CGRect)frame {
 		if (self = [super initWithFrame:frame]) {
 			self.autoresizingMask	= UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
-			self.tintColor			= UXSTYLEVAR(toolbarTintColor);
+			self.tintColor			= UXSTYLESHEETPROPERTY(toolbarTintColor);
 			margin = 8.0f;
 		}
 		return self;
@@ -25,7 +25,7 @@
 			}
 			segmentedControl						= [[UISegmentedControl alloc] initWithItems:itemNames];
 			segmentedControl.segmentedControlStyle	= UISegmentedControlStyleBar;
-			segmentedControl.tintColor				= UXSTYLEVAR(segmentedControlTintColor);
+			segmentedControl.tintColor				= UXSTYLESHEETPROPERTY(segmentedControlTintColor);
 			segmentedControl.selectedSegmentIndex	= 0;
 			
 			CGFloat newWidthWithMargins = (self.bounds.size.width - 2 * margin);

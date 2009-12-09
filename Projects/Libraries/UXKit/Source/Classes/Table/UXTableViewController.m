@@ -485,7 +485,7 @@ static const CGFloat kBannerViewHeight = 22;
 		if (!_tableView) {
 			_tableView						= [[UXTableView alloc] initWithFrame:self.view.bounds style:_tableViewStyle];
 			_tableView.autoresizingMask		=  UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-			UIColor *backgroundColor		= _tableViewStyle == UITableViewStyleGrouped ? UXSTYLEVAR(tableGroupedBackgroundColor) : UXSTYLEVAR(tablePlainBackgroundColor);
+			UIColor *backgroundColor		= _tableViewStyle == UITableViewStyleGrouped ? UXSTYLESHEETPROPERTY(tableGroupedBackgroundColor) : UXSTYLESHEETPROPERTY(tablePlainBackgroundColor);
 			if (backgroundColor) {
 				_tableView.backgroundColor	= backgroundColor;
 				  self.view.backgroundColor = backgroundColor;
@@ -722,7 +722,10 @@ static const CGFloat kBannerViewHeight = 22;
 
 	-(CGRect) rectForBannerView {
 		CGRect tableFrame = [_tableView frameWithKeyboardSubtracted:0];
-		return CGRectMake(tableFrame.origin.x, (tableFrame.origin.y + tableFrame.size.height) - kBannerViewHeight, tableFrame.size.width, kBannerViewHeight);
+		UXLOG(@"rectForBannerView = %@", NSStringFromCGRect(tableFrame));
+		tableFrame = CGRectMake(tableFrame.origin.x, (tableFrame.origin.y + tableFrame.size.height) - kBannerViewHeight, tableFrame.size.width, kBannerViewHeight);
+		UXLOG(@"rectForBannerView = %@", NSStringFromCGRect(tableFrame));
+		return tableFrame;
 	}
 
 @end

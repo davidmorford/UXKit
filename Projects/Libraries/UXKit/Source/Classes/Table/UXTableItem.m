@@ -76,7 +76,7 @@
 			[encoder encodeObject:self.URL forKey:@"URL"];
 		}
 		if (self.accessoryURL) {
-			[encoder encodeObject:self.accessoryURL forKey:@"URL"];
+			[encoder encodeObject:self.accessoryURL forKey:@"accessoryURL"];
 		}
 	}
 

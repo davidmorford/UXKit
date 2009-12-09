@@ -224,7 +224,7 @@ static CGFloat		kThumbSpacing		= 4;
 		[super loadView];
 		self.tableView.rowHeight			 = kThumbnailRowHeight;
 		self.tableView.autoresizingMask		 = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-		self.tableView.backgroundColor		 = UXSTYLEVAR(backgroundColor);
+		self.tableView.backgroundColor		 = UXSTYLESHEETPROPERTY(backgroundColor);
 		self.tableView.separatorStyle		 = UITableViewCellSeparatorStyleNone;
 		[self updateTableLayout];
 	}

@@ -83,7 +83,7 @@ static CGFloat kPadding = 5;
 		
 		self.view = [[[UIView alloc] init] autorelease];
 		_textBar = [[UXView alloc] init];
-		_textBar.style = UXSTYLE(textBar);
+		_textBar.style = UXSTYLEWITHSELECTOR(textBar);
 		[self.view addSubview:_textBar];
 		
 		[_textBar addSubview:self.textEditor];
@@ -279,7 +279,7 @@ static CGFloat kPadding = 5;
 		if (!_textEditor) {
 			_textEditor = [[UXTextEditor alloc] init];
 			_textEditor.delegate = self;
-			_textEditor.style = UXSTYLE(textBarTextField);
+			_textEditor.style = UXSTYLEWITHSELECTOR(textBarTextField);
 			_textEditor.backgroundColor = [UIColor clearColor];
 			_textEditor.autoresizesToText = YES;
 			_textEditor.maxNumberOfLines = 6;

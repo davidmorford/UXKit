@@ -20,7 +20,7 @@ static const NSInteger kMaxBadgeNumber = 99;
 	-(void) updateBadge {
 		if (!_badge && _item.badgeNumber) {
 			_badge							= [[UXLabel alloc] init];
-			_badge.style					= UXSTYLE(largeBadge);
+			_badge.style					= UXSTYLEWITHSELECTOR(largeBadge);
 			_badge.backgroundColor			= [UIColor clearColor];
 			_badge.userInteractionEnabled	= NO;
 			[self addSubview:_badge];

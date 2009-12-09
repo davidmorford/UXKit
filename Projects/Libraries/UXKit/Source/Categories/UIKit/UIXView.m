@@ -1,6 +1,9 @@
 
 #import <UXKit/UXGlobal.h>
 
+// GSEvent and UITouchAdditions are not here, never have been and never will be. 
+// Don't use private APIs... ever.
+
 @implementation UIView (UIXView)
 
 	-(CGFloat) left {

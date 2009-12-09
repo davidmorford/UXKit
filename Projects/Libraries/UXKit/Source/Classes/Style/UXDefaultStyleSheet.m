@@ -49,28 +49,28 @@
 	-(UXStyle *) toolbarButton:(UIControlState)state {
 		return [self toolbarButtonForState:state
 									 shape:[UXRoundedRectangleShape shapeWithRadius:4.5]
-								 tintColor:UXSTYLEVAR(navigationBarTintColor)
+								 tintColor:UXSTYLESHEETPROPERTY(navigationBarTintColor)
 									  font:nil];
 	}
 
 	-(UXStyle *) toolbarBackButton:(UIControlState)state {
 		return [self toolbarButtonForState:state
 									 shape:[UXRoundedLeftArrowShape shapeWithRadius:4.5]
-								 tintColor:UXSTYLEVAR(navigationBarTintColor)
+								 tintColor:UXSTYLESHEETPROPERTY(navigationBarTintColor)
 									  font:nil];
 	}
 
 	-(UXStyle *) toolbarForwardButton:(UIControlState)state {
 		return [self toolbarButtonForState:state
 									 shape:[UXRoundedRightArrowShape shapeWithRadius:4.5]
-								 tintColor:UXSTYLEVAR(navigationBarTintColor)
+								 tintColor:UXSTYLESHEETPROPERTY(navigationBarTintColor)
 									  font:nil];
 	}
 
 	-(UXStyle *) toolbarRoundButton:(UIControlState)state {
 		return [self toolbarButtonForState:state
 									 shape:[UXRoundedRectangleShape shapeWithRadius:UX_ROUNDED]
-								 tintColor:UXSTYLEVAR(navigationBarTintColor)
+								 tintColor:UXSTYLESHEETPROPERTY(navigationBarTintColor)
 									  font:nil];
 	}
 
@@ -109,14 +109,14 @@
 		return [UXShapeStyle styleWithShape:[UXRoundedRectangleShape shapeWithRadius:UX_ROUNDED] 
 									   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(1, 0, 1, 0) 
 									   next:[UXShadowStyle styleWithColor:RGBACOLOR(255, 255, 255, 0.4) blur:0 offset:CGSizeMake(0, 1) 
-									   next:[UXSolidFillStyle styleWithColor:UXSTYLEVAR(backgroundColor) 
+									   next:[UXSolidFillStyle styleWithColor:UXSTYLESHEETPROPERTY(backgroundColor) 
 									   next:[UXInnerShadowStyle styleWithColor:RGBACOLOR(0, 0, 0, 0.4) blur:3 offset:CGSizeMake(0, 2) 
 									   next:[UXBevelBorderStyle styleWithHighlight:RGBACOLOR(0, 0, 0, 0.25) shadow:RGBACOLOR(0, 0, 0, 0.4) width:1 lightSource:270 
 									   next:nil]]]]]];
 	}
 
 	-(UXStyle *) searchBar {
-		UIColor *color	= UXSTYLEVAR(searchBarTintColor);
+		UIColor *color	= UXSTYLESHEETPROPERTY(searchBarTintColor);
 		UIColor *highlight	= [color multiplyHue:0 saturation:0 value:1.2];
 		UIColor *shadow		= [color multiplyHue:0 saturation:0 value:0.82];
 		return [UXLinearGradientFillStyle styleWithColor1:highlight color2:color 
@@ -142,7 +142,7 @@
 	
 	/*
 	-(UXStyle *) searchBarbottom {
-		UIColor *color		= UXSTYLEVAR(searchBarTintColor);
+		UIColor *color		= UXSTYLESHEETPROPERTY(searchBarTintColor);
 		UIColor *highlight	= [color multiplyHue:0 saturation:0 value:1.2];
 		UIColor *shadow		= [color multiplyHue:0 saturation:0 value:0.82];
 		return [UXLinearGradientFillStyle styleWithColor1:highlight color2:color 
@@ -154,7 +154,7 @@
 	#pragma mark Tables
 	
 	-(UXStyle *) tableHeader {
-		UIColor *color		= UXSTYLEVAR(tableHeaderTintColor);
+		UIColor *color		= UXSTYLESHEETPROPERTY(tableHeaderTintColor);
 		UIColor *highlight	= [color multiplyHue:0 saturation:0 value:1.1];
 		return [UXLinearGradientFillStyle styleWithColor1:highlight color2:color 
 													 next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(-1, 0, 0, 0) 
@@ -238,21 +238,21 @@
 	#pragma mark Tabs
 
 	-(UXStyle *) tabBar {
-		UIColor *border = [UXSTYLEVAR(tabBarTintColor) multiplyHue:0 saturation:0 value:0.7];
-		return [UXSolidFillStyle styleWithColor:UXSTYLEVAR(tabBarTintColor) 
+		UIColor *border = [UXSTYLESHEETPROPERTY(tabBarTintColor) multiplyHue:0 saturation:0 value:0.7];
+		return [UXSolidFillStyle styleWithColor:UXSTYLESHEETPROPERTY(tabBarTintColor) 
 											 next:[UXFourBorderStyle styleWithTop:nil right:nil bottom:border left:nil width:1 
 											 next:nil]];
 	}
 
 	-(UXStyle *) tabStrip {
-		UIColor *border = [UXSTYLEVAR(tabTintColor) multiplyHue:0 saturation:0 value:0.4];
-		return [UXReflectiveFillStyle styleWithColor:UXSTYLEVAR(tabTintColor) 
+		UIColor *border = [UXSTYLESHEETPROPERTY(tabTintColor) multiplyHue:0 saturation:0 value:0.4];
+		return [UXReflectiveFillStyle styleWithColor:UXSTYLESHEETPROPERTY(tabTintColor) 
 												  next:[UXFourBorderStyle styleWithTop:nil right:nil bottom:border left:nil width:1 
 												  next:nil]];
 	}
 
 	-(UXStyle *) tabGrid {
-		UIColor *color		= UXSTYLEVAR(tabTintColor);
+		UIColor *color		= UXSTYLESHEETPROPERTY(tabTintColor);
 		UIColor *lighter	= [color multiplyHue:1 saturation:0.9 value:1.1];
 		
 		UIColor *highlight	= RGBACOLOR(255, 255, 255, 0.7);
@@ -294,7 +294,7 @@
 		}
 		
 		UIColor *highlight = RGBACOLOR(255, 255, 255, 0.7);
-		UIColor *shadow = [UXSTYLEVAR(tabTintColor) multiplyHue:1 saturation:1.1 value:0.88];
+		UIColor *shadow = [UXSTYLESHEETPROPERTY(tabTintColor) multiplyHue:1 saturation:1.1 value:0.88];
 		
 		if (state == UIControlStateSelected) {
 			return [UXShapeStyle styleWithShape:shape 
@@ -348,14 +348,14 @@
 
 	-(UXStyle *) tab:(UIControlState)state {
 		if (state == UIControlStateSelected) {
-			UIColor *border = [UXSTYLEVAR(tabBarTintColor) multiplyHue:0 saturation:0 value:0.7];
+			UIColor *border = [UXSTYLESHEETPROPERTY(tabBarTintColor) multiplyHue:0 saturation:0 value:0.7];
 			return [UXShapeStyle styleWithShape:[UXRoundedRectangleShape shapeWithTopLeft:4.5 topRight:4.5 bottomRight:0 bottomLeft:0] 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(5, 1, 0, 1) 
-										   next:[UXReflectiveFillStyle styleWithColor:UXSTYLEVAR(tabTintColor) 
+										   next:[UXReflectiveFillStyle styleWithColor:UXSTYLESHEETPROPERTY(tabTintColor) 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(-1, -1, 0, -1) 
 										   next:[UXFourBorderStyle styleWithTop:border right:border bottom:nil left:border width:1 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(6, 12, 2, 12) 
-										   next:[UXTextStyle styleWithFont:[UIFont boldSystemFontOfSize:14]  color:UXSTYLEVAR(textColor) minimumFontSize:8 shadowColor:[UIColor colorWithWhite:1 alpha:0.8] shadowOffset:CGSizeMake(0, -1) 
+										   next:[UXTextStyle styleWithFont:[UIFont boldSystemFontOfSize:14]  color:UXSTYLESHEETPROPERTY(textColor) minimumFontSize:8 shadowColor:[UIColor colorWithWhite:1 alpha:0.8] shadowOffset:CGSizeMake(0, -1) 
 										   next:nil]]]]]]];
 		}
 		else {
@@ -375,7 +375,7 @@
 			return [UXShapeStyle styleWithShape:[UXRoundedRectangleShape shapeWithRadius:UX_ROUNDED] 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(9, 1, 8, 1) 
 										   next:[UXShadowStyle styleWithColor:RGBACOLOR(255, 255, 255, 0.8) blur:0 offset:CGSizeMake(0, 1) 
-										   next:[UXReflectiveFillStyle styleWithColor:UXSTYLEVAR(tabBarTintColor) 
+										   next:[UXReflectiveFillStyle styleWithColor:UXSTYLESHEETPROPERTY(tabBarTintColor) 
 										   next:[UXInnerShadowStyle styleWithColor:RGBACOLOR(0, 0, 0, 0.3) blur:1 offset:CGSizeMake(1, 1) 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(-1, -1, -1, -1) 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(0, 10, 0, 10) 
@@ -427,8 +427,8 @@
 		return [UXSolidFillStyle styleWithColor:[UIColor colorWithWhite:0 alpha:0.5] 
 											 next:[UXFourBorderStyle styleWithTop:RGBACOLOR(0, 0, 0, 0.5) width:1 
 											 next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(8, 8, 8, 8)
-											 next:[UXTextStyle styleWithFont:UXSTYLEVAR(photoCaptionFont) 
-																		 color:UXSTYLEVAR(photoCaptionTextColor) 
+											 next:[UXTextStyle styleWithFont:UXSTYLESHEETPROPERTY(photoCaptionFont) 
+																		 color:UXSTYLESHEETPROPERTY(photoCaptionTextColor) 
 															   minimumFontSize:0 
 																   shadowColor:[UIColor colorWithWhite:0 alpha:0.9] 
 																  shadowOffset:CGSizeMake(0, 1) 
@@ -442,7 +442,7 @@
 	-(UXStyle *) photoStatusLabel {
 		return [UXSolidFillStyle styleWithColor:[UIColor colorWithWhite:0 alpha:0.5]
 											 next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(20, 8, 20, 8) 
-											 next:[UXTextStyle styleWithFont:UXSTYLEVAR(tableFont) color:RGBCOLOR(200, 200, 200) minimumFontSize:0 shadowColor:[UIColor colorWithWhite:0 alpha:0.9] shadowOffset:CGSizeMake(0, -1) 
+											 next:[UXTextStyle styleWithFont:UXSTYLESHEETPROPERTY(tableFont) color:RGBCOLOR(200, 200, 200) minimumFontSize:0 shadowColor:[UIColor colorWithWhite:0 alpha:0.9] shadowOffset:CGSizeMake(0, -1) 
 											next:nil]]];
 	}
 
@@ -459,7 +459,7 @@
 	#pragma mark Photos
 
 	-(UXStyle *) launcherButton:(UIControlState)state {
-		return [UXPartStyle styleWithName:@"image" style:UXSTYLESTATE(launcherButtonImage:, state) 
+		return [UXPartStyle styleWithName:@"image" style:UXSTYLEWITHSELECTORSTATE(launcherButtonImage:, state) 
 									 next:[UXTextStyle styleWithFont:[UIFont boldSystemFontOfSize:11] color:RGBCOLOR(180, 180, 180) minimumFontSize:11 shadowColor:nil shadowOffset:CGSizeZero 
 									 next:nil]];
 	}
@@ -491,7 +491,7 @@
 									   next:[UXSolidFillStyle styleWithColor:[UIColor blackColor] 
 									   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(-1, -1, -1, -1) 
 									   next:[UXSolidBorderStyle styleWithColor:[UIColor whiteColor] width:2 
-									   next:[UXPartStyle styleWithName:@"image" style:UXSTYLE(launcherCloseButtonImage:) 
+									   next:[UXPartStyle styleWithName:@"image" style:UXSTYLEWITHSELECTOR(launcherCloseButtonImage:) 
 									   next:nil]]]]]]];
 	}
 
@@ -521,7 +521,7 @@
 				[UXShapeStyle styleWithShape:[UXRoundedRectangleShape shapeWithRadius:12.5] next:
 				 [UXInsetStyle styleWithInset:UIEdgeInsetsMake(1, 0, 1, 0) next:
 				  [UXShadowStyle styleWithColor:RGBACOLOR(255, 255, 255, 0.4) blur:0 offset:CGSizeMake(0, 1) next:
-				   [UXSolidFillStyle styleWithColor:UXSTYLEVAR(backgroundColor) next:
+				   [UXSolidFillStyle styleWithColor:UXSTYLESHEETPROPERTY(backgroundColor) next:
 					[UXInnerShadowStyle styleWithColor:RGBACOLOR(0, 0, 0, 0.4) blur:3 offset:CGSizeMake(0, 2) next:
 					 [UXBevelBorderStyle styleWithHighlight:RGBACOLOR(0, 0, 0, 0.25) shadow:RGBACOLOR(0, 0, 0, 0.4) width:1 lightSource:270 
 													   next:nil]]]]]]];
@@ -871,8 +871,8 @@
 	#pragma mark -
 
 	-(UXStyle *) calendarTileWithColor:(UIColor *)color {
-		return [UXFourBorderStyle styleWithTop:UXSTYLEVAR(calendarGridLineHighlightColor) right:UXSTYLEVAR(calendarGridLineHighlightColor) bottom:nil left:nil width:1.f 
-										  next:[UXFourBorderStyle styleWithTop:UXSTYLEVAR(calendarGridLineShadowColor) right:UXSTYLEVAR(calendarGridLineShadowColor) bottom:nil left:nil width:1.f 
+		return [UXFourBorderStyle styleWithTop:UXSTYLESHEETPROPERTY(calendarGridLineHighlightColor) right:UXSTYLESHEETPROPERTY(calendarGridLineHighlightColor) bottom:nil left:nil width:1.f 
+										  next:[UXFourBorderStyle styleWithTop:UXSTYLESHEETPROPERTY(calendarGridLineShadowColor) right:UXSTYLESHEETPROPERTY(calendarGridLineShadowColor) bottom:nil left:nil width:1.f 
 										  next:[UXTextStyle styleWithFont:[UIFont boldSystemFontOfSize:24.f] color:color shadowColor:[UIColor whiteColor] shadowOffset:CGSizeMake(0.f, 1.f) 
 										  next:nil]]];
 	}
@@ -902,27 +902,27 @@
 				
 			case kUXCalendarTileTypeRegular:
 				if (state & UIControlStateSelected) {
-					//style = UXSTYLE(calendar_tile_selected);
-					style = UXSTYLE(calendarTileSelected);
+					//style = UXSTYLEWITHSELECTOR(calendar_tile_selected);
+					style = UXSTYLEWITHSELECTOR(calendarTileSelected);
 					markColor = [UIColor whiteColor];
 				}
 				else {
-					style = [self calendarTileWithColor:UXSTYLEVAR(calendarTextColor)];
-					markColor = UXSTYLEVAR(calendarTextColor);
+					style = [self calendarTileWithColor:UXSTYLESHEETPROPERTY(calendarTextColor)];
+					markColor = UXSTYLESHEETPROPERTY(calendarTextColor);
 				}
 				break;
 				
 			case kUXCalendarTileTypeAdjacent:
-				style = [self calendarTileWithColor:UXSTYLEVAR(calendarTextLightColor)];
-				markColor = UXSTYLEVAR(calendarTextLightColor);
+				style = [self calendarTileWithColor:UXSTYLESHEETPROPERTY(calendarTextLightColor)];
+				markColor = UXSTYLESHEETPROPERTY(calendarTextLightColor);
 				if (state & UIControlStateSelected) {
-					[style addStyle:[UXSolidFillStyle styleWithColor:UXSTYLEVAR(calendarTileDimmedOutColor) next:nil]];
+					[style addStyle:[UXSolidFillStyle styleWithColor:UXSTYLESHEETPROPERTY(calendarTileDimmedOutColor) next:nil]];
 				}
 				break;
 				
 			case kUXCalendarTileTypeToday:
 				markColor = [UIColor whiteColor];
-				style = state & UIControlStateSelected ? UXSTYLE(calendar_tile_today_selected) : UXSTYLE(calendar_tile_today);
+				style = state & UIControlStateSelected ? UXSTYLEWITHSELECTOR(calendar_tile_today_selected) : UXSTYLEWITHSELECTOR(calendar_tile_today);
 				break;
 				
 			default:

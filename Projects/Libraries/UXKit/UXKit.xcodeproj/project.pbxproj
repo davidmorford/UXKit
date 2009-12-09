@@ -9,26 +9,6 @@
 /* Begin PBXBuildFile section */
 		630AC6DA10162A90002E6BFF /* UXModelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 630AC6D810162A90002E6BFF /* UXModelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		630AC6DB10162A90002E6BFF /* UXModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630AC6D910162A90002E6BFF /* UXModelViewController.m */; };
-		63194681109C2A23006E1B56 /* UXPanelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6319467F109C2A23006E1B56 /* UXPanelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63194682109C2A23006E1B56 /* UXPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63194680109C2A23006E1B56 /* UXPanelViewController.m */; };
-		63194685109C2B71006E1B56 /* UXPanelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63194683109C2B71006E1B56 /* UXPanelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63194686109C2B71006E1B56 /* UXPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63194684109C2B71006E1B56 /* UXPanelView.m */; };
-		632D5B62109EAF1B00627CEA /* UXManagedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B60109EAF1B00627CEA /* UXManagedModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B63109EAF1B00627CEA /* UXManagedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B61109EAF1B00627CEA /* UXManagedModel.m */; };
-		632D5B6E109EB00C00627CEA /* UXManagedModelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B6F109EB00C00627CEA /* UXManagedModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */; };
-		632D5B76109EB33A00627CEA /* UXManagedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B77109EB33A00627CEA /* UXManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */; };
-		632D5B7A109EB35400627CEA /* UXManagedTableItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B7B109EB35400627CEA /* UXManagedTableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */; };
-		632D5B7E109EB36000627CEA /* UXManagedTableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B7C109EB36000627CEA /* UXManagedTableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B7F109EB36000627CEA /* UXManagedTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B7D109EB36000627CEA /* UXManagedTableItem.m */; };
-		632D5B82109EB37200627CEA /* UXManagedTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B83109EB37200627CEA /* UXManagedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */; };
-		632D5B93109EB57C00627CEA /* UXStoreQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B91109EB57C00627CEA /* UXStoreQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B94109EB57C00627CEA /* UXStoreQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B92109EB57C00627CEA /* UXStoreQuery.m */; };
-		632D5B9B109EB5EE00627CEA /* UXStoreContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 632D5B99109EB5EE00627CEA /* UXStoreContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632D5B9C109EB5EE00627CEA /* UXStoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 632D5B9A109EB5EE00627CEA /* UXStoreContext.m */; };
 		6354FE25107D5A36006831CE /* UXLauncherViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6354FE23107D5A36006831CE /* UXLauncherViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6354FE26107D5A36006831CE /* UXLauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6354FE24107D5A36006831CE /* UXLauncherViewController.m */; };
 		635F5B84102A94D400CF0EF9 /* UXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 635F5B82102A94D400CF0EF9 /* UXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,18 +58,21 @@
 		63900ED11041DCEE002FDE89 /* UXLauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63900ECB1041DCEE002FDE89 /* UXLauncherItem.m */; };
 		63900ED21041DCEE002FDE89 /* UXLauncherView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63900ECC1041DCEE002FDE89 /* UXLauncherView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63900ED31041DCEE002FDE89 /* UXLauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63900ECD1041DCEE002FDE89 /* UXLauncherView.m */; };
-		639417C810B3E2F3000D5976 /* UIXApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 639417C210B3E2F3000D5976 /* UIXApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639417C910B3E2F3000D5976 /* UIXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 639417C310B3E2F3000D5976 /* UIXApplication.m */; };
-		639417CA10B3E2F3000D5976 /* UIXBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 639417C410B3E2F3000D5976 /* UIXBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639417CB10B3E2F3000D5976 /* UIXBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 639417C510B3E2F3000D5976 /* UIXBarButtonItem.m */; };
-		639417CC10B3E2F3000D5976 /* UIXDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 639417C610B3E2F3000D5976 /* UIXDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639417CD10B3E2F3000D5976 /* UIXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 639417C710B3E2F3000D5976 /* UIXDevice.m */; };
-		639417D010B3E324000D5976 /* UXManagedTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 639417CE10B3E324000D5976 /* UXManagedTableViewDelegate.h */; };
-		639417D110B3E324000D5976 /* UXManagedTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639417CF10B3E324000D5976 /* UXManagedTableViewDelegate.m */; };
+		6392851610B12C750081DCD6 /* UIXApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 6392851410B12C750081DCD6 /* UIXApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6392851710B12C750081DCD6 /* UIXApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392851510B12C750081DCD6 /* UIXApplication.m */; };
+		6392851B10B12CCB0081DCD6 /* UIXDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 6392851910B12CCB0081DCD6 /* UIXDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6392851C10B12CCB0081DCD6 /* UIXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392851A10B12CCB0081DCD6 /* UIXDevice.m */; };
+		6392886E10B25C930081DCD6 /* UIXBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6392886C10B25C930081DCD6 /* UIXBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6392886F10B25C930081DCD6 /* UIXBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392886D10B25C930081DCD6 /* UIXBarButtonItem.m */; };
 		639C41C5100E4B8E0013393A /* UXModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 639C41C1100E4B8D0013393A /* UXModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639C41C7100E4B8E0013393A /* UXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639C41C3100E4B8D0013393A /* UXModel.m */; };
 		639C87EE10997BE600B87173 /* UIXWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 639C87EC10997BE600B87173 /* UIXWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639C87EF10997BE600B87173 /* UIXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 639C87ED10997BE600B87173 /* UIXWindow.m */; };
+		63A684B910C4F55800DD39EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A684B810C4F55800DD39EE /* SenTestingKit.framework */; };
+		63A684C310C4F58C00DD39EE /* UXKitUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A684BE10C4F58C00DD39EE /* UXKitUnitTest.m */; };
+		63A684F610C4FDFD00DD39EE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B6A79A104139220049EC9C /* CoreData.framework */; };
+		63A684F710C4FDFD00DD39EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		63A684F810C4FDFD00DD39EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		63A9E2061047C26F007FF732 /* UXCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A9E2001047BBE4007FF732 /* UXCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A9E21910485D5D007FF732 /* UXCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63905D7E104748B200106BC3 /* UXCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A9E21A10485D63007FF732 /* UXCalendarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63905D7F104748B200106BC3 /* UXCalendarDataSource.m */; };
@@ -106,18 +89,14 @@
 		63ADE9D01020BA96009B03DF /* UXModelURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 63ADE9CE1020BA96009B03DF /* UXModelURLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63ADE9D11020BA96009B03DF /* UXModelURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ADE9CF1020BA96009B03DF /* UXModelURLResponse.m */; };
 		63B6A7A9104139220049EC9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B6A7A8104139220049EC9C /* QuartzCore.framework */; };
-		63C53B5510ADECF200770A0B /* UXManagedModelDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B5610ADECF200770A0B /* UXManagedModelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */; };
-		63C53B5D10ADF59700770A0B /* UXManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B5B10ADF58A00770A0B /* UXManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B5E10ADF59700770A0B /* UXManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B5C10ADF58A00770A0B /* UXManagedObject.m */; };
-		63C53B6210ADFA0100770A0B /* UXManagedObjectEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B6310ADFA0100770A0B /* UXManagedObjectEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */; };
-		63C53B6710ADFFD400770A0B /* UXStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6510ADFFD400770A0B /* UXStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B6810ADFFD400770A0B /* UXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6610ADFFD400770A0B /* UXStore.m */; };
-		63C53B6B10AE060700770A0B /* UXManagedObjectPropertyEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B6C10AE060700770A0B /* UXManagedObjectPropertyEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */; };
-		63C53B6F10AE065500770A0B /* UXManagedObjectValueEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63C53B7010AE065500770A0B /* UXManagedObjectValueEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */; };
+		63BE308510CDB22500FBB27C /* UXInputPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BE308110CDB22500FBB27C /* UXInputPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BE308610CDB22500FBB27C /* UXInputPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE308210CDB22500FBB27C /* UXInputPanel.m */; };
+		63BE308710CDB22500FBB27C /* UXInputPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BE308310CDB22500FBB27C /* UXInputPanelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BE308810CDB22500FBB27C /* UXInputPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE308410CDB22500FBB27C /* UXInputPanelController.m */; };
+		63BE947810C39B0B00220E6A /* UXNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BE947610C39B0B00220E6A /* UXNSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BE947910C39B0B00220E6A /* UXNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE947710C39B0B00220E6A /* UXNSData.m */; };
+		63BE948410C39B9D00220E6A /* UXNSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BE948210C39B9D00220E6A /* UXNSDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BE948510C39B9D00220E6A /* UXNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BE948310C39B9D00220E6A /* UXNSDictionary.m */; };
 		63C5AFF6100F8F270028F9EF /* UXSearchDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C5AFE9100F8E710028F9EF /* UXSearchDisplayController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63C5AFF7100F8F280028F9EF /* UXSearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C5AFE8100F8E710028F9EF /* UXSearchDisplayController.m */; };
 		63C714C81007109500AD6672 /* UXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C714BE1007108B00AD6672 /* UXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -242,35 +221,89 @@
 		BEF320370F352E7A000DE5D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		634FCE3110CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = StorageKit;
+		};
+		634FCE3310CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63894BFB103BE194007C9CC9;
+			remoteInfo = StorageKitUnitTests;
+		};
+		634FCE3710CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ControllerKit;
+		};
+		634FCE3910CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63894BFB103BE194007C9CC9;
+			remoteInfo = ControllerKitUnitTests;
+		};
+		634FCE3D10CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = TableKit;
+		};
+		634FCE3F10CE0BAE004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63894BFB103BE194007C9CC9;
+			remoteInfo = TableKitUnitTests;
+		};
+		634FCE4110CE0BC3004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = StorageKit;
+		};
+		634FCE4310CE0BC3004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ControllerKit;
+		};
+		634FCE4510CE0BC3004D48BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TableKit;
+		};
+		63A684F910C4FE0B00DD39EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = UXKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		630AC6D810162A90002E6BFF /* UXModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXModelViewController.h; path = Source/Classes/Model/UXModelViewController.h; sourceTree = SOURCE_ROOT; };
 		630AC6D910162A90002E6BFF /* UXModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModelViewController.m; sourceTree = "<group>"; };
-		6319467F109C2A23006E1B56 /* UXPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPanelViewController.h; sourceTree = "<group>"; };
-		63194680109C2A23006E1B56 /* UXPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPanelViewController.m; sourceTree = "<group>"; };
-		63194683109C2B71006E1B56 /* UXPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPanelView.h; sourceTree = "<group>"; };
-		63194684109C2B71006E1B56 /* UXPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXPanelView.m; sourceTree = "<group>"; };
 		631EBE38100BC5CD0036C6F7 /* UXKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UXKit.bundle; path = Source/Resources/Bundles/UXKit.bundle; sourceTree = SOURCE_ROOT; };
-		632D5B60109EAF1B00627CEA /* UXManagedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModel.h; sourceTree = "<group>"; };
-		632D5B61109EAF1B00627CEA /* UXManagedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModel.m; sourceTree = "<group>"; };
-		632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModelViewController.h; sourceTree = "<group>"; };
-		632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModelViewController.m; sourceTree = "<group>"; };
-		632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableViewController.h; sourceTree = "<group>"; };
-		632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableViewController.m; sourceTree = "<group>"; };
-		632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableItemCell.h; sourceTree = "<group>"; };
-		632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableItemCell.m; sourceTree = "<group>"; };
-		632D5B7C109EB36000627CEA /* UXManagedTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableItem.h; sourceTree = "<group>"; };
-		632D5B7D109EB36000627CEA /* UXManagedTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableItem.m; sourceTree = "<group>"; };
-		632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedTableViewDataSource.h; sourceTree = "<group>"; };
-		632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableViewDataSource.m; sourceTree = "<group>"; };
-		632D5B8D109EB56E00627CEA /* UXObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXObjectStore.h; sourceTree = "<group>"; };
-		632D5B8E109EB56E00627CEA /* UXObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXObjectStore.m; sourceTree = "<group>"; };
-		632D5B91109EB57C00627CEA /* UXStoreQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStoreQuery.h; sourceTree = "<group>"; };
-		632D5B92109EB57C00627CEA /* UXStoreQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStoreQuery.m; sourceTree = "<group>"; };
-		632D5B99109EB5EE00627CEA /* UXStoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStoreContext.h; sourceTree = "<group>"; };
-		632D5B9A109EB5EE00627CEA /* UXStoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStoreContext.m; sourceTree = "<group>"; };
+		634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StorageKit.xcodeproj; path = ../StorageKit/StorageKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ControllerKit.xcodeproj; path = ../ControllerKit/ControllerKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TableKit.xcodeproj; path = ../TableKit/TableKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6354FE23107D5A36006831CE /* UXLauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXLauncherViewController.h; path = Source/Classes/Launcher/UXLauncherViewController.h; sourceTree = SOURCE_ROOT; };
 		6354FE24107D5A36006831CE /* UXLauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXLauncherViewController.m; sourceTree = "<group>"; };
 		635F5B82102A94D400CF0EF9 /* UXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXPageControl.h; sourceTree = "<group>"; };
@@ -327,16 +360,12 @@
 		63905D83104748B200106BC3 /* UXCalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarLogic.m; sourceTree = "<group>"; };
 		63905D84104748B200106BC3 /* UXCalendarTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarTileView.h; path = Source/Classes/Calendar/UXCalendarTileView.h; sourceTree = SOURCE_ROOT; };
 		63905D85104748B200106BC3 /* UXCalendarTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarTileView.m; sourceTree = "<group>"; };
-		639417BE10B3E2E6000D5976 /* UXNSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSManagedObject.h; path = Source/Categories/CoreData/UXNSManagedObject.h; sourceTree = SOURCE_ROOT; };
-		639417BF10B3E2E6000D5976 /* UXNSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UXNSManagedObject.m; path = Source/Categories/CoreData/UXNSManagedObject.m; sourceTree = SOURCE_ROOT; };
-		639417C210B3E2F3000D5976 /* UIXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXApplication.h; path = Source/Categories/UIKit/UIXApplication.h; sourceTree = SOURCE_ROOT; };
-		639417C310B3E2F3000D5976 /* UIXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXApplication.m; sourceTree = "<group>"; };
-		639417C410B3E2F3000D5976 /* UIXBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXBarButtonItem.h; path = Source/Categories/UIKit/UIXBarButtonItem.h; sourceTree = SOURCE_ROOT; };
-		639417C510B3E2F3000D5976 /* UIXBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXBarButtonItem.m; sourceTree = "<group>"; };
-		639417C610B3E2F3000D5976 /* UIXDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXDevice.h; path = Source/Categories/UIKit/UIXDevice.h; sourceTree = SOURCE_ROOT; };
-		639417C710B3E2F3000D5976 /* UIXDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXDevice.m; sourceTree = "<group>"; };
-		639417CE10B3E324000D5976 /* UXManagedTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXManagedTableViewDelegate.h; path = Source/Classes/ManagedTable/UXManagedTableViewDelegate.h; sourceTree = SOURCE_ROOT; };
-		639417CF10B3E324000D5976 /* UXManagedTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedTableViewDelegate.m; sourceTree = "<group>"; };
+		6392851410B12C750081DCD6 /* UIXApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXApplication.h; sourceTree = "<group>"; };
+		6392851510B12C750081DCD6 /* UIXApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXApplication.m; sourceTree = "<group>"; };
+		6392851910B12CCB0081DCD6 /* UIXDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXDevice.h; sourceTree = "<group>"; };
+		6392851A10B12CCB0081DCD6 /* UIXDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXDevice.m; sourceTree = "<group>"; };
+		6392886C10B25C930081DCD6 /* UIXBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXBarButtonItem.h; sourceTree = "<group>"; };
+		6392886D10B25C930081DCD6 /* UIXBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXBarButtonItem.m; sourceTree = "<group>"; };
 		639C41C1100E4B8D0013393A /* UXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXModel.h; path = Source/Classes/Model/UXModel.h; sourceTree = SOURCE_ROOT; };
 		639C41C3100E4B8D0013393A /* UXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModel.m; sourceTree = "<group>"; };
 		639C87EC10997BE600B87173 /* UIXWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXWindow.h; path = Source/Categories/UIKit/UIXWindow.h; sourceTree = SOURCE_ROOT; };
@@ -345,6 +374,12 @@
 		63A156E8103358F40083C26C /* UXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarView.m; sourceTree = "<group>"; };
 		63A156E9103358F40083C26C /* UXCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCalendarViewController.h; path = Source/Classes/Calendar/UXCalendarViewController.h; sourceTree = SOURCE_ROOT; };
 		63A156EA103358F40083C26C /* UXCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXCalendarViewController.m; sourceTree = "<group>"; };
+		63A6843910C4EEC600DD39EE /* UXNSIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXNSIndexPath.h; path = Source/Categories/Foundation/UXNSIndexPath.h; sourceTree = SOURCE_ROOT; };
+		63A6843A10C4EEC600DD39EE /* UXNSIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSIndexPath.m; sourceTree = "<group>"; };
+		63A6848710C4F4FB00DD39EE /* UXKitUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UXKitUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A684B810C4F55800DD39EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = SDKROOT; };
+		63A684BE10C4F58C00DD39EE /* UXKitUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXKitUnitTest.m; sourceTree = "<group>"; };
+		63A684C210C4F58C00DD39EE /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Source/UnitTests/Resources/PropertyLists/UnitTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		63A9E2001047BBE4007FF732 /* UXCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXCoding.h; path = Source/Classes/Utilities/UXCoding.h; sourceTree = SOURCE_ROOT; };
 		63ADE9CE1020BA96009B03DF /* UXModelURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXModelURLResponse.h; sourceTree = "<group>"; };
 		63ADE9CF1020BA96009B03DF /* UXModelURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXModelURLResponse.m; sourceTree = "<group>"; };
@@ -362,18 +397,15 @@
 		63B6A7AA104139220049EC9C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		63B6A8FE1041482C0049EC9C /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Settings.xcconfig; path = Configurations/Settings.xcconfig; sourceTree = SOURCE_ROOT; };
 		63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = UnitTests.xcconfig; path = Configurations/UnitTests.xcconfig; sourceTree = SOURCE_ROOT; };
-		63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedModelDataSource.h; sourceTree = "<group>"; };
-		63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedModelDataSource.m; sourceTree = "<group>"; };
-		63C53B5B10ADF58A00770A0B /* UXManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXManagedObject.h; path = Source/Classes/ManagedModel/UXManagedObject.h; sourceTree = SOURCE_ROOT; };
-		63C53B5C10ADF58A00770A0B /* UXManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObject.m; sourceTree = "<group>"; };
-		63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXManagedObjectEditorController.h; path = Source/Classes/ManagedTableEditor/UXManagedObjectEditorController.h; sourceTree = SOURCE_ROOT; };
-		63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectEditorController.m; sourceTree = "<group>"; };
-		63C53B6510ADFFD400770A0B /* UXStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXStore.h; sourceTree = "<group>"; };
-		63C53B6610ADFFD400770A0B /* UXStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXStore.m; sourceTree = "<group>"; };
-		63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedObjectPropertyEditorController.h; sourceTree = "<group>"; };
-		63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectPropertyEditorController.m; sourceTree = "<group>"; };
-		63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXManagedObjectValueEditorController.h; sourceTree = "<group>"; };
-		63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXManagedObjectValueEditorController.m; sourceTree = "<group>"; };
+		63BE308110CDB22500FBB27C /* UXInputPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXInputPanel.h; path = Source/Classes/InputPanel/UXInputPanel.h; sourceTree = SOURCE_ROOT; };
+		63BE308210CDB22500FBB27C /* UXInputPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXInputPanel.m; sourceTree = "<group>"; };
+		63BE308310CDB22500FBB27C /* UXInputPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXInputPanelController.h; path = Source/Classes/InputPanel/UXInputPanelController.h; sourceTree = SOURCE_ROOT; };
+		63BE308410CDB22500FBB27C /* UXInputPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXInputPanelController.m; sourceTree = "<group>"; };
+		63BE947610C39B0B00220E6A /* UXNSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNSData.h; sourceTree = "<group>"; };
+		63BE947710C39B0B00220E6A /* UXNSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSData.m; sourceTree = "<group>"; };
+		63BE948210C39B9D00220E6A /* UXNSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXNSDictionary.h; sourceTree = "<group>"; };
+		63BE948310C39B9D00220E6A /* UXNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXNSDictionary.m; sourceTree = "<group>"; };
+		63BE949210C39CC100220E6A /* UXDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UXDebug.h; sourceTree = "<group>"; };
 		63C5AFE8100F8E710028F9EF /* UXSearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UXSearchDisplayController.m; sourceTree = "<group>"; };
 		63C5AFE9100F8E710028F9EF /* UXSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXSearchDisplayController.h; path = Source/Classes/Search/UXSearchDisplayController.h; sourceTree = SOURCE_ROOT; };
 		63C714471007108B00AD6672 /* UXButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UXButtonBar.h; path = Source/Classes/Bar/UXButtonBar.h; sourceTree = SOURCE_ROOT; };
@@ -507,6 +539,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		63A6848410C4F4FB00DD39EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A684B910C4F55800DD39EE /* SenTestingKit.framework in Frameworks */,
+				63A684F610C4FDFD00DD39EE /* CoreData.framework in Frameworks */,
+				63A684F710C4FDFD00DD39EE /* Foundation.framework in Frameworks */,
+				63A684F810C4FDFD00DD39EE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF31F380F352DF5000DE5D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF31F3A0F352DF5000DE5D2 /* libUXKit.a */,
+				63A6848710C4F4FB00DD39EE /* UXKitUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -539,6 +583,7 @@
 				63C714271007107800AD6672 /* Configurations */,
 				63C714C01007108B00AD6672 /* Resources */,
 				63C714BC1007108B00AD6672 /* Project */,
+				63A684BC10C4F58C00DD39EE /* UnitTests */,
 				63C716C31008018900AD6672 /* Categories */,
 				63C714451007108B00AD6672 /* Classes */,
 			);
@@ -730,24 +775,41 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
-		632D5B8C109EB55F00627CEA /* ObjectStore */ = {
+		634FCE2710CE0BAE004D48BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63C53B6510ADFFD400770A0B /* UXStore.h */,
-				632D5B99109EB5EE00627CEA /* UXStoreContext.h */,
-				632D5B91109EB57C00627CEA /* UXStoreQuery.h */,
-				632D5B8D109EB56E00627CEA /* UXObjectStore.h */,
-				63C53B6410ADFCA000770A0B /* Source */,
+				634FCE3210CE0BAE004D48BE /* libStorageKit.a */,
+				634FCE3410CE0BAE004D48BE /* StorageKitUnitTests.octest */,
 			);
-			name = ObjectStore;
-			path = Source/Classes/ObjectStore;
-			sourceTree = SOURCE_ROOT;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634FCE2A10CE0BAE004D48BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				634FCE3810CE0BAE004D48BE /* libControllerKit.a */,
+				634FCE3A10CE0BAE004D48BE /* ControllerKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634FCE2D10CE0BAE004D48BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				634FCE3E10CE0BAE004D48BE /* libTableKit.a */,
+				634FCE4010CE0BAE004D48BE /* TableKitUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
 		};
 		638436EE104000BD00D29404 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				638436EF104000BD00D29404 /* UXNSArray.h */,
+				63BE947610C39B0B00220E6A /* UXNSData.h */,
 				638436F1104000BD00D29404 /* UXNSDate.h */,
+				63BE948210C39B9D00220E6A /* UXNSDictionary.h */,
+				63A6843910C4EEC600DD39EE /* UXNSIndexPath.h */,
 				638436F3104000BD00D29404 /* UXNSObject.h */,
 				638436F5104000BD00D29404 /* UXNSString.h */,
 				638437311040014200D29404 /* Source */,
@@ -759,10 +821,10 @@
 		638436F7104000BD00D29404 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				639417C210B3E2F3000D5976 /* UIXApplication.h */,
-				639417C410B3E2F3000D5976 /* UIXBarButtonItem.h */,
+				6392851410B12C750081DCD6 /* UIXApplication.h */,
+				6392886C10B25C930081DCD6 /* UIXBarButtonItem.h */,
 				638436F8104000BD00D29404 /* UIXColor.h */,
-				639417C610B3E2F3000D5976 /* UIXDevice.h */,
+				6392851910B12CCB0081DCD6 /* UIXDevice.h */,
 				638436FA104000BD00D29404 /* UIXFont.h */,
 				63843700104000BD00D29404 /* UIXImage.h */,
 				63843702104000BD00D29404 /* UIXNavigationController.h */,
@@ -782,10 +844,10 @@
 		638437301040013B00D29404 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				639417C310B3E2F3000D5976 /* UIXApplication.m */,
-				639417C510B3E2F3000D5976 /* UIXBarButtonItem.m */,
+				6392851510B12C750081DCD6 /* UIXApplication.m */,
+				6392886D10B25C930081DCD6 /* UIXBarButtonItem.m */,
 				638436F9104000BD00D29404 /* UIXColor.m */,
-				639417C710B3E2F3000D5976 /* UIXDevice.m */,
+				6392851A10B12CCB0081DCD6 /* UIXDevice.m */,
 				638436FB104000BD00D29404 /* UIXFont.m */,
 				63843701104000BD00D29404 /* UIXImage.m */,
 				63843703104000BD00D29404 /* UIXNavigationController.m */,
@@ -804,39 +866,15 @@
 			isa = PBXGroup;
 			children = (
 				638436F0104000BD00D29404 /* UXNSArray.m */,
+				63BE947710C39B0B00220E6A /* UXNSData.m */,
 				638436F2104000BD00D29404 /* UXNSDate.m */,
+				63BE948310C39B9D00220E6A /* UXNSDictionary.m */,
+				63A6843A10C4EEC600DD39EE /* UXNSIndexPath.m */,
 				638436F4104000BD00D29404 /* UXNSObject.m */,
 				638436F6104000BD00D29404 /* UXNSString.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
-		};
-		638F365C108C25B40021685E /* ManagedModel */ = {
-			isa = PBXGroup;
-			children = (
-				632D5B60109EAF1B00627CEA /* UXManagedModel.h */,
-				63C53B5310ADECF200770A0B /* UXManagedModelDataSource.h */,
-				632D5B6C109EB00C00627CEA /* UXManagedModelViewController.h */,
-				63C53B5B10ADF58A00770A0B /* UXManagedObject.h */,
-				63C53B4310ADE9EC00770A0B /* Source */,
-			);
-			name = ManagedModel;
-			path = Source/Classes/ManagedModel;
-			sourceTree = SOURCE_ROOT;
-		};
-		638F365D108C25B40021685E /* ManagedTable */ = {
-			isa = PBXGroup;
-			children = (
-				632D5B7C109EB36000627CEA /* UXManagedTableItem.h */,
-				632D5B78109EB35400627CEA /* UXManagedTableItemCell.h */,
-				632D5B74109EB33A00627CEA /* UXManagedTableViewController.h */,
-				632D5B80109EB37200627CEA /* UXManagedTableViewDataSource.h */,
-				639417CE10B3E324000D5976 /* UXManagedTableViewDelegate.h */,
-				63C53B5F10ADF9E900770A0B /* Source */,
-			);
-			name = ManagedTable;
-			path = Source/Classes/ManagedTable;
-			sourceTree = SOURCE_ROOT;
 		};
 		63900EC71041DCEE002FDE89 /* Launcher */ = {
 			isa = PBXGroup;
@@ -860,16 +898,6 @@
 			);
 			name = Source;
 			sourceTree = "<group>";
-		};
-		639417BD10B3E2E6000D5976 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				639417BE10B3E2E6000D5976 /* UXNSManagedObject.h */,
-				639417BF10B3E2E6000D5976 /* UXNSManagedObject.m */,
-			);
-			name = CoreData;
-			path = Source/Categories/CoreData;
-			sourceTree = SOURCE_ROOT;
 		};
 		639C41C0100E4B690013393A /* Model */ = {
 			isa = PBXGroup;
@@ -923,15 +951,58 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
-		63B47A2C108EDAF600C2D5B5 /* Panel */ = {
+		63A684BA10C4F56700DD39EE /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				63194683109C2B71006E1B56 /* UXPanelView.h */,
-				6319467F109C2A23006E1B56 /* UXPanelViewController.h */,
-				63F7FCD3109030B600F96586 /* Source */,
+				63A684B810C4F55800DD39EE /* SenTestingKit.framework */,
 			);
-			name = Panel;
-			path = Source/Classes/Panel;
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		63A684BC10C4F58C00DD39EE /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A684BD10C4F58C00DD39EE /* Classes */,
+				63A684BF10C4F58C00DD39EE /* Resources */,
+			);
+			name = UnitTests;
+			path = Source/UnitTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A684BD10C4F58C00DD39EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63A684BE10C4F58C00DD39EE /* UXKitUnitTest.m */,
+			);
+			name = Classes;
+			path = Source/UnitTests/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A684BF10C4F58C00DD39EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63A684C010C4F58C00DD39EE /* Fixtures */,
+				63A684C110C4F58C00DD39EE /* PropertyLists */,
+			);
+			name = Resources;
+			path = Source/UnitTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A684C010C4F58C00DD39EE /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fixtures;
+			path = Source/UnitTests/Resources/Fixtures;
+			sourceTree = SOURCE_ROOT;
+		};
+		63A684C110C4F58C00DD39EE /* PropertyLists */ = {
+			isa = PBXGroup;
+			children = (
+				63A684C210C4F58C00DD39EE /* UnitTests-Info.plist */,
+			);
+			name = PropertyLists;
+			path = Source/UnitTests/Resources/PropertyLists;
 			sourceTree = SOURCE_ROOT;
 		};
 		63B6A82F104139440049EC9C /* Libraries */ = {
@@ -948,62 +1019,29 @@
 		63B6A8301041394B0049EC9C /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */,
+				634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */,
+				634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
 		};
-		63C53B4310ADE9EC00770A0B /* Source */ = {
+		63BE308010CDB22500FBB27C /* InputPanel */ = {
 			isa = PBXGroup;
 			children = (
-				632D5B61109EAF1B00627CEA /* UXManagedModel.m */,
-				63C53B5410ADECF200770A0B /* UXManagedModelDataSource.m */,
-				632D5B6D109EB00C00627CEA /* UXManagedModelViewController.m */,
-				63C53B5C10ADF58A00770A0B /* UXManagedObject.m */,
+				63BE308110CDB22500FBB27C /* UXInputPanel.h */,
+				63BE308310CDB22500FBB27C /* UXInputPanelController.h */,
+				63BE308D10CDB29600FBB27C /* Source */,
 			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		63C53B5210ADEA4E00770A0B /* ManagedTableEditor */ = {
-			isa = PBXGroup;
-			children = (
-				63C53B6010ADFA0100770A0B /* UXManagedObjectEditorController.h */,
-				63C53B6910AE060700770A0B /* UXManagedObjectPropertyEditorController.h */,
-				63C53B6D10AE065500770A0B /* UXManagedObjectValueEditorController.h */,
-				63C53B7110AE070800770A0B /* Source */,
-			);
-			name = ManagedTableEditor;
-			path = Source/Classes/ManagedTableEditor;
+			name = InputPanel;
+			path = Source/Classes/InputPanel;
 			sourceTree = SOURCE_ROOT;
 		};
-		63C53B5F10ADF9E900770A0B /* Source */ = {
+		63BE308D10CDB29600FBB27C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				632D5B7D109EB36000627CEA /* UXManagedTableItem.m */,
-				632D5B79109EB35400627CEA /* UXManagedTableItemCell.m */,
-				632D5B75109EB33A00627CEA /* UXManagedTableViewController.m */,
-				632D5B81109EB37200627CEA /* UXManagedTableViewDataSource.m */,
-				639417CF10B3E324000D5976 /* UXManagedTableViewDelegate.m */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		63C53B6410ADFCA000770A0B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				63C53B6610ADFFD400770A0B /* UXStore.m */,
-				632D5B9A109EB5EE00627CEA /* UXStoreContext.m */,
-				632D5B92109EB57C00627CEA /* UXStoreQuery.m */,
-				632D5B8E109EB56E00627CEA /* UXObjectStore.m */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		63C53B7110AE070800770A0B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				63C53B6110ADFA0100770A0B /* UXManagedObjectEditorController.m */,
-				63C53B6A10AE060700770A0B /* UXManagedObjectPropertyEditorController.m */,
-				63C53B6E10AE065500770A0B /* UXManagedObjectValueEditorController.m */,
+				63BE308210CDB22500FBB27C /* UXInputPanel.m */,
+				63BE308410CDB22500FBB27C /* UXInputPanelController.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -1022,20 +1060,15 @@
 		63C714451007108B00AD6672 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				63E2E43E101AD03900CC0DDE /* Utilities */,
 				63C714461007108B00AD6672 /* Bar */,
 				63A156E4103358F40083C26C /* Calendar */,
 				63E2E6A7101B806100CC0DDE /* Composer */,
 				63C7144D1007108B00AD6672 /* Control */,
+				63BE308010CDB22500FBB27C /* InputPanel */,
 				63C714521007108B00AD6672 /* Label */,
 				63900EC71041DCEE002FDE89 /* Launcher */,
 				639C41C0100E4B690013393A /* Model */,
-				638F365C108C25B40021685E /* ManagedModel */,
-				632D5B8C109EB55F00627CEA /* ObjectStore */,
-				638F365D108C25B40021685E /* ManagedTable */,
-				63C53B5210ADEA4E00770A0B /* ManagedTableEditor */,
 				63C714591007108B00AD6672 /* Navigator */,
-				63B47A2C108EDAF600C2D5B5 /* Panel */,
 				63C7145C1007108B00AD6672 /* Photo */,
 				63C716F9100801A000AD6672 /* Search */,
 				63C714681007108B00AD6672 /* Style */,
@@ -1044,6 +1077,7 @@
 				63C714911007108B00AD6672 /* Text */,
 				63C716FE100801A000AD6672 /* Thumbnail */,
 				63C7149A1007108B00AD6672 /* URL */,
+				63E2E43E101AD03900CC0DDE /* Utilities */,
 				63C714A71007108B00AD6672 /* View */,
 				63C714B51007108B00AD6672 /* ViewController */,
 			);
@@ -1145,11 +1179,11 @@
 		63C714801007108B00AD6672 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				63C714811007108B00AD6672 /* UXTableHeaderView.h */,
 				63C714831007108B00AD6672 /* UXTableItem.h */,
 				63C714851007108B00AD6672 /* UXTableItemCell.h */,
-				63C714871007108B00AD6672 /* UXTableView.h */,
 				63C714891007108B00AD6672 /* UXTableViewCell.h */,
+				63C714811007108B00AD6672 /* UXTableHeaderView.h */,
+				63C714871007108B00AD6672 /* UXTableView.h */,
 				63C7148B1007108B00AD6672 /* UXTableViewController.h */,
 				63C7148F1007108B00AD6672 /* UXTableViewDelegate.h */,
 				63F3DC0E1014DAB000B448E2 /* UXTableViewDataSource.h */,
@@ -1204,9 +1238,9 @@
 			isa = PBXGroup;
 			children = (
 				63C714B81007108B00AD6672 /* UXViewController.h */,
-				63844A9810095889005A6532 /* UXPopupViewController.h */,
 				63844A821009585C005A6532 /* UXActionSheetController.h */,
 				63844A841009585C005A6532 /* UXAlertViewController.h */,
+				63844A9810095889005A6532 /* UXPopupViewController.h */,
 				63C714BA1007108B00AD6672 /* UXWebController.h */,
 				631EBD59100BB7AB0036C6F7 /* Source */,
 			);
@@ -1247,6 +1281,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				63B6A82F104139440049EC9C /* Libraries */,
 				63B6A8301041394B0049EC9C /* Projects */,
+				63A684BA10C4F56700DD39EE /* UnitTests */,
 			);
 			name = References;
 			sourceTree = "<group>";
@@ -1254,7 +1289,6 @@
 		63C716C31008018900AD6672 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				639417BD10B3E2E6000D5976 /* CoreData */,
 				638436EE104000BD00D29404 /* Foundation */,
 				638436F7104000BD00D29404 /* UIKit */,
 			);
@@ -1290,6 +1324,7 @@
 			isa = PBXGroup;
 			children = (
 				63E2E43F101AD03900CC0DDE /* UXGlobal.h */,
+				63BE949210C39CC100220E6A /* UXDebug.h */,
 				63A9E2001047BBE4007FF732 /* UXCoding.h */,
 				63E2E443101AD04200CC0DDE /* Source */,
 			);
@@ -1320,15 +1355,6 @@
 			children = (
 				63E2E6AB101B806100CC0DDE /* UXPostController.m */,
 				6388A0D610578E51004D3052 /* UXTextBarController.m */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		63F7FCD3109030B600F96586 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				63194684109C2B71006E1B56 /* UXPanelView.m */,
-				63194680109C2A23006E1B56 /* UXPanelViewController.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -1435,32 +1461,38 @@
 				638F35A5108C08DD0021685E /* UIXView.h in Headers */,
 				63DC00C51092EF9800933FBE /* UXURLMap.h in Headers */,
 				639C87EE10997BE600B87173 /* UIXWindow.h in Headers */,
-				63194681109C2A23006E1B56 /* UXPanelViewController.h in Headers */,
-				63194685109C2B71006E1B56 /* UXPanelView.h in Headers */,
-				632D5B62109EAF1B00627CEA /* UXManagedModel.h in Headers */,
-				632D5B6E109EB00C00627CEA /* UXManagedModelViewController.h in Headers */,
-				632D5B76109EB33A00627CEA /* UXManagedTableViewController.h in Headers */,
-				632D5B7A109EB35400627CEA /* UXManagedTableItemCell.h in Headers */,
-				632D5B7E109EB36000627CEA /* UXManagedTableItem.h in Headers */,
-				632D5B82109EB37200627CEA /* UXManagedTableViewDataSource.h in Headers */,
-				632D5B93109EB57C00627CEA /* UXStoreQuery.h in Headers */,
-				632D5B9B109EB5EE00627CEA /* UXStoreContext.h in Headers */,
-				63C53B5510ADECF200770A0B /* UXManagedModelDataSource.h in Headers */,
-				63C53B5D10ADF59700770A0B /* UXManagedObject.h in Headers */,
-				63C53B6210ADFA0100770A0B /* UXManagedObjectEditorController.h in Headers */,
-				63C53B6710ADFFD400770A0B /* UXStore.h in Headers */,
-				63C53B6B10AE060700770A0B /* UXManagedObjectPropertyEditorController.h in Headers */,
-				63C53B6F10AE065500770A0B /* UXManagedObjectValueEditorController.h in Headers */,
-				639417C810B3E2F3000D5976 /* UIXApplication.h in Headers */,
-				639417CA10B3E2F3000D5976 /* UIXBarButtonItem.h in Headers */,
-				639417CC10B3E2F3000D5976 /* UIXDevice.h in Headers */,
-				639417D010B3E324000D5976 /* UXManagedTableViewDelegate.h in Headers */,
+				6392851610B12C750081DCD6 /* UIXApplication.h in Headers */,
+				6392851B10B12CCB0081DCD6 /* UIXDevice.h in Headers */,
+				6392886E10B25C930081DCD6 /* UIXBarButtonItem.h in Headers */,
+				63BE947810C39B0B00220E6A /* UXNSData.h in Headers */,
+				63BE948410C39B9D00220E6A /* UXNSDictionary.h in Headers */,
+				63BE308510CDB22500FBB27C /* UXInputPanel.h in Headers */,
+				63BE308710CDB22500FBB27C /* UXInputPanelController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		63A6848610C4F4FB00DD39EE /* UXKitUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A6848D10C4F4FC00DD39EE /* Build configuration list for PBXNativeTarget "UXKitUnitTests" */;
+			buildPhases = (
+				63A6848210C4F4FB00DD39EE /* Resources */,
+				63A6848310C4F4FB00DD39EE /* Sources */,
+				63A6848410C4F4FB00DD39EE /* Frameworks */,
+				63A6848510C4F4FB00DD39EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A684FA10C4FE0B00DD39EE /* PBXTargetDependency */,
+			);
+			name = UXKitUnitTests;
+			productName = UXKitUnitTests;
+			productReference = 63A6848710C4F4FB00DD39EE /* UXKitUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BEF31F390F352DF5000DE5D2 /* UXKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "UXKit" */;
@@ -1473,6 +1505,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				634FCE4210CE0BC3004D48BE /* PBXTargetDependency */,
+				634FCE4410CE0BC3004D48BE /* PBXTargetDependency */,
+				634FCE4610CE0BC3004D48BE /* PBXTargetDependency */,
 			);
 			name = UXKit;
 			productName = UXKit;
@@ -1489,14 +1524,97 @@
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 634FCE2A10CE0BAE004D48BE /* Products */;
+					ProjectRef = 634FCE2910CE0BAE004D48BE /* ControllerKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 634FCE2710CE0BAE004D48BE /* Products */;
+					ProjectRef = 634FCE2610CE0BAE004D48BE /* StorageKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 634FCE2D10CE0BAE004D48BE /* Products */;
+					ProjectRef = 634FCE2C10CE0BAE004D48BE /* TableKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BEF31F390F352DF5000DE5D2 /* UXKit */,
+				63A6848610C4F4FB00DD39EE /* UXKitUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		634FCE3210CE0BAE004D48BE /* libStorageKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStorageKit.a;
+			remoteRef = 634FCE3110CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		634FCE3410CE0BAE004D48BE /* StorageKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StorageKitUnitTests.octest;
+			remoteRef = 634FCE3310CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		634FCE3810CE0BAE004D48BE /* libControllerKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libControllerKit.a;
+			remoteRef = 634FCE3710CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		634FCE3A10CE0BAE004D48BE /* ControllerKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ControllerKitUnitTests.octest;
+			remoteRef = 634FCE3910CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		634FCE3E10CE0BAE004D48BE /* libTableKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTableKit.a;
+			remoteRef = 634FCE3D10CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		634FCE4010CE0BAE004D48BE /* TableKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TableKitUnitTests.octest;
+			remoteRef = 634FCE3F10CE0BAE004D48BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63A6848210C4F4FB00DD39EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
+		63A6848510C4F4FB00DD39EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		63C715561007113600AD6672 /* Deploy Library */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1514,6 +1632,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63A6848310C4F4FB00DD39EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A684C310C4F58C00DD39EE /* UXKitUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF31F370F352DF5000DE5D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1610,32 +1736,73 @@
 				63C830BB10879F9000343E7B /* UXStyledTextViewController.m in Sources */,
 				63C830CA10879FD600343E7B /* UXNavigationController.m in Sources */,
 				639C87EF10997BE600B87173 /* UIXWindow.m in Sources */,
-				63194682109C2A23006E1B56 /* UXPanelViewController.m in Sources */,
-				63194686109C2B71006E1B56 /* UXPanelView.m in Sources */,
-				632D5B63109EAF1B00627CEA /* UXManagedModel.m in Sources */,
-				632D5B6F109EB00C00627CEA /* UXManagedModelViewController.m in Sources */,
-				632D5B77109EB33A00627CEA /* UXManagedTableViewController.m in Sources */,
-				632D5B7B109EB35400627CEA /* UXManagedTableItemCell.m in Sources */,
-				632D5B7F109EB36000627CEA /* UXManagedTableItem.m in Sources */,
-				632D5B83109EB37200627CEA /* UXManagedTableViewDataSource.m in Sources */,
-				632D5B94109EB57C00627CEA /* UXStoreQuery.m in Sources */,
-				632D5B9C109EB5EE00627CEA /* UXStoreContext.m in Sources */,
-				63C53B5610ADECF200770A0B /* UXManagedModelDataSource.m in Sources */,
-				63C53B5E10ADF59700770A0B /* UXManagedObject.m in Sources */,
-				63C53B6310ADFA0100770A0B /* UXManagedObjectEditorController.m in Sources */,
-				63C53B6810ADFFD400770A0B /* UXStore.m in Sources */,
-				63C53B6C10AE060700770A0B /* UXManagedObjectPropertyEditorController.m in Sources */,
-				63C53B7010AE065500770A0B /* UXManagedObjectValueEditorController.m in Sources */,
-				639417C910B3E2F3000D5976 /* UIXApplication.m in Sources */,
-				639417CB10B3E2F3000D5976 /* UIXBarButtonItem.m in Sources */,
-				639417CD10B3E2F3000D5976 /* UIXDevice.m in Sources */,
-				639417D110B3E324000D5976 /* UXManagedTableViewDelegate.m in Sources */,
+				6392851710B12C750081DCD6 /* UIXApplication.m in Sources */,
+				6392851C10B12CCB0081DCD6 /* UIXDevice.m in Sources */,
+				6392886F10B25C930081DCD6 /* UIXBarButtonItem.m in Sources */,
+				63BE947910C39B0B00220E6A /* UXNSData.m in Sources */,
+				63BE948510C39B9D00220E6A /* UXNSDictionary.m in Sources */,
+				63BE308610CDB22500FBB27C /* UXInputPanel.m in Sources */,
+				63BE308810CDB22500FBB27C /* UXInputPanelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		634FCE4210CE0BC3004D48BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StorageKit;
+			targetProxy = 634FCE4110CE0BC3004D48BE /* PBXContainerItemProxy */;
+		};
+		634FCE4410CE0BC3004D48BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ControllerKit;
+			targetProxy = 634FCE4310CE0BC3004D48BE /* PBXContainerItemProxy */;
+		};
+		634FCE4610CE0BC3004D48BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableKit;
+			targetProxy = 634FCE4510CE0BC3004D48BE /* PBXContainerItemProxy */;
+		};
+		63A684FA10C4FE0B00DD39EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF31F390F352DF5000DE5D2 /* UXKit */;
+			targetProxy = 63A684F910C4FE0B00DD39EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		63A6848910C4F4FB00DD39EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		63A6848A10C4F4FB00DD39EE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		63A6848B10C4F4FB00DD39EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		63A6848C10C4F4FB00DD39EE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B6A8FF1041482C0049EC9C /* UnitTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Distribution;
+		};
 		63C71551100710E100AD6672 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
@@ -1699,6 +1866,17 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		63A6848D10C4F4FC00DD39EE /* Build configuration list for PBXNativeTarget "UXKitUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A6848910C4F4FB00DD39EE /* Debug */,
+				63A6848A10C4F4FB00DD39EE /* Profile */,
+				63A6848B10C4F4FB00DD39EE /* Release */,
+				63A6848C10C4F4FB00DD39EE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "UXKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

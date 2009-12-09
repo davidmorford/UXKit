@@ -48,7 +48,7 @@ static const CGSize		kTileSize			= { 46.f, 46.f };
 			cellHeight			= kTileSize.height;
 			logic				= [theLogic retain];
 			delegate			= theDelegate;
-			self.style			= [UXLinearGradientFillStyle styleWithColor1:UXSTYLEVAR(calendarGridTopColor) color2:UXSTYLEVAR(calendarGridBottomColor) next:nil];
+			self.style			= [UXLinearGradientFillStyle styleWithColor1:UXSTYLESHEETPROPERTY(calendarGridTopColor) color2:UXSTYLESHEETPROPERTY(calendarGridBottomColor) next:nil];
 			
 			// Allocate the pool of cells. Each cell represents a calendar week (a single row of 7 UXCalendarTileViews).
 			for (NSUInteger i = 0; i < kTilePoolSize; i++) {

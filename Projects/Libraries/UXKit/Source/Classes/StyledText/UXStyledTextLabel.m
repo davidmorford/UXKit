@@ -177,8 +177,8 @@ static const CGFloat kCancelHighlightThreshold = 4;
 			_highlightedNode		= nil;
 			_highlightedFrame		= nil;
 			_accessibilityElements	= nil;
-			self.font				= UXSTYLEVAR(font);
-			self.backgroundColor	= UXSTYLEVAR(backgroundColor);
+			self.font				= UXSTYLESHEETPROPERTY(font);
+			self.backgroundColor	= UXSTYLESHEETPROPERTY(backgroundColor);
 			self.contentMode		= UIViewContentModeRedraw;
 		}
 		return self;
@@ -357,7 +357,7 @@ static const CGFloat kCancelHighlightThreshold = 4;
 
 	-(UIColor *) textColor {
 		if (!_textColor) {
-			_textColor = [UXSTYLEVAR(textColor) retain];
+			_textColor = [UXSTYLESHEETPROPERTY(textColor) retain];
 		}
 		return _textColor;
 	}
@@ -372,7 +372,7 @@ static const CGFloat kCancelHighlightThreshold = 4;
 
 	-(UIColor *) highlightedTextColor {
 		if (!_highlightedTextColor) {
-			_highlightedTextColor = [UXSTYLEVAR(highlightedTextColor) retain];
+			_highlightedTextColor = [UXSTYLESHEETPROPERTY(highlightedTextColor) retain];
 		}
 		return _highlightedTextColor;
 	}

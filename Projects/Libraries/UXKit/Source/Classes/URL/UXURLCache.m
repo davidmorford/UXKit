@@ -228,7 +228,7 @@ static NSMutableDictionary* gNamedCaches		= nil;
 	}
 
 	-(NSData *) dataForURL:(NSString *)URL {
-		return [self dataForURL:URL expires:0 timestamp:nil];
+		return [self dataForURL:URL expires:UX_CACHE_EXPIRATION_AGE_NEVER timestamp:nil];
 	}
 
 	-(NSData *) dataForURL:(NSString *)URL expires:(NSTimeInterval)expirationAge timestamp:(NSDate **)timestamp {
@@ -242,7 +242,8 @@ static NSMutableDictionary* gNamedCaches		= nil;
 		if ([fm fileExistsAtPath:filePath]) {
 			NSDictionary *attrs = [fm attributesOfItemAtPath:filePath error:nil];
 			NSDate *modified	= [attrs objectForKey:NSFileModificationDate];
-			if (expirationAge && ([modified timeIntervalSinceNow] < -expirationAge) ) {
+			/*if (expirationAge && ([modified timeIntervalSinceNow] < -expirationAge)) {*/
+			if ([modified timeIntervalSinceNow] < -expirationAge) {
 				return nil;
 			}
 			if (timestamp) {

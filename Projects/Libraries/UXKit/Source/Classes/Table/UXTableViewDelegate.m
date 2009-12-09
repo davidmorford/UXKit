@@ -37,8 +37,8 @@ static const CGFloat kSectionHeaderHeight	= 35;
 	#pragma mark UITableViewDelegate
 
 	-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-		//if ((tableView.style == UITableViewStylePlain) && UXSTYLEVAR(tableHeaderTintColor)) {
-		if (UXSTYLEVAR(tableHeaderTintColor)) {
+		//if ((tableView.style == UITableViewStylePlain) && UXSTYLESHEETPROPERTY(tableHeaderTintColor)) {
+		if (UXSTYLESHEETPROPERTY(tableHeaderTintColor)) {
 			if ([tableView.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)]) {
 				NSString *title = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
 				if (title.length) {

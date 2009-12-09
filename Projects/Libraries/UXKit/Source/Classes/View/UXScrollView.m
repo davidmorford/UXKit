@@ -385,7 +385,8 @@ static const NSTimeInterval kOvershoot			= 2;
 		if (resetEdges) {
 			_pageEdges	= _pageStartEdges = UIEdgeInsetsZero;
 			_zooming	= NO;
-			//[self setNeedsLayout];
+			// ???:
+			[self setNeedsLayout];
 		}
 		else if (pageIndex != _centerPageIndex) {
 			[self adjustPageEdgesForPageAtIndex:pageIndex];
@@ -416,6 +417,7 @@ static const NSTimeInterval kOvershoot			= 2;
 			}
 			_pageArrayIndex		= [self arrayIndexForPageIndex:pageIndex relativeToIndex:_centerPageIndex];
 			_centerPageIndex	= pageIndex;
+			[self setNeedsLayout];
 		}
 	}
 

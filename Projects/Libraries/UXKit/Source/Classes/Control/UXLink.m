@@ -40,7 +40,7 @@
 		if (highlighted) {
 			if (!_screenView) {
 				_screenView					= [[UXView alloc] initWithFrame:self.bounds];
-				_screenView.style			= UXSTYLE(linkHighlighted);
+				_screenView.style			= UXSTYLEWITHSELECTOR(linkHighlighted);
 				_screenView.backgroundColor = [UIColor clearColor];
 				_screenView.userInteractionEnabled = NO;
 				[self addSubview:_screenView];

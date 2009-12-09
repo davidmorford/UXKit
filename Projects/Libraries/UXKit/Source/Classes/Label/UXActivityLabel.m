@@ -30,12 +30,12 @@ static CGFloat kProgressMargin	= 6;
 			_bezelView = [[UXView alloc] init];
 			if (_style == UXActivityLabelStyleBlackBezel) {
 				_bezelView.backgroundColor	= [UIColor clearColor];
-				_bezelView.style			= UXSTYLE(blackBezel);
+				_bezelView.style			= UXSTYLEWITHSELECTOR(blackBezel);
 				self.backgroundColor		= [UIColor clearColor];
 			}
 			else if (_style == UXActivityLabelStyleWhiteBezel) {
 				_bezelView.backgroundColor	= [UIColor clearColor];
-				_bezelView.style			= UXSTYLE(whiteBezel);
+				_bezelView.style			= UXSTYLEWITHSELECTOR(whiteBezel);
 				self.backgroundColor		= [UIColor clearColor];
 			}
 			else if (_style == UXActivityLabelStyleWhiteBox) {
@@ -48,13 +48,15 @@ static CGFloat kProgressMargin	= 6;
 			}
 			else if (_style == UXActivityLabelStyleBlackBanner) {
 				_bezelView.backgroundColor	= [UIColor clearColor];
-				_bezelView.style			= UXSTYLE(blackBanner);
+				_bezelView.style			= UXSTYLEWITHSELECTOR(blackBanner);
 				self.backgroundColor		= [UIColor clearColor];
 			}
 			else {
 				_bezelView.backgroundColor	= [UIColor clearColor];
 				self.backgroundColor		= [UIColor clearColor];
 			}
+			
+			self.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 			
 			_label = [[UILabel alloc] init];
 			_label.text = text;
@@ -63,25 +65,25 @@ static CGFloat kProgressMargin	= 6;
 			
 			if (_style == UXActivityLabelStyleWhite) {
 				_activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-				_label.font = UXSTYLEVAR(activityLabelFont);
+				_label.font = UXSTYLESHEETPROPERTY(activityLabelFont);
 				_label.textColor = [UIColor whiteColor];
 			}
 			else if ((_style == UXActivityLabelStyleGray) || (_style == UXActivityLabelStyleWhiteBox) || (_style == UXActivityLabelStyleWhiteBezel) ) {
 				_activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-				_label.font = UXSTYLEVAR(activityLabelFont);
-				_label.textColor = UXSTYLEVAR(tableActivityTextColor);
+				_label.font = UXSTYLESHEETPROPERTY(activityLabelFont);
+				_label.textColor = UXSTYLESHEETPROPERTY(tableActivityTextColor);
 			}
 			else if ((_style == UXActivityLabelStyleBlackBezel) || (_style == UXActivityLabelStyleBlackBox) ) {
 				_activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
 				_activityIndicator.frame = CGRectMake(0, 0, 24, 24);
-				_label.font = UXSTYLEVAR(activityLabelFont);
+				_label.font = UXSTYLESHEETPROPERTY(activityLabelFont);
 				_label.textColor = [UIColor whiteColor];
 				_label.shadowColor = [UIColor colorWithWhite:0 alpha:0.3];
 				_label.shadowOffset = CGSizeMake(1, 1);
 			}
 			else if (_style == UXActivityLabelStyleBlackBanner) {
 				_activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-				_label.font = UXSTYLEVAR(activityBannerFont);
+				_label.font = UXSTYLESHEETPROPERTY(activityBannerFont);
 				_label.textColor = [UIColor whiteColor];
 				_label.shadowColor = [UIColor colorWithWhite:0 alpha:0.3];
 				_label.shadowOffset = CGSizeMake(1, 1);

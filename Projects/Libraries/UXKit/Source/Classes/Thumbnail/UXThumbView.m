@@ -6,7 +6,7 @@
 
 	-(id) initWithFrame:(CGRect)frame {
 		if (self = [super initWithFrame:frame]) {
-			self.backgroundColor	= UXSTYLEVAR(thumbnailBackgroundColor);
+			self.backgroundColor	= UXSTYLESHEETPROPERTY(thumbnailBackgroundColor);
 			self.clipsToBounds		= YES;
 			[self setStylesWithSelector:@"thumbView:"];
 		}

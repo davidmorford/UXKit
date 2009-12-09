@@ -72,8 +72,8 @@
 				_image = [image retain];
 			}
 			else {
-				return [NSError errorWithDomain:UX_ERROR_DOMAIN 
-										   code:UX_EC_INVALID_IMAGE
+				return [NSError errorWithDomain:UXKitErrorDomain 
+										   code:UXKitInvalidImageErrorCode
 									   userInfo:nil];
 			}
 		}

@@ -21,47 +21,31 @@
 
 	+(NSArray *) lettersForSectionsWithSearch:(BOOL)search summary:(BOOL)summary;
 
-	/*!
-	@abstract
-	*/
+	#pragma mark -
+
 	-(id) tableView:(UITableView *)aTableView objectForRowAtIndexPath:(NSIndexPath *)anIndexPath;
-
-	/*!
-	@abstract
-	*/
 	-(Class) tableView:(UITableView *)aTableView cellClassForObject:(id)object;
-
-	/*!
-	@abstract
-	*/
 	-(NSString *) tableView:(UITableView *)aTableView labelForObject:(id)object;
-
-	/*!
-	@abstract
-	*/
 	-(NSIndexPath *) tableView:(UITableView *)aTableView indexPathForObject:(id)object;
-
-	/*!
-	@abstract
-	*/
 	-(void) tableView:(UITableView *)aTableView cell:(UITableViewCell *)cell willAppearAtIndexPath:(NSIndexPath *)anIndexPath;
+
+	#pragma mark -
 
 	/*!
 	@abstract Informs the data source that its model loaded.
 	@discussion Prepare newly loaded data for use in the table view.
 	*/
-	-(void) tableViewDidLoadModel:(UITableView *)aTableView;	
-
+	-(void) tableViewDidLoadModel:(UITableView *)aTableView;
 
 	-(NSString *) titleForLoading:(BOOL)reloading;
+	-(NSString *) titleForEmpty;
+	-(NSString *) titleForError:(NSError *)error;
+
+	-(NSString *) subtitleForEmpty;
+	-(NSString *) subtitleForError:(NSError *)error;
 
 	-(UIImage *) imageForEmpty;
-	-(NSString *) titleForEmpty;
-	-(NSString *) subtitleForEmpty;
-
 	-(UIImage *) imageForError:(NSError *)error;
-	-(NSString *) titleForError:(NSError *)error;
-	-(NSString *) subtitleForError:(NSError *)error;
 
 @optional
 	-(NSIndexPath *) tableView:(UITableView *)aTableView willUpdateObject:(id)anObject atIndexPath:(NSIndexPath *)anIndexPath;
