@@ -44,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6340D65710D0167A00324F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C5400710AE58C400770A0B /* UXKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63A6848710C4F4FB00DD39EE /* UXKitUnitTests.octest */;
+			remoteInfo = UXKitUnitTests;
+		};
 		638439791040F9F000D29404 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -607,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				63C5400F10AE58C400770A0B /* libUXKit.a */,
+				6340D65810D0167A00324F4D /* UXKitUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -697,6 +705,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		6340D65810D0167A00324F4D /* UXKitUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UXKitUnitTests.octest;
+			remoteRef = 6340D65710D0167A00324F4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		63C53FF810AE58A900770A0B /* libJSONKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;

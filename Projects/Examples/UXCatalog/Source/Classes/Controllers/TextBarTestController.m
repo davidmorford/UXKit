@@ -32,7 +32,7 @@
 										   next:[UXLinearGradientFillStyle styleWithColor1:RGBCOLOR(255, 255, 255) color2:RGBCOLOR(216, 221, 231) 
 										   next:[UXSolidBorderStyle styleWithColor:RGBCOLOR(161, 167, 178) width:1 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(10, 12, 9, 12) 
-										   next:[UXTextStyle styleWithFont:nil color:UXSTYLEVAR(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
+										   next:[UXTextStyle styleWithFont:nil color:UXSTYLESHEETPROPERTY(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
 										   next:nil]]]]]]];
 		}
 		else if (state == UIControlStateHighlighted)  {
@@ -142,7 +142,7 @@
 		UXLabel *view			= [[[UXLabel alloc] initWithFrame:frame] autorelease];
 		view.backgroundColor	= scrollView.backgroundColor;
 		view.text				= chatText;
-		view.style				= UXSTYLEVAR(leftSpeechBubble);
+		view.style				= UXSTYLESHEETPROPERTY(leftSpeechBubble);
 		[scrollView addSubview:view];
 		
 		scrollView.contentSize = CGSizeMake(scrollView.width, (scrollView.contentSize.height + (view.frame.size.height + 10)));

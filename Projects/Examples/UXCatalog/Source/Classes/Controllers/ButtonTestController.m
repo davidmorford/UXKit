@@ -167,7 +167,7 @@
 										   next:[UXLinearGradientFillStyle styleWithColor1:RGBCOLOR(255, 255, 255) color2:RGBCOLOR(216, 221, 231) 
 										   next:[UXSolidBorderStyle styleWithColor:RGBCOLOR(161, 167, 178) width:1 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(10, 12, 9, 12) 
-										   next:[UXTextStyle styleWithFont:nil color:UXSTYLEVAR(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
+										   next:[UXTextStyle styleWithFont:nil color:UXSTYLESHEETPROPERTY(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
 										   next:nil]]]]]]];
 		}
 		else if (state == UIControlStateHighlighted)  {
@@ -195,7 +195,7 @@
 										   next:[UXSolidBorderStyle styleWithColor:RGBCOLOR(161, 167, 178) width:1 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(2, 0, 0, 0) 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(11, 10, 9, 10) 
-										   next:[UXTextStyle styleWithFont:nil color:UXSTYLEVAR(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
+										   next:[UXTextStyle styleWithFont:nil color:UXSTYLESHEETPROPERTY(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
 										   next:nil]]]]]]]]];
 		}
 		else if (state == UIControlStateHighlighted)  {
@@ -205,7 +205,7 @@
 										   next:[UXSolidBorderStyle styleWithColor:RGBCOLOR(161, 167, 178) width:1 
 										   next:[UXInsetStyle styleWithInset:UIEdgeInsetsMake(2, 0, 0, 0) 
 										   next:[UXBoxStyle styleWithPadding:UIEdgeInsetsMake(11, 10, 9, 10) 
-										   next:[UXTextStyle styleWithFont:nil color:UXSTYLEVAR(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
+										   next:[UXTextStyle styleWithFont:nil color:UXSTYLESHEETPROPERTY(linkTextColor) shadowColor:[UIColor colorWithWhite:255 alpha:0.4] shadowOffset:CGSizeMake(0, -1) 
 										   next:nil]]]]]]];
 		}
 		else {

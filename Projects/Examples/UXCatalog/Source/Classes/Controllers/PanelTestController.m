@@ -1,7 +1,7 @@
 
 #import "PanelTestController.h"
-#import <UXKit/UXPanelView.h>
-#import <UXKit/UXPanelViewController.h>
+#import <UXKit/UXInputPanel.h>
+#import <UXKit/UXInputPanelController.h>
 
 @implementation PanelTestController
 
@@ -31,8 +31,23 @@
 			[controller release]; controller = nil;
 		}
 		else {
-			controller = (UXPanelViewController *)[[UXNavigator navigator] openURL:@"uxcatalog://panel" animated:TRUE];
+			controller = (UXInputPanelController *)[[UXNavigator navigator] openURL:@"uxcatalog://panel" animated:TRUE];
 		}
+	}
+
+
+	#pragma mark <UXInputPanelControllerDelegate>
+	
+	-(BOOL) panelController:(UXInputPanelController *)controller shouldCompleteWithResult:(id)result  {
+		return TRUE;
+	}
+
+	-(void) panelController:(UXInputPanelController *)controller didCompleteWithResult:(id)result  {
+	
+	}
+
+	-(void) panelControllerDidCancel:(UXInputPanelController *)controller {
+	
 	}
 	
 

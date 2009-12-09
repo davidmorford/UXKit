@@ -7,7 +7,7 @@
 
 #import <UXKit/UXKit.h>
 
-@class UXPanelViewController;
+@class UXInputPanelController;
 
 /*!
 @class PanelTestController
@@ -15,8 +15,8 @@
 @abstract
 @discussion
 */
-@interface PanelTestController : UXViewController {
-	UXPanelViewController *controller;
+@interface PanelTestController : UXViewController <UXInputPanelControllerDelegate> {
+	UXInputPanelController *controller;
 }
 
 	-(void) togglePanel;

@@ -196,16 +196,16 @@
 			UXPickerTextField *textField	= [field createViewForController:self];
 			if (textField) {
 				textField.delegate			= self;
-				textField.backgroundColor	= UXSTYLEVAR(backgroundColor);
-				textField.font				= UXSTYLEVAR(messageFont);
+				textField.backgroundColor	= UXSTYLESHEETPROPERTY(backgroundColor);
+				textField.font				= UXSTYLESHEETPROPERTY(messageFont);
 				textField.returnKeyType		= UIReturnKeyNext;
 				textField.autoresizingMask	= UIViewAutoresizingFlexibleWidth;
 				[textField sizeToFit];
 				
 				UILabel *label				= [[[UILabel alloc] init] autorelease];
 				label.text					= field.title;
-				label.font					= UXSTYLEVAR(messageFont);
-				label.textColor				= UXSTYLEVAR(messageFieldTextColor);
+				label.font					= UXSTYLESHEETPROPERTY(messageFont);
+				label.textColor				= UXSTYLESHEETPROPERTY(messageFieldTextColor);
 				[label sizeToFit];
 				label.frame					= CGRectInset(label.frame, -2, 0);
 				textField.leftView			= label;
@@ -215,7 +215,7 @@
 				[_fieldViews addObject:textField];
 				
 				UIView *separator			= [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 1)] autorelease];
-				separator.backgroundColor	= UXSTYLEVAR(messageFieldSeparatorColor);
+				separator.backgroundColor	= UXSTYLESHEETPROPERTY(messageFieldSeparatorColor);
 				separator.autoresizingMask	= UIViewAutoresizingFlexibleWidth;
 				[_scrollView addSubview:separator];
 			}
@@ -381,10 +381,10 @@
 
 	-(void) loadView {
 		[super loadView];
-		self.view.backgroundColor					= UXSTYLEVAR(backgroundColor);
+		self.view.backgroundColor					= UXSTYLESHEETPROPERTY(backgroundColor);
 		
 		_scrollView									= [[UIScrollView  alloc] initWithFrame:UXKeyboardNavigationFrame()];
-		_scrollView.backgroundColor					= UXSTYLEVAR(backgroundColor);
+		_scrollView.backgroundColor					= UXSTYLESHEETPROPERTY(backgroundColor);
 		_scrollView.autoresizingMask				= (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		_scrollView.canCancelContentTouches			= NO;
 		_scrollView.showsVerticalScrollIndicator	= NO;
@@ -393,8 +393,8 @@
 		
 		_textEditor									= [[UXTextEditor alloc] initWithFrame:CGRectMake(0, 0, _scrollView.width, 0)];
 		_textEditor.delegate						= self;
-		_textEditor.backgroundColor					= UXSTYLEVAR(backgroundColor);
-		_textEditor.font							= UXSTYLEVAR(messageFont);
+		_textEditor.backgroundColor					= UXSTYLESHEETPROPERTY(backgroundColor);
+		_textEditor.font							= UXSTYLESHEETPROPERTY(messageFont);
 		_textEditor.autoresizingMask				= UIViewAutoresizingFlexibleWidth;
 		_textEditor.autoresizesToText				= YES;
 		_textEditor.showsExtraLine					= YES;

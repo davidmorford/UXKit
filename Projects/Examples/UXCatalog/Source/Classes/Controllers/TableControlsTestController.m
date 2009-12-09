@@ -13,20 +13,20 @@
 			
 			UITextField *textField				= [[[UITextField alloc] init] autorelease];
 			textField.placeholder				= @"UITextField";
-			textField.font						= UXSTYLEVAR(font);
+			textField.font						= UXSTYLESHEETPROPERTY(font);
 			
 			UITextField *textField2				= [[[UITextField alloc] init] autorelease];
-			textField2.font						= UXSTYLEVAR(font);
+			textField2.font						= UXSTYLESHEETPROPERTY(font);
 			textField2.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 			UXTableControlItem *textFieldItem	= [UXTableControlItem itemWithCaption:@"UXTableControlItem" control:textField2];
 			
 			UITextView *textView				= [[[UITextView alloc] init] autorelease];
 			textView.text						= @"UITextView";
-			textView.font						= UXSTYLEVAR(font);
+			textView.font						= UXSTYLESHEETPROPERTY(font);
 			
 			UXTextEditor *editor				= [[[UXTextEditor alloc] init] autorelease];
-			editor.font							= UXSTYLEVAR(font);
-			editor.backgroundColor				= UXSTYLEVAR(backgroundColor);
+			editor.font							= UXSTYLESHEETPROPERTY(font);
+			editor.backgroundColor				= UXSTYLESHEETPROPERTY(backgroundColor);
 			editor.autoresizesToText			= NO;
 			editor.minNumberOfLines				= 3;
 			editor.placeholder					= @"UXTextEditor";

@@ -41,7 +41,7 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 							   
 								@"Images",
 									[UXTableImageItem itemWithText:@"UXTableImageItem" imageURL:localImage URL:@"uxcatalog://tableItemTest"],
-									[UXTableRightImageItem itemWithText:@"UXTableRightImageItem" imageURL:localImage defaultImage:nil imageStyle:UXSTYLE(rounded) URL:@"uxcatalog://tableItemTest"],
+									[UXTableRightImageItem itemWithText:@"UXTableRightImageItem" imageURL:localImage defaultImage:nil imageStyle:UXSTYLEWITHSELECTOR(rounded) URL:@"uxcatalog://tableItemTest"],
 									[UXTableSubtitleItem itemWithText:@"UXTableSubtitleItem" subtitle:kLoremIpsum imageURL:remoteImage defaultImage:defaultPerson URL:@"uxcatalog://tableItemTest" accessoryURL:nil],
 									[UXTableMessageItem itemWithTitle:@"Bob Jones" caption:@"UXTableMessageItem" text:kLoremIpsum timestamp:[NSDate date] imageURL:remoteImage URL:@"uxcatalog://tableItemTest"],
 							   

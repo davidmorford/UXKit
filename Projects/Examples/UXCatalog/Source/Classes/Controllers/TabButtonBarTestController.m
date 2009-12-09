@@ -30,7 +30,7 @@
 
 	-(void) loadView {
 		self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame] autorelease];
-		self.view.backgroundColor = UXSTYLEVAR(tabBackgroundTintColor);
+		self.view.backgroundColor = UXSTYLESHEETPROPERTY(tabBackgroundTintColor);
 		
 		tabButtonBar = [[UXTabButtonBar alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
 		tabButtonBar.tabItems = [NSArray arrayWithObjects:

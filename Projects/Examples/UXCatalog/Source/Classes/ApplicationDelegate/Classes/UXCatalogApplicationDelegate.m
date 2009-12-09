@@ -67,7 +67,7 @@
 		[map from:@"uxcatalog://calendarTest"		toViewController:[CalendarTestController class]];
 		[map from:@"uxcatalog://panelTest"			toViewController:[PanelTestController class]];
 		[map from:@"uxcatalog://styledTextControllerTest"	toViewController:[StyledTextTestViewController class]];
-		[map from:@"uxcatalog://panel"				toViewController:[UXPanelViewController class]];
+		[map from:@"uxcatalog://panel"				toViewController:[UXInputPanelController class]];
 		
 		if (![navigator restoreViewControllers]) {
 			[navigator openURL:@"uxcatalog://catalog" animated:NO];
