@@ -5,6 +5,7 @@
 # Created: June 12, 2009     - dpm
 # Updated: September 8, 2009 - dpm
 # Updated: November 13, 2009 - dpm 
+# Updated: December 1, 2009  - dpm 
 # ================================================================================
 
 # ================================================================================
@@ -126,6 +127,15 @@ rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/JSONKit
 rm -dRfv $BUILD_SDK_DIR/$BUILD_DEVICE_SDK_NAME.sdk/$BUILD_SDK_VERSION/XMLKit
 rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/XMLKit
 
+rm -dRfv $BUILD_SDK_DIR/$BUILD_DEVICE_SDK_NAME.sdk/$BUILD_SDK_VERSION/StorageKit
+rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/StorageKit
+
+rm -dRfv $BUILD_SDK_DIR/$BUILD_DEVICE_SDK_NAME.sdk/$BUILD_SDK_VERSION/ControllerKit
+rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/ControllerKit
+
+rm -dRfv $BUILD_SDK_DIR/$BUILD_DEVICE_SDK_NAME.sdk/$BUILD_SDK_VERSION/TableKit
+rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/TableKit
+
 rm -dRfv $BUILD_SDK_DIR/$BUILD_DEVICE_SDK_NAME.sdk/$BUILD_SDK_VERSION/UXKit
 rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/UXKit
 
@@ -133,6 +143,46 @@ rm -dRfv $BUILD_SDK_DIR/$BUILD_SIMULATOR_SDK_NAME.sdk/$BUILD_SDK_VERSION/UXKit
 # ================================================================================
 # Libraries
 # ================================================================================ 
+
+
+echo "Building StorageKit"
+echo "________________________________________________________________________________\n"
+cd $LIBRARIES_ROOT/StorageKit
+
+echo "Cleaning..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target StorageKit -configuration $BUILD_CONFIGURATION -project StorageKit.xcodeproj clean
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target StorageKit -configuration $BUILD_CONFIGURATION -project StorageKit.xcodeproj clean
+
+echo "Building..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target StorageKit -configuration $BUILD_CONFIGURATION -project StorageKit.xcodeproj build
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target StorageKit -configuration $BUILD_CONFIGURATION -project StorageKit.xcodeproj build
+
+
+echo "Building ControllerKit"
+echo "________________________________________________________________________________\n"
+cd $LIBRARIES_ROOT/ControllerKit
+
+echo "Cleaning..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target ControllerKit -configuration $BUILD_CONFIGURATION -project ControllerKit.xcodeproj clean
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target ControllerKit -configuration $BUILD_CONFIGURATION -project ControllerKit.xcodeproj clean
+
+echo "Building..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target ControllerKit -configuration $BUILD_CONFIGURATION -project ControllerKit.xcodeproj build
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target ControllerKit -configuration $BUILD_CONFIGURATION -project ControllerKit.xcodeproj build
+
+
+echo "Building TableKit"
+echo "________________________________________________________________________________\n"
+cd $LIBRARIES_ROOT/TableKit
+
+echo "Cleaning..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target TableKit -configuration $BUILD_CONFIGURATION -project TableKit.xcodeproj clean
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target TableKit -configuration $BUILD_CONFIGURATION -project TableKit.xcodeproj clean
+
+echo "Building..."
+xcodebuild -sdk $BUILD_DEVICE_SDK -target TableKit -configuration $BUILD_CONFIGURATION -project TableKit.xcodeproj build
+xcodebuild -sdk $BUILD_SIMULATOR_SDK -target TableKit -configuration $BUILD_CONFIGURATION -project TableKit.xcodeproj build
+
 
 echo "Building UXKit"
 echo "________________________________________________________________________________\n"
@@ -145,6 +195,7 @@ xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGU
 echo "Building..."
 xcodebuild -sdk $BUILD_DEVICE_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build
 xcodebuild -sdk $BUILD_SIMULATOR_SDK -target UXKit -configuration $BUILD_CONFIGURATION -project UXKit.xcodeproj build
+
 
 
 # ================================================================================

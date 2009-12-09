@@ -1,7 +1,23 @@
 # UXKit
 
-UXKit is a non-compatible fork of the THree20 iPhone OS Objective-C library. It contains all recent changes up to to 
-commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8183ae25528bbc575ab41a41227756f06c166240)
+UXKit is a fork of the THree20 iPhone OS Objective-C library.
+
+## Update History
+
+---
+
+### December 7, 2009
+
+- Include **StorageKit**, **ControllerKit**, [**TableKit**](http://github.com/davidmorford/TableKit) and a new example project, UXTableCatalog, demonstrating TableKit.
+
+### November 28, 2009
+
+- Synced with Facebook Three20 commit [November 28, 2009 (1e56a91)](http://github.com/facebook/three20/commit/1e56a91a4c67d6fde109f398544d533bc7191160)
+
+### October 26, 2009
+
+- Synced with commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8183ae25528bbc575ab41a41227756f06c166240)
+
 
 ## Differences with Three20
 
@@ -12,7 +28,8 @@ commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8
 * Different prefix for clases and categories, UX and UIX.
 * UITouch category deleted.
 * UIWindow findFirstResponder from Jonathan Saggnu.
-* Removal viewDidUnload call 
+* Removal of viewDidUnload call from dealloc in UXViewController (TTViewController).
+
 
 ## Inclusions from other Three20 forks
 
@@ -24,22 +41,29 @@ commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8
 * Numerous bug fixes from other forks. Attribution has been included as much possible. If I've missed you, send a message so proper credit can be added.
 
 
-## Under Development
+## New Features
 
 ---
 
-* Input Panel Controller
-* Complete Model Refactor
-* Core Data TableView Model
-* Core Data Storage and Query Class cluster
-* Styles and Shapes via UIView backingLayer
+* Input Panel Controller based on Popup
+
+
+## Planned Changed and Features In Development
+
+---
+
+* Complete Model/ModelController refactor.
+* New UITableView model and view controller cluster with editing, value editors and managed object support/
+* CoreData storage and query class cluster.
+
 
 ## BuildKit Usage Notes
 
 ---
 
-* BuildKit uses the latest iPhone OS SDK and the iPhone OS Deployment Target. Please be aware of the implications of this.
-* ...
+* UXKit and supporting libraries uses the "BuildKit" infrastructure to share build configurations, managing project layout and builds and facilitate sharing of libraries.
+
+* BuildKit uses the latest iPhone OS SDK and sets the iPhone OS Deployment Target. Please be aware of the implications of this and how to implement compatability checks by using class, method and function symbols.
 
 
 
