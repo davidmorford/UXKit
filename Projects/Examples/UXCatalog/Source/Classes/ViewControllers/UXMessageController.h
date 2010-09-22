@@ -6,8 +6,7 @@
 @changes	(c) 2009 Semantap
 */
 
-#import <UXKit/UXViewController.h>
-#import <UXKit/UXTextEditor.h>
+#import <UXKit/UXKit.h>
 
 @protocol UXTableViewDataSource, UXMessageControllerDelegate;
 @class UXPickerTextField, UXActivityLabel;

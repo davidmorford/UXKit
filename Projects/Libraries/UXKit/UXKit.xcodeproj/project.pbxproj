@@ -1521,7 +1521,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "UXKit" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
@@ -1807,7 +1814,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos3.1.2;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Profile;
 		};
@@ -1822,7 +1830,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos3.1.2;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Distribution;
 		};
@@ -1851,7 +1860,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos3.1.2;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -1859,7 +1869,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63B6A7531041380F0049EC9C /* Project.xcconfig */;
 			buildSettings = {
-				SDKROOT = iphoneos3.1.2;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Release;
 		};

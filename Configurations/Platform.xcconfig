@@ -7,13 +7,14 @@
 
 // Always use the latest released SDK... until iPhone OS 4.0 beta
 // comes again in the spring. Sigh...
-SDKROOT						= iphoneos3.1.2
+SDKROOT						= iphoneos4.1
 
 // Set to a desired iPhone OS target.
-IPHONEOS_DEPLOYMENT_TARGET	= 3.1
+IPHONEOS_DEPLOYMENT_TARGET	= 4.0
 
 // This builds *all* libraries and applications with arm6 and arm7,
 // effectively doubling the binary size of libraries and applications.
 // Take this into account as the AppStore limits app downloads to 10mb 
 // when done on the phone over mobile networks.
-ARCHS						= $(ARCHS_UNIVERSAL_IPHONE_OS)
+
+ARCHS						= $(ARCHS_STANDARD_32_BIT)

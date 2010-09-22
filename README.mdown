@@ -2,23 +2,6 @@
 
 UXKit is a fork of the THree20 iPhone OS Objective-C library.
 
-## Update History
-
----
-
-### December 7, 2009
-
-- Include **StorageKit**, **ControllerKit**, [**TableKit**](http://github.com/davidmorford/TableKit) and a new example project, UXTableCatalog, demonstrating TableKit.
-
-### November 28, 2009
-
-- Synced with Facebook Three20 commit [November 28, 2009 (1e56a91)](http://github.com/facebook/three20/commit/1e56a91a4c67d6fde109f398544d533bc7191160)
-
-### October 26, 2009
-
-- Synced with commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8183ae25528bbc575ab41a41227756f06c166240)
-
-
 ## Differences with Three20
 
 ---
@@ -65,6 +48,29 @@ UXKit is a fork of the THree20 iPhone OS Objective-C library.
 
 * BuildKit uses the latest iPhone OS SDK and sets the iPhone OS Deployment Target. Please be aware of the implications of this and how to implement compatability checks by using class, method and function symbols.
 
+## Update History
+
+---
+
+### September 2010
+
+- Doh. Push commit to master.
+
+### June 19, 2010
+
+- Update for iOS 4.0 SDK
+
+### December 7, 2009
+
+- Include **StorageKit**, **ControllerKit**, [**TableKit**](http://github.com/davidmorford/TableKit) and a new example project, UXTableCatalog, demonstrating TableKit.
+
+### November 28, 2009
+
+- Synced with Facebook Three20 commit [November 28, 2009 (1e56a91)](http://github.com/facebook/three20/commit/1e56a91a4c67d6fde109f398544d533bc7191160)
+
+### October 26, 2009
+
+- Synced with commit [October 26, 2009 (8183ae2)](http://github.com/joehewitt/three20/commit/8183ae25528bbc575ab41a41227756f06c166240)
 
 
 ## UXKit Google Group

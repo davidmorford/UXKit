@@ -1,7 +1,7 @@
 
 #import <JSONKit/JKJSONBase.h>
 
-NSString *JKJSONErrorDomain = @"com.atigeo.JSON.ErrorDomain";
+NSString *JKJSONErrorDomain = @"com.semantap.JSON.ErrorDomain";
 
 @implementation JKJSONBase
 
